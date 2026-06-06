@@ -34,6 +34,14 @@ CREATE TYPE public.analysis_status AS ENUM (
     'stale'
 );
 
+CREATE TYPE public.semantic_embedding_refresh_status AS ENUM (
+    'queued',
+    'processing',
+    'retrying',
+    'complete',
+    'failed'
+);
+
 CREATE TYPE public.skill_requirement_level AS ENUM (
     'required',
     'preferred',
@@ -222,46 +230,98 @@ CREATE TABLE public.internship_skills (
 CREATE INDEX internship_skills_skill_id_idx
     ON public.internship_skills (skill_id);
 
--- The initial embedding contract is 384 dimensions, suitable for a lightweight
--- sentence-transformer model such as all-MiniLM-L6-v2. Changing the model or
--- dimensions later requires a deliberate migration and re-embedding pass.
-CREATE TABLE public.resume_embeddings (
+-- The current embedding contract is 768 dimensions for gemini-embedding-001.
+-- Changing the model or dimensions requires a deliberate migration and
+-- re-embedding pass.
+CREATE TABLE public.resume_section_embeddings (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     resume_id UUID NOT NULL REFERENCES public.resumes(id) ON DELETE CASCADE,
     section_type TEXT NOT NULL
-        CHECK (section_type IN ('skills', 'projects', 'experience', 'education', 'summary')),
+        CHECK (section_type IN (
+            'skills_list', 'summary', 'project', 'experience', 'education',
+            'certification'
+        )),
+    section_key TEXT NOT NULL,
+    section_text TEXT NOT NULL,
+    content_hash TEXT NOT NULL,
     model_name TEXT NOT NULL,
-    embedding extensions.vector(384) NOT NULL,
+    embedding extensions.vector(768) NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    UNIQUE (resume_id, section_type, model_name)
+    UNIQUE (resume_id, section_type, section_key, model_name)
 );
 
-CREATE INDEX resume_embeddings_resume_id_idx
-    ON public.resume_embeddings (resume_id);
+CREATE INDEX resume_section_embeddings_resume_model_idx
+    ON public.resume_section_embeddings (resume_id, model_name);
 
-CREATE TRIGGER resume_embeddings_set_updated_at
-BEFORE UPDATE ON public.resume_embeddings
-FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();
-
-CREATE TABLE public.internship_embeddings (
+CREATE TABLE public.internship_requirement_embeddings (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     internship_input_id UUID NOT NULL REFERENCES public.internship_inputs(id) ON DELETE CASCADE,
-    section_type TEXT NOT NULL DEFAULT 'description'
-        CHECK (section_type IN ('description', 'required_skills', 'preferred_skills', 'responsibilities')),
+    requirement_category TEXT NOT NULL
+        CHECK (requirement_category IN ('required_skill', 'preferred_skill')),
+    requirement TEXT NOT NULL,
+    requirement_text TEXT NOT NULL,
+    content_hash TEXT NOT NULL,
     model_name TEXT NOT NULL,
-    embedding extensions.vector(384) NOT NULL,
+    embedding extensions.vector(768) NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    UNIQUE (internship_input_id, section_type, model_name)
+    UNIQUE (internship_input_id, requirement_category, requirement, model_name)
 );
 
-CREATE INDEX internship_embeddings_input_id_idx
-    ON public.internship_embeddings (internship_input_id);
+CREATE INDEX internship_requirement_embeddings_input_model_idx
+    ON public.internship_requirement_embeddings (internship_input_id, model_name);
 
-CREATE TRIGGER internship_embeddings_set_updated_at
-BEFORE UPDATE ON public.internship_embeddings
+CREATE TABLE public.semantic_embedding_refresh_jobs (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    resume_id UUID REFERENCES public.resumes(id) ON DELETE CASCADE,
+    internship_input_id UUID REFERENCES public.internship_inputs(id) ON DELETE CASCADE,
+    generation UUID NOT NULL DEFAULT gen_random_uuid(),
+    status public.semantic_embedding_refresh_status NOT NULL DEFAULT 'queued',
+    processing_attempts INTEGER NOT NULL DEFAULT 0 CHECK (processing_attempts >= 0),
+    processing_error TEXT,
+    processing_started_at TIMESTAMPTZ,
+    processing_completed_at TIMESTAMPTZ,
+    next_retry_at TIMESTAMPTZ,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    CHECK (
+        (resume_id IS NOT NULL AND internship_input_id IS NULL)
+        OR
+        (resume_id IS NULL AND internship_input_id IS NOT NULL)
+    )
+);
+
+CREATE UNIQUE INDEX semantic_embedding_refresh_jobs_resume_unique_idx
+    ON public.semantic_embedding_refresh_jobs (resume_id)
+    WHERE resume_id IS NOT NULL;
+
+CREATE UNIQUE INDEX semantic_embedding_refresh_jobs_internship_unique_idx
+    ON public.semantic_embedding_refresh_jobs (internship_input_id)
+    WHERE internship_input_id IS NOT NULL;
+
+CREATE INDEX semantic_embedding_refresh_jobs_queue_idx
+    ON public.semantic_embedding_refresh_jobs (status, next_retry_at, created_at)
+    WHERE status IN ('queued', 'processing', 'retrying');
+
+CREATE TRIGGER semantic_embedding_refresh_jobs_set_updated_at
+BEFORE UPDATE ON public.semantic_embedding_refresh_jobs
 FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();
+
+CREATE TABLE public.match_llm_adjudications (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,
+    resume_id UUID NOT NULL REFERENCES public.resumes(id) ON DELETE CASCADE,
+    internship_input_id UUID NOT NULL REFERENCES public.internship_inputs(id) ON DELETE CASCADE,
+    adjudication_version TEXT NOT NULL,
+    prompt_version TEXT NOT NULL,
+    score_version TEXT NOT NULL,
+    official_score NUMERIC(5, 2) NOT NULL CHECK (official_score BETWEEN 0 AND 100),
+    shadow_score NUMERIC(5, 2) NOT NULL CHECK (shadow_score BETWEEN 0 AND 100),
+    provider TEXT NOT NULL,
+    model_name TEXT NOT NULL,
+    adjudication_payload JSONB NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    stale_at TIMESTAMPTZ
+);
 
 CREATE TABLE public.analysis_sessions (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -388,8 +448,10 @@ ALTER TABLE public.skills ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.skill_aliases ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.resume_skills ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.internship_skills ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.resume_embeddings ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.internship_embeddings ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.resume_section_embeddings ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.internship_requirement_embeddings ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.semantic_embedding_refresh_jobs ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.match_llm_adjudications ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.analysis_sessions ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.resume_match_scores ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.skill_gaps ENABLE ROW LEVEL SECURITY;

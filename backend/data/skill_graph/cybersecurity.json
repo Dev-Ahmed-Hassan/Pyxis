@@ -1,0 +1,6949 @@
+{
+  "schema_version": 1,
+  "domain": "cybersecurity",
+  "description": "Migrated canonical aliases and curated skill relationships.",
+  "skills" : [
+  {
+    "canonical_name": "Access Control",
+    "aliases": [
+      "broken access control",
+      "accesscontrol",
+      "access-control",
+      "broken authorization"
+    ]
+  },
+  {
+    "canonical_name": "ACLs",
+    "aliases": [
+      "access control lists",
+      "access-control-lists",
+      "accesscontrollists",
+      "acl"
+    ]
+  },
+  {
+    "canonical_name": "Active Directory",
+    "aliases": [
+      "activedirectory",
+      "ad",
+      "active-directory",
+      "activedir"
+    ]
+  },
+  {
+    "canonical_name": "Acunetix",
+    "aliases": [
+      "acunetix scanner",
+      "acunetix web scanner",
+      "acunetix vulnerability scanner",
+      "acunetix web"
+    ]
+  },
+  {
+    "canonical_name": "AES",
+    "aliases": [
+      "advanced encryption standard",
+      "advanced-encryption-standard",
+      "aes encryption",
+      "rijndael"
+    ]
+  },
+  {
+    "canonical_name": "Aircrack-ng",
+    "aliases": [
+      "aircrack",
+      "aircrack ng",
+      "aircrackng",
+      "aircrack-ng suite"
+    ]
+  },
+  {
+    "canonical_name": "Alert Triage",
+    "aliases": [
+      "alerttriage",
+      "alert triaging",
+      "alert investigation",
+      "alert analysis"
+    ]
+  },
+  {
+    "canonical_name": "Amass",
+    "aliases": [
+      "amass tool",
+      "amass owasp",
+      "amass subdomain enumeration",
+      "amass dns enumeration"
+    ]
+  },
+  {
+    "canonical_name": "Amazon GuardDuty",
+    "aliases": [
+      "guardduty",
+      "aws guardduty",
+      "amazon guard duty",
+      "guard duty"
+    ]
+  },
+  {
+    "canonical_name": "Android Security",
+    "aliases": [
+      "android",
+      "androidsecurity",
+      "android-security",
+      "android app security"
+    ]
+  },
+  {
+    "canonical_name": "Angular",
+    "aliases": [
+      "angularjs",
+      "angular framework",
+      "angular.js",
+      "angular web framework"
+    ]
+  },
+  {
+    "canonical_name": "Ansible",
+    "aliases": [
+      "ansible automation",
+      "ansible playbook",
+      "ansible tower",
+      "ansible configuration management"
+    ]
+  },
+  {
+    "canonical_name": "ANY.RUN",
+    "aliases": [
+      "anyrun",
+      "any run",
+      "any.run sandbox",
+      "anyrun malware sandbox"
+    ]
+  },
+  {
+    "canonical_name": "API Security",
+    "aliases": [
+      "apisecurity",
+      "api-security",
+      "web api security",
+      "api protection"
+    ]
+  },
+  {
+    "canonical_name": "Application Security (AppSec)",
+    "aliases": [
+      "applicatonsecurity",
+      "appsec",
+      "application-security",
+      "application security testing"
+    ]
+  },
+  {
+    "canonical_name": "Aqua Security",
+    "aliases": [
+      "aquasecurity",
+      "aqua",
+      "aqua container security",
+      "aquasec"
+    ]
+  },
+  {
+    "canonical_name": "Aquatone",
+    "aliases": [
+      "aquatone tool",
+      "aquatone screenshot",
+      "aquatone domain",
+      "aquatone visual reconnaissance"
+    ]
+  },
+  {
+    "canonical_name": "ArcSight",
+    "aliases": [
+      "arcsight siem",
+      "hp arcsight",
+      "micro focus arcsight",
+      "arcsight esm"
+    ]
+  },
+  {
+    "canonical_name": "AS-REP Roasting",
+    "aliases": [
+      "asreproasting",
+      "as-rep roasting attack",
+      "asrep roasting",
+      "as-rep attack"
+    ]
+  },
+  {
+    "canonical_name": "Auditing",
+    "aliases": [
+      "audit",
+      "security auditing",
+      "it audit",
+      "system auditing"
+    ]
+  },
+  {
+    "canonical_name": "Autopsy",
+    "aliases": [
+      "autopsy forensic tool",
+      "autopsy sleuth kit",
+      "autopsy digital forensics",
+      "autopsy forensics browser"
+    ]
+  },
+  {
+    "canonical_name": "AWS",
+    "aliases": [
+      "amazon",
+      "amazonwebservices",
+      "amazon web services",
+      "aws cloud"
+    ]
+  },
+  {
+    "canonical_name": "AWS Certified Security \u2013 Specialty",
+    "aliases": [
+      "awssecurityspecialty",
+      "aws certified security specialty",
+      "aws security specialty certification",
+      "awscertifiedsecurity"
+    ]
+  },
+  {
+    "canonical_name": "AWS CloudTrail",
+    "aliases": [
+      "cloudtrail",
+      "aws cloud trail",
+      "cloudtrail logging",
+      "aws cloudtrail service"
+    ]
+  },
+  {
+    "canonical_name": "AWS S3",
+    "aliases": [
+      "awss3",
+      "s3",
+      "amazon s3",
+      "aws simple storage service"
+    ]
+  },
+  {
+    "canonical_name": "AWS Security",
+    "aliases": [
+      "awssecurity",
+      "amazon security",
+      "aws cloud security",
+      "amazon web services security"
+    ]
+  },
+  {
+    "canonical_name": "AWS Security Hub",
+    "aliases": [
+      "securityhub",
+      "aws security hub service",
+      "aws security hub findings",
+      "security hub"
+    ]
+  },
+  {
+    "canonical_name": "AZ-500",
+    "aliases": [
+      "az500",
+      "azure security engineer associate",
+      "az-500 exam",
+      "azure az-500"
+    ]
+  },
+  {
+    "canonical_name": "Azure Active Directory",
+    "aliases": [
+      "azuread",
+      "azure ad",
+      "microsoft azure active directory",
+      "aad"
+    ]
+  },
+  {
+    "canonical_name": "Azure Defender for Cloud",
+    "aliases": [
+      "azuredfender",
+      "azure defender",
+      "azure security center",
+      "azure defender for cloud app"
+    ]
+  },
+  {
+    "canonical_name": "Azure Security",
+    "aliases": [
+      "azuresecurity",
+      "microsoft azure security",
+      "azure cloud security",
+      "azure security services"
+    ]
+  },
+  {
+    "canonical_name": "BackBox",
+    "aliases": [
+      "backbox linux",
+      "backbox os",
+      "backbox penetration testing",
+      "backbox security"
+    ]
+  },
+  {
+    "canonical_name": "Bash",
+    "aliases": [
+      "bash scripting",
+      "bashscripting",
+      "shell scripting",
+      "shellscripting",
+      "bash shell",
+      "bash command line"
+    ]
+  },
+  {
+    "canonical_name": "BCDR",
+    "aliases": [
+      "business continuity and disaster recovery",
+      "bc/dr",
+      "business continuity disaster recovery",
+      "bc dr"
+    ]
+  },
+  {
+    "canonical_name": "BeEF",
+    "aliases": [
+      "beef framework",
+      "browser exploitation framework",
+      "beef project",
+      "beef exploitation"
+    ]
+  },
+  {
+    "canonical_name": "Bettercap",
+    "aliases": [
+      "bettercap tool",
+      "bettercap network",
+      "bettercap mitm",
+      "bettercap framework"
+    ]
+  },
+  {
+    "canonical_name": "Binary Ninja",
+    "aliases": [
+      "binaryninja",
+      "binja",
+      "binary ninja reverse engineering",
+      "binary ninja platform"
+    ]
+  },
+  {
+    "canonical_name": "Bitbucket",
+    "aliases": [
+      "bitbucket cloud",
+      "bitbucket server",
+      "bitbucket git",
+      "bitbucket repository"
+    ]
+  },
+  {
+    "canonical_name": "BlackArch",
+    "aliases": [
+      "blackarch linux",
+      "blackarch os",
+      "blackarch penetration testing",
+      "blackarch tools"
+    ]
+  },
+  {
+    "canonical_name": "Blockchain Security",
+    "aliases": [
+      "blockchain",
+      "blockchainsecurity",
+      "blockchain-security",
+      "distributed ledger security"
+    ]
+  },
+  {
+    "canonical_name": "BloodHound",
+    "aliases": [
+      "bloodhound ad",
+      "bloodhound active directory",
+      "bloodhound tool",
+      "bloodhound attack path"
+    ]
+  },
+  {
+    "canonical_name": "Blue Teaming",
+    "aliases": [
+      "blueteam",
+      "blue teaming",
+      "defensive security",
+      "blue team defense"
+    ]
+  },
+  {
+    "canonical_name": "Bluetooth Security",
+    "aliases": [
+      "bluetooth",
+      "bluetoothsecurity",
+      "bluetooth-security",
+      "bt security"
+    ]
+  },
+  {
+    "canonical_name": "Browser Exploitation",
+    "aliases": [
+      "browserexploitation",
+      "browser exploit",
+      "browser hijacking",
+      "browser-based attacks"
+    ]
+  },
+  {
+    "canonical_name": "Buffer Overflow",
+    "aliases": [
+      "bufferoverflow",
+      "buffer overrun",
+      "stack overflow",
+      "buffer overflow attack"
+    ]
+  },
+  {
+    "canonical_name": "Burp Suite",
+    "aliases": [
+      "burp",
+      "burp suite professional",
+      "burpsuite",
+      "burpsuitepro",
+      "burpsuiteprofessional"
+    ]
+  },
+  {
+    "canonical_name": "Business Continuity",
+    "aliases": [
+      "businesscontinuity",
+      "bc",
+      "business continuity planning",
+      "bc planning"
+    ]
+  },
+  {
+    "canonical_name": "C#",
+    "aliases": [
+      "csharp",
+      "csharp programming",
+      "c-sharp",
+      "c# language"
+    ]
+  },
+  {
+    "canonical_name": "C++",
+    "aliases": [
+      "cplusplus",
+      "cpp",
+      "c plus plus",
+      "c++ programming language"
+    ]
+  },
+  {
+    "canonical_name": "C/C++",
+    "aliases": [
+      "c and c++",
+      "c c++",
+      "c/c++ languages",
+      "c cpp"
+    ]
+  },
+  {
+    "canonical_name": "CAPA",
+    "aliases": [
+      "capa tool",
+      "fireeye capa",
+      "capa malware analysis",
+      "capa rule-based analysis"
+    ]
+  },
+  {
+    "canonical_name": "Cartography",
+    "aliases": [
+      "cartography mapping",
+      "cartography tool",
+      "cartography attack surface",
+      "cartography asset mapping"
+    ]
+  },
+  {
+    "canonical_name": "Cassandra",
+    "aliases": [
+      "apache cassandra",
+      "cassandra db",
+      "cassandra database",
+      "cassandra nosql"
+    ]
+  },
+  {
+    "canonical_name": "CCIE Security",
+    "aliases": [
+      "ccie",
+      "ccie security certification",
+      "cisco ccie security",
+      "ccie security exam"
+    ]
+  },
+  {
+    "canonical_name": "CCNA",
+    "aliases": [
+      "cisco certified network associate",
+      "ccna routing and switching",
+      "ccna certification",
+      "ccna exam"
+    ]
+  },
+  {
+    "canonical_name": "CCNP Security",
+    "aliases": [
+      "ccnp",
+      "ccnp security certification",
+      "cisco ccnp security",
+      "ccnp security exam"
+    ]
+  },
+  {
+    "canonical_name": "CCSK",
+    "aliases": [
+      "certificate of cloud security knowledge",
+      "ccsk certification",
+      "cloud security knowledge",
+      "ccsk exam"
+    ]
+  },
+  {
+    "canonical_name": "CCSP",
+    "aliases": [
+      "certified cloud security professional",
+      "ccsp certification",
+      "isc2 ccsp",
+      "ccsp exam"
+    ]
+  },
+  {
+    "canonical_name": "CEH",
+    "aliases": [
+      "certified ethical hacker",
+      "ceh certification",
+      "ec-council ceh",
+      "ceh exam"
+    ]
+  },
+  {
+    "canonical_name": "Cellebrite",
+    "aliases": [
+      "cellebrite ufed",
+      "cellebrite forensic tool",
+      "cellebrite mobile forensics",
+      "cellebrite extraction"
+    ]
+  },
+  {
+    "canonical_name": "Censys",
+    "aliases": [
+      "censys.io",
+      "censys scan",
+      "censys search engine",
+      "censys internet scan"
+    ]
+  },
+  {
+    "canonical_name": "Check Point",
+    "aliases": [
+      "checkpoint",
+      "check point firewall",
+      "check point software",
+      "check point security"
+    ]
+  },
+  {
+    "canonical_name": "Checkmarx",
+    "aliases": [
+      "checkmarx sast",
+      "checkmarx appsec",
+      "checkmarx code analysis",
+      "checkmarx security"
+    ]
+  },
+  {
+    "canonical_name": "Checkov",
+    "aliases": [
+      "checkov terraform",
+      "checkov iac",
+      "checkov policy as code",
+      "checkov bridgecrew"
+    ]
+  },
+  {
+    "canonical_name": "Chef",
+    "aliases": [
+      "chef configuration management",
+      "chef infra",
+      "chef automate",
+      "chef cookbook"
+    ]
+  },
+  {
+    "canonical_name": "CHFI",
+    "aliases": [
+      "computer hacking forensic investigator",
+      "chfi certification",
+      "ec-council chfi",
+      "chfi exam"
+    ]
+  },
+  {
+    "canonical_name": "CIS Benchmarks",
+    "aliases": [
+      "cisbenchmarks",
+      "cis security benchmarks",
+      "center for internet security benchmarks",
+      "cis hardening benchmarks"
+    ]
+  },
+  {
+    "canonical_name": "CIS Controls",
+    "aliases": [
+      "ciscontrols",
+      "cis critical security controls",
+      "center for internet security controls",
+      "cis top 20 controls"
+    ]
+  },
+  {
+    "canonical_name": "CISA",
+    "aliases": [
+      "certified information systems auditor",
+      "cisa certification",
+      "isaca cisa",
+      "cisa exam"
+    ]
+  },
+  {
+    "canonical_name": "Cisco ASA",
+    "aliases": [
+      "ciscoasa",
+      "cisco adaptive security appliance",
+      "asa firewall",
+      "cisco asa firewall"
+    ]
+  },
+  {
+    "canonical_name": "Cisco Packet Tracer",
+    "aliases": [
+      "cisco packettracer",
+      "packet tracer",
+      "cisco packet tracer simulator",
+      "packet tracer network simulator"
+    ]
+  },
+  {
+    "canonical_name": "CISM",
+    "aliases": [
+      "certified information security manager",
+      "cism certification",
+      "isaca cism",
+      "cism exam"
+    ]
+  },
+  {
+    "canonical_name": "CISSP",
+    "aliases": [
+      "certified information systems security professional",
+      "cissp certification",
+      "isc2 cissp",
+      "cissp exam"
+    ]
+  },
+  {
+    "canonical_name": "Cloud Infrastructure Entitlement Management (CIEM)",
+    "aliases": [
+      "ciem",
+      "cloud infrastructure entitlement management",
+      "cloud entitlements management",
+      "ciem solution"
+    ]
+  },
+  {
+    "canonical_name": "Cloud Security",
+    "aliases": [
+      "cloudsecurity",
+      "cloud-security",
+      "cloud computing security",
+      "cloud security fundamentals"
+    ]
+  },
+  {
+    "canonical_name": "Cloud Security Posture Management (CSPM)",
+    "aliases": [
+      "cspm",
+      "cloud security posture management",
+      "cloud posture management",
+      "cspm tools"
+    ]
+  },
+  {
+    "canonical_name": "Cloud Workload Protection Platform (CWPP)",
+    "aliases": [
+      "cwpp",
+      "cloud workload protection",
+      "cwpp platform",
+      "cloud workload security"
+    ]
+  },
+  {
+    "canonical_name": "CloudMapper",
+    "aliases": [
+      "cloudmapper aws",
+      "cloudmapper tool",
+      "cloudmapper reporting",
+      "cloudmapper network visualization"
+    ]
+  },
+  {
+    "canonical_name": "CloudSploit",
+    "aliases": [
+      "cloudsploit aws",
+      "cloudsploit security",
+      "cloudsploit scanning",
+      "cloudsploit aqua"
+    ]
+  },
+  {
+    "canonical_name": "Cobalt Strike",
+    "aliases": [
+      "cobaltstrike",
+      "cobalt strike beacon",
+      "cobalt strike adversary simulation",
+      "cobalt strike red team"
+    ]
+  },
+  {
+    "canonical_name": "Compliance",
+    "aliases": [
+      "regulatory compliance",
+      "security compliance",
+      "it compliance",
+      "compliance management"
+    ]
+  },
+  {
+    "canonical_name": "CompTIA Security+",
+    "aliases": [
+      "comptia security plus",
+      "comptiasecurity+",
+      "sec+",
+      "security+"
+    ]
+  },
+  {
+    "canonical_name": "Container Security",
+    "aliases": [
+      "containersecurity",
+      "container-security",
+      "containerization security",
+      "container hardening"
+    ]
+  },
+  {
+    "canonical_name": "CrackMapExec",
+    "aliases": [
+      "cme",
+      "crackmapexec",
+      "crackmap",
+      "crack map exec"
+    ]
+  },
+  {
+    "canonical_name": "Credential Dumping",
+    "aliases": [
+      "credentialdumping",
+      "password dumping",
+      "hash dumping",
+      "credential theft"
+    ]
+  },
+  {
+    "canonical_name": "CRISC",
+    "aliases": [
+      "certified in risk and information systems control",
+      "crisc certification",
+      "isaca crisc",
+      "crisc exam"
+    ]
+  },
+  {
+    "canonical_name": "Cross-Site Request Forgery (CSRF)",
+    "aliases": [
+      "csrf",
+      "cross site request forgery",
+      "cross-site request forgery",
+      "xsrf"
+    ]
+  },
+  {
+    "canonical_name": "Cross-Site Scripting (XSS)",
+    "aliases": [
+      "cross site scripting",
+      "cross-site scripting",
+      "crosssitescripting",
+      "xss"
+    ]
+  },
+  {
+    "canonical_name": "Cryptography",
+    "aliases": [
+      "crypto",
+      "cryptology",
+      "encryption science",
+      "cryptographic"
+    ]
+  },
+  {
+    "canonical_name": "CSS",
+    "aliases": [
+      "css3",
+      "cascading style sheets",
+      "css styling",
+      "web css"
+    ]
+  },
+  {
+    "canonical_name": "Cuckoo Sandbox",
+    "aliases": [
+      "cuckoo",
+      "cuckoosandbox",
+      "cuckoo malware analysis",
+      "cuckoo sandbox analysis"
+    ]
+  },
+  {
+    "canonical_name": "Cyber Kill Chain",
+    "aliases": [
+      "cyberkillchain",
+      "kill chain",
+      "cyber kill chain model",
+      "intrusion kill chain"
+    ]
+  },
+  {
+    "canonical_name": "Cybersecurity Fundamentals",
+    "aliases": [
+      "cybersecurityfundamentals",
+      "cyber fundamentals",
+      "information security fundamentals",
+      "security fundamentals"
+    ]
+  },
+  {
+    "canonical_name": "Dalfox",
+    "aliases": [
+      "dalfox xss",
+      "dalfox tool",
+      "dalfox scanner",
+      "dalfox web security"
+    ]
+  },
+  {
+    "canonical_name": "DAST",
+    "aliases": [
+      "dynamic application security testing",
+      "dynamic analysis security testing",
+      "dast scanner",
+      "dast tools"
+    ]
+  },
+  {
+    "canonical_name": "Database Management",
+    "aliases": [
+      "db management",
+      "database administration",
+      "sql database management",
+      "dbms"
+    ]
+  },
+  {
+    "canonical_name": "DCSync",
+    "aliases": [
+      "dcsync attack",
+      "mimikatz dcsync",
+      "directory replication service attack",
+      "dcsync mimikatz"
+    ]
+  },
+  {
+    "canonical_name": "Debian",
+    "aliases": [
+      "debian linux",
+      "debian os",
+      "debian distribution",
+      "debian gnu/linux"
+    ]
+  },
+  {
+    "canonical_name": "Detect It Easy",
+    "aliases": [
+      "detectiteasy",
+      "die",
+      "detect it easy tool",
+      "detect it easy file analysis"
+    ]
+  },
+  {
+    "canonical_name": "DevSecOps",
+    "aliases": [
+      "devsecops pipeline",
+      "development security operations",
+      "devsecops practices",
+      "devsecops integration"
+    ]
+  },
+  {
+    "canonical_name": "DHCP",
+    "aliases": [
+      "dynamic host configuration protocol",
+      "dhcp server",
+      "dhcp protocol",
+      "dhcp networking"
+    ]
+  },
+  {
+    "canonical_name": "Diamond Model",
+    "aliases": [
+      "diamondmodel",
+      "diamond model of intrusion analysis",
+      "diamond model threat intelligence",
+      "diamond model analysis"
+    ]
+  },
+  {
+    "canonical_name": "Digital Certificates",
+    "aliases": [
+      "digitalcertificates",
+      "digital cert",
+      "x509 certificates",
+      "ssl certificates"
+    ]
+  },
+  {
+    "canonical_name": "Digital Forensics",
+    "aliases": [
+      "digitalforensics",
+      "forensics",
+      "computer forensics",
+      "forensic analysis"
+    ]
+  },
+  {
+    "canonical_name": "Dirb",
+    "aliases": [
+      "dirb scanner",
+      "dirb web",
+      "dirb directory brute force",
+      "dirb tool"
+    ]
+  },
+  {
+    "canonical_name": "DirBuster",
+    "aliases": [
+      "dirbuster owasp",
+      "dirbuster tool",
+      "dirbuster directory enumeration",
+      "dirbuster brute force"
+    ]
+  },
+  {
+    "canonical_name": "Directory Enumeration",
+    "aliases": [
+      "directory brute forcing",
+      "dir enumeration",
+      "dir scanning",
+      "directory discovery"
+    ]
+  },
+  {
+    "canonical_name": "dirsearch",
+    "aliases": [
+      "dirsearch tool",
+      "dirsearch web",
+      "dirsearch scanner",
+      "dirsearch enumeration"
+    ]
+  },
+  {
+    "canonical_name": "Disaster Recovery",
+    "aliases": [
+      "disasterrecovery",
+      "dr",
+      "disaster recovery planning",
+      "it disaster recovery"
+    ]
+  },
+  {
+    "canonical_name": "Django",
+    "aliases": [
+      "django framework",
+      "django web",
+      "django python",
+      "django rest"
+    ]
+  },
+  {
+    "canonical_name": "DLP",
+    "aliases": [
+      "data loss prevention",
+      "data leak prevention",
+      "dlp solution",
+      "data loss protection"
+    ]
+  },
+  {
+    "canonical_name": "DNS",
+    "aliases": [
+      "domain name system",
+      "dns protocol",
+      "dns server",
+      "dns resolution"
+    ]
+  },
+  {
+    "canonical_name": "DNS Security",
+    "aliases": [
+      "dnssecurity",
+      "domain name system security",
+      "dns protection",
+      "secure dns"
+    ]
+  },
+  {
+    "canonical_name": "DNSSEC",
+    "aliases": [
+      "dns security extensions",
+      "domain name system security extensions",
+      "dnssec protocol",
+      "dnssec validation"
+    ]
+  },
+  {
+    "canonical_name": "Docker",
+    "aliases": [
+      "docker container",
+      "docker engine",
+      "docker platform",
+      "docker compose"
+    ]
+  },
+  {
+    "canonical_name": "Docker Security",
+    "aliases": [
+      "dockersecurity",
+      "docker container security",
+      "docker hardening",
+      "docker security best practices"
+    ]
+  },
+  {
+    "canonical_name": "DREAD",
+    "aliases": [
+      "dread threat model",
+      "dread risk assessment",
+      "dread methodology",
+      "dread model"
+    ]
+  },
+  {
+    "canonical_name": "DynamoDB",
+    "aliases": [
+      "amazon dynamodb",
+      "aws dynamodb",
+      "dynamodb nosql",
+      "dynamodb database"
+    ]
+  },
+  {
+    "canonical_name": "EDR",
+    "aliases": [
+      "endpoint detection and response",
+      "endpoint detection & response",
+      "edr solution",
+      "edr tools"
+    ]
+  },
+  {
+    "canonical_name": "Elastic Stack",
+    "aliases": [
+      "elastic stack siem",
+      "elastic stack logging",
+      "elastic stack kibana",
+      "elastic stack elk"
+    ]
+  },
+  {
+    "canonical_name": "Elasticsearch",
+    "aliases": [
+      "elasticsearch database",
+      "elasticsearch search engine",
+      "elasticsearch elk",
+      "elasticsearch nosql"
+    ]
+  },
+  {
+    "canonical_name": "ELK Stack",
+    "aliases": [
+      "elasticstack",
+      "elk",
+      "elk stack",
+      "elasticsearch logstash kibana"
+    ]
+  },
+  {
+    "canonical_name": "Elliptic Curve Cryptography (ECC)",
+    "aliases": [
+      "ecc",
+      "elliptic curve crypto",
+      "ecc cryptography",
+      "elliptic curve encryption"
+    ]
+  },
+  {
+    "canonical_name": "Embedded Security",
+    "aliases": [
+      "embedded systems security",
+      "firmware security",
+      "iot embedded security",
+      "embedded device security"
+    ]
+  },
+  {
+    "canonical_name": "Empire",
+    "aliases": [
+      "empire powershell",
+      "empire c2",
+      "empire post exploitation",
+      "empire red team"
+    ]
+  },
+  {
+    "canonical_name": "EnCase",
+    "aliases": [
+      "encase forensic",
+      "encase digital investigation",
+      "encase software",
+      "encase forensics tool"
+    ]
+  },
+  {
+    "canonical_name": "Encryption",
+    "aliases": [
+      "data encryption",
+      "cipher",
+      "encrypt",
+      "cryptographic encryption"
+    ]
+  },
+  {
+    "canonical_name": "Ethical Hacking",
+    "aliases": [
+      "ethicalhacking",
+      "white hat hacking",
+      "ethical hacking techniques"
+    ]
+  },
+  {
+    "canonical_name": "Ettercap",
+    "aliases": [
+      "ettercap mitm",
+      "ettercap tool",
+      "ettercap sniffing",
+      "ettercap arp spoofing"
+    ]
+  },
+  {
+    "canonical_name": "EvilGinx",
+    "aliases": [
+      "evilginx phishing",
+      "evilginx2",
+      "evilginx tool",
+      "evilginx proxy"
+    ]
+  },
+  {
+    "canonical_name": "Express.js",
+    "aliases": [
+      "express",
+      "expressjs",
+      "express framework",
+      "express node"
+    ]
+  },
+  {
+    "canonical_name": "FastAPI",
+    "aliases": [
+      "fast-api",
+      "fastapi python",
+      "fastapi web",
+      "fastapi framework"
+    ]
+  },
+  {
+    "canonical_name": "Feroxbuster",
+    "aliases": [
+      "feroxbuster scanner",
+      "feroxbuster tool",
+      "feroxbuster directory brute force",
+      "feroxbuster web"
+    ]
+  },
+  {
+    "canonical_name": "ffuf",
+    "aliases": [
+      "ffuf fuzzing",
+      "ffuf web",
+      "ffuf tool",
+      "ffuf directory enumeration"
+    ]
+  },
+  {
+    "canonical_name": "Firewall",
+    "aliases": [
+      "firewall security",
+      "network firewall",
+      "firewall rules"
+    ]
+  },
+  {
+    "canonical_name": "Firewalls",
+    "aliases": [
+      "firewalls security",
+      "network firewalls",
+      "firewall devices",
+      "enterprise firewalls"
+    ]
+  },
+  {
+    "canonical_name": "Flask",
+    "aliases": [
+      "flask framework",
+      "flask python",
+      "flask web",
+      "flask microframework"
+    ]
+  },
+  {
+    "canonical_name": "FLOSS",
+    "aliases": [
+      "floss malware analysis",
+      "floss tool",
+      "fireeye floss",
+      "floss strings extraction"
+    ]
+  },
+  {
+    "canonical_name": "Forensic Toolkit (FTK)",
+    "aliases": [
+      "ftk",
+      "accessdata ftk",
+      "forensic toolkit accessdata"
+    ]
+  },
+  {
+    "canonical_name": "Fortify",
+    "aliases": [
+      "fortify sast",
+      "hp fortify",
+      "micro focus fortify",
+      "fortify application security"
+    ]
+  },
+  {
+    "canonical_name": "FortiGate",
+    "aliases": [
+      "fortigate firewall",
+      "fortinet fortigate",
+      "fortigate ngfw",
+      "fortigate security appliance"
+    ]
+  },
+  {
+    "canonical_name": "FTK Imager",
+    "aliases": [
+      "ftkimager",
+      "accessdata ftk imager",
+      "ftk imager forensic",
+      "ftk imager tool"
+    ]
+  },
+  {
+    "canonical_name": "FTP",
+    "aliases": [
+      "file transfer protocol",
+      "ftp protocol",
+      "ftp server",
+      "ftp client"
+    ]
+  },
+  {
+    "canonical_name": "Fuzzing",
+    "aliases": [
+      "fuzz testing",
+      "fuzz testing technique",
+      "fuzzing tool",
+      "fuzzer"
+    ]
+  },
+  {
+    "canonical_name": "Gap Analysis",
+    "aliases": [
+      "gapanalysis",
+      "gap assessment",
+      "security gap analysis",
+      "compliance gap analysis"
+    ]
+  },
+  {
+    "canonical_name": "GCFA",
+    "aliases": [
+      "giac certified forensic analyst",
+      "gcfa certification",
+      "sans gcfa",
+      "gcfa forensics"
+    ]
+  },
+  {
+    "canonical_name": "GCIA",
+    "aliases": [
+      "giac certified intrusion analyst",
+      "gcia certification",
+      "sans gcia",
+      "gcia intrusion detection"
+    ]
+  },
+  {
+    "canonical_name": "GCIH",
+    "aliases": [
+      "giac certified incident handler",
+      "gcih certification",
+      "sans gcih",
+      "gcih incident response"
+    ]
+  },
+  {
+    "canonical_name": "GCP Security",
+    "aliases": [
+      "gcpsecurity",
+      "google cloud security",
+      "google cloud platform security",
+      "gcp security services"
+    ]
+  },
+  {
+    "canonical_name": "GDPR",
+    "aliases": [
+      "general data protection regulation",
+      "gdpr compliance",
+      "eu gdpr",
+      "gdpr regulation"
+    ]
+  },
+  {
+    "canonical_name": "Ghidra",
+    "aliases": [
+      "ghidra reverse engineering",
+      "nsa ghidra",
+      "ghidra disassembler",
+      "ghidra tool"
+    ]
+  },
+  {
+    "canonical_name": "GIAC",
+    "aliases": [
+      "global information assurance certification",
+      "giac certification",
+      "sans giac",
+      "giac exams"
+    ]
+  },
+  {
+    "canonical_name": "Git",
+    "aliases": [
+      "git version control",
+      "git scm",
+      "git repository",
+      "git cli"
+    ]
+  },
+  {
+    "canonical_name": "GitHub",
+    "aliases": [
+      "github repository",
+      "github git",
+      "github platform",
+      "github code hosting"
+    ]
+  },
+  {
+    "canonical_name": "GitLab",
+    "aliases": [
+      "gitlab ci/cd",
+      "gitlab repository",
+      "gitlab devops",
+      "gitlab platform"
+    ]
+  },
+  {
+    "canonical_name": "Go",
+    "aliases": [
+      "golang",
+      "go programming",
+      "go language",
+      "golang programming"
+    ]
+  },
+  {
+    "canonical_name": "Gobuster",
+    "aliases": [
+      "gobuster scanner",
+      "gobuster tool",
+      "gobuster directory enumeration",
+      "gobuster web"
+    ]
+  },
+  {
+    "canonical_name": "GPEN",
+    "aliases": [
+      "giac penetration tester",
+      "gpen certification",
+      "sans gpen",
+      "gpen ethical hacking"
+    ]
+  },
+  {
+    "canonical_name": "GPG",
+    "aliases": [
+      "gnu privacy guard",
+      "gpg encryption",
+      "gpg keys",
+      "gpg cryptography"
+    ]
+  },
+  {
+    "canonical_name": "GraphQL Security",
+    "aliases": [
+      "graphql api security",
+      "graphql injection",
+      "graphql vulnerabilities"
+    ]
+  },
+  {
+    "canonical_name": "Graylog",
+    "aliases": [
+      "graylog siem",
+      "graylog log management",
+      "graylog server",
+      "graylog open source"
+    ]
+  },
+  {
+    "canonical_name": "GREM",
+    "aliases": [
+      "giac reverse engineering malware",
+      "grem certification",
+      "sans grem",
+      "grem malware analysis"
+    ]
+  },
+  {
+    "canonical_name": "GSEC",
+    "aliases": [
+      "giac security essentials",
+      "gsec certification",
+      "sans gsec",
+      "gsec security fundamentals"
+    ]
+  },
+  {
+    "canonical_name": "GWAPT",
+    "aliases": [
+      "giac web application penetration tester",
+      "gwapt certification",
+      "sans gwapt",
+      "gwapt web security"
+    ]
+  },
+  {
+    "canonical_name": "Hardware Security Module (HSM)",
+    "aliases": [
+      "hsm",
+      "hardware security module",
+      "hsm device",
+      "cryptographic hardware module"
+    ]
+  },
+  {
+    "canonical_name": "Hashcat",
+    "aliases": [
+      "hashcat password cracking",
+      "hashcat tool",
+      "hashcat gpu cracking",
+      "hashcat hash cracking"
+    ]
+  },
+  {
+    "canonical_name": "Hashing",
+    "aliases": [
+      "hash function",
+      "cryptographic hashing",
+      "hash algorithm",
+      "hashing techniques"
+    ]
+  },
+  {
+    "canonical_name": "HCL AppScan",
+    "aliases": [
+      "appscan",
+      "ibm appscan",
+      "hcl appscan standard",
+      "appscan security testing"
+    ]
+  },
+  {
+    "canonical_name": "HIPAA",
+    "aliases": [
+      "health insurance portability and accountability act",
+      "hipaa compliance",
+      "hipaa security",
+      "hipaa regulations"
+    ]
+  },
+  {
+    "canonical_name": "Hopper Disassembler",
+    "aliases": [
+      "hopper",
+      "hopper disassembler tool",
+      "hopper reverse engineering",
+      "hopper app"
+    ]
+  },
+  {
+    "canonical_name": "HTML5",
+    "aliases": [
+      "html",
+      "html5 markup",
+      "hypertext markup language",
+      "web html"
+    ]
+  },
+  {
+    "canonical_name": "HTTP/HTTPS",
+    "aliases": [
+      "http",
+      "httphttps",
+      "https",
+      "hypertext transfer protocol"
+    ]
+  },
+  {
+    "canonical_name": "httpx",
+    "aliases": [
+      "httpx tool",
+      "httpx http probing",
+      "httpx scanner",
+      "httpx web"
+    ]
+  },
+  {
+    "canonical_name": "Hybrid Analysis",
+    "aliases": [
+      "hybridanalysis",
+      "hybrid analysis malware",
+      "hybrid analysis sandbox",
+      "hybrid analysis online"
+    ]
+  },
+  {
+    "canonical_name": "Hydra",
+    "aliases": [
+      "thc-hydra",
+      "hydra brute force",
+      "hydra password cracker",
+      "hydra network login cracker"
+    ]
+  },
+  {
+    "canonical_name": "Hyper-V",
+    "aliases": [
+      "hyperv",
+      "microsoft hyper-v",
+      "hyper-v virtualization",
+      "hyper-v server"
+    ]
+  },
+  {
+    "canonical_name": "IAM",
+    "aliases": [
+      "identity and access management",
+      "identity & access management",
+      "iam security",
+      "iam solution"
+    ]
+  },
+  {
+    "canonical_name": "IAST",
+    "aliases": [
+      "interactive application security testing",
+      "iast scanner",
+      "iast tools",
+      "interactive security testing"
+    ]
+  },
+  {
+    "canonical_name": "IBM QRadar",
+    "aliases": [
+      "qradar",
+      "ibm qradar siem",
+      "qradar security intelligence",
+      "qradar incident response"
+    ]
+  },
+  {
+    "canonical_name": "ICS/SCADA Security",
+    "aliases": [
+      "ics",
+      "scada",
+      "industrial control system security",
+      "ics security"
+    ]
+  },
+  {
+    "canonical_name": "IDA Pro",
+    "aliases": [
+      "ida",
+      "idapro",
+      "ida pro disassembler",
+      "hex-rays ida"
+    ]
+  },
+  {
+    "canonical_name": "IDOR",
+    "aliases": [
+      "insecure direct object reference",
+      "insecure direct object references",
+      "idor vulnerability",
+      "idor attack"
+    ]
+  },
+  {
+    "canonical_name": "IDS",
+    "aliases": [
+      "intrusion detection system",
+      "intrusion detection systems",
+      "ids security",
+      "ids sensor"
+    ]
+  },
+  {
+    "canonical_name": "IDS/IPS",
+    "aliases": [
+      "intrusion detection and prevention",
+      "intrusion detection/prevention",
+      "ids ips",
+      "network intrusion detection prevention"
+    ]
+  },
+  {
+    "canonical_name": "Impacket",
+    "aliases": [
+      "ntlmrelayx",
+      "impacket library",
+      "impacket python",
+      "impacket tools"
+    ]
+  },
+  {
+    "canonical_name": "Incident Response",
+    "aliases": [
+      "incident handling",
+      "incident response fundamentals",
+      "incidenthandling",
+      "incidentresponse",
+      "ir"
+    ]
+  },
+  {
+    "canonical_name": "Infrastructure as Code (IaC)",
+    "aliases": [
+      "iac",
+      "infrastructureascode",
+      "infrastructure as code",
+      "infrastructure automation"
+    ]
+  },
+  {
+    "canonical_name": "InsightVM",
+    "aliases": [
+      "Rapid7 InsightVM",
+      "insightvm vulnerability management",
+      "insightvm scanner",
+      "insightvm nexpose"
+    ]
+  },
+  {
+    "canonical_name": "Intrusion Detection System (IDS)",
+    "aliases": [
+      "intrusion detection",
+      "ids system",
+      "network intrusion detection"
+    ]
+  },
+  {
+    "canonical_name": "Investigations",
+    "aliases": [
+      "incident investigations",
+      "forensic investigations",
+      "security investigations",
+      "digital investigations"
+    ]
+  },
+  {
+    "canonical_name": "Invicti (formerly Netsparker)",
+    "aliases": [
+      "invicti",
+      "netsparker",
+      "invicti web scanner",
+      "netsparker web security scanner"
+    ]
+  },
+  {
+    "canonical_name": "iOS Security",
+    "aliases": [
+      "ios",
+      "iossecurity",
+      "ios-security",
+      "apple ios security"
+    ]
+  },
+  {
+    "canonical_name": "IoT Security",
+    "aliases": [
+      "iot",
+      "iotsecurity",
+      "internet of things security",
+      "iot device security"
+    ]
+  },
+  {
+    "canonical_name": "IPS",
+    "aliases": [
+      "intrusion prevention system",
+      "intrusion prevention systems",
+      "ips security",
+      "network intrusion prevention"
+    ]
+  },
+  {
+    "canonical_name": "IPsec",
+    "aliases": [
+      "ip security",
+      "ipsec protocol",
+      "ipsec vpn",
+      "ipsec encryption"
+    ]
+  },
+  {
+    "canonical_name": "iptables",
+    "aliases": [
+      "iptables firewall",
+      "linux iptables",
+      "iptables rules",
+      "iptables linux firewall"
+    ]
+  },
+  {
+    "canonical_name": "ISO 27001",
+    "aliases": [
+      "iso27001",
+      "iso 27001 standard",
+      "iso/iec 27001",
+      "information security management system"
+    ]
+  },
+  {
+    "canonical_name": "Java",
+    "aliases": [
+      "java programming",
+      "java language",
+      "java jvm",
+      "java development"
+    ]
+  },
+  {
+    "canonical_name": "JavaScript",
+    "aliases": [
+      "js",
+      "javascript programming",
+      "ecmascript",
+      "javascript scripting"
+    ]
+  },
+  {
+    "canonical_name": "Jenkins",
+    "aliases": [
+      "jenkins ci/cd",
+      "jenkins automation",
+      "jenkins pipeline",
+      "jenkins server"
+    ]
+  },
+  {
+    "canonical_name": "John the Ripper",
+    "aliases": [
+      "john",
+      "johntheripper",
+      "john password cracker",
+      "john hash cracker"
+    ]
+  },
+  {
+    "canonical_name": "JoomScan",
+    "aliases": [
+      "joomscan scanner",
+      "joomscan joomla",
+      "joomscan tool",
+      "joomscan web security"
+    ]
+  },
+  {
+    "canonical_name": "Kali Linux",
+    "aliases": [
+      "kali",
+      "kali linux tools",
+      "kalilinux",
+      "kali linux penetration testing"
+    ]
+  },
+  {
+    "canonical_name": "Kerberoasting",
+    "aliases": [
+      "kerberoasting attack",
+      "kerberoast",
+      "kerberos roasting",
+      "kerberoasting active directory"
+    ]
+  },
+  {
+    "canonical_name": "Kibana",
+    "aliases": [
+      "kibana visualization",
+      "kibana dashboard",
+      "kibana elk",
+      "kibana analytics"
+    ]
+  },
+  {
+    "canonical_name": "Kismet",
+    "aliases": [
+      "kismet wireless",
+      "kismet scanner",
+      "kismet network detector",
+      "kismet tool"
+    ]
+  },
+  {
+    "canonical_name": "Kotlin",
+    "aliases": [
+      "kotlin programming",
+      "kotlin language",
+      "kotlin android",
+      "kotlin jvm"
+    ]
+  },
+  {
+    "canonical_name": "Kubernetes",
+    "aliases": [
+      "k8s",
+      "kubernetes container orchestration",
+      "kubernetes cluster",
+      "kube"
+    ]
+  },
+  {
+    "canonical_name": "Kubernetes Security",
+    "aliases": [
+      "kubernetessecurity",
+      "k8s security",
+      "kubernetes cluster security",
+      "kubernetes hardening"
+    ]
+  },
+  {
+    "canonical_name": "KVM",
+    "aliases": [
+      "kernel-based virtual machine",
+      "kvm virtualization",
+      "kvm hypervisor",
+      "linux kvm"
+    ]
+  },
+  {
+    "canonical_name": "Lateral Movement",
+    "aliases": [
+      "lateralmovement",
+      "lateral movement attack",
+      "lateral movement techniques",
+      "network lateral movement"
+    ]
+  },
+  {
+    "canonical_name": "Linux",
+    "aliases": [
+      "linux command line",
+      "linux os",
+      "linux operating system",
+      "gnu linux"
+    ]
+  },
+  {
+    "canonical_name": "Linux Administration",
+    "aliases": [
+      "linuxadmin",
+      "linuxadministration",
+      "linux sysadmin",
+      "linux server administration"
+    ]
+  },
+  {
+    "canonical_name": "Local File Inclusion (LFI)",
+    "aliases": [
+      "lfi",
+      "local file inclusion",
+      "lfi vulnerability",
+      "lfi attack"
+    ]
+  },
+  {
+    "canonical_name": "Log Analysis",
+    "aliases": [
+      "loganalysis",
+      "log review",
+      "security log analysis",
+      "log monitoring"
+    ]
+  },
+  {
+    "canonical_name": "Logging & Monitoring",
+    "aliases": [
+      "logging",
+      "monitoring",
+      "logging and monitoring",
+      "security logging and monitoring"
+    ]
+  },
+  {
+    "canonical_name": "Logstash",
+    "aliases": [
+      "logstash elk",
+      "logstash data pipeline",
+      "logstash log processing",
+      "logstash collector"
+    ]
+  },
+  {
+    "canonical_name": "LOKI",
+    "aliases": [
+      "loki scanner",
+      "loki incident response",
+      "loki indicator of compromise",
+      "loki tool"
+    ]
+  },
+  {
+    "canonical_name": "Lua",
+    "aliases": [
+      "lua programming",
+      "lua language",
+      "lua script",
+      "lua coding"
+    ]
+  },
+  {
+    "canonical_name": "macOS",
+    "aliases": [
+      "mac",
+      "mac os",
+      "apple macos",
+      "mac operating system"
+    ]
+  },
+  {
+    "canonical_name": "Magnet AXIOM",
+    "aliases": [
+      "magnetaxiom",
+      "magnet axiom forensic",
+      "magnet axiom tool",
+      "magnet axiom digital forensics"
+    ]
+  },
+  {
+    "canonical_name": "Maltego",
+    "aliases": [
+      "maltego osint",
+      "maltego tool",
+      "maltego intelligence",
+      "maltego graph"
+    ]
+  },
+  {
+    "canonical_name": "Malware Analysis",
+    "aliases": [
+      "malwareanalysis",
+      "malware reverse engineering",
+      "malicious code analysis",
+      "malware forensics"
+    ]
+  },
+  {
+    "canonical_name": "Malware Sandbox",
+    "aliases": [
+      "malwaresandbox",
+      "sandbox malware analysis",
+      "malware sandboxing",
+      "dynamic malware analysis sandbox"
+    ]
+  },
+  {
+    "canonical_name": "MariaDB",
+    "aliases": [
+      "mariadb database",
+      "mariadb server",
+      "mariadb mysql",
+      "mariadb sql"
+    ]
+  },
+  {
+    "canonical_name": "Masscan",
+    "aliases": [
+      "masscan scanner",
+      "masscan port scanning",
+      "masscan tool",
+      "masscan internet scanning"
+    ]
+  },
+  {
+    "canonical_name": "MD5",
+    "aliases": [
+      "message-digest algorithm 5",
+      "md5 hash",
+      "md5 hashing",
+      "md5 cryptographic"
+    ]
+  },
+  {
+    "canonical_name": "Medusa",
+    "aliases": [
+      "medusa brute force",
+      "medusa password cracker",
+      "medusa network login cracker",
+      "medusa tool"
+    ]
+  },
+  {
+    "canonical_name": "Memory Forensics",
+    "aliases": [
+      "memoryforensics",
+      "ram forensics",
+      "memory analysis",
+      "volatile memory forensics"
+    ]
+  },
+  {
+    "canonical_name": "Metasploit",
+    "aliases": [
+      "metasploit framework",
+      "msfconsole",
+      "msfvenom",
+      "metasploit exploitation"
+    ]
+  },
+  {
+    "canonical_name": "MFA",
+    "aliases": [
+      "multi factor authentication",
+      "multi-factor authentication",
+      "2fa",
+      "two-factor authentication"
+    ]
+  },
+  {
+    "canonical_name": "Micro Focus WebInspect",
+    "aliases": [
+      "webinspect",
+      "micro focus webinspect",
+      "webinspect scanner",
+      "webinspect dynamic analysis"
+    ]
+  },
+  {
+    "canonical_name": "Microsoft Entra ID",
+    "aliases": [
+      "entraid",
+      "microsoftentraid",
+      "entra identity"
+    ]
+  },
+  {
+    "canonical_name": "Microsoft Sentinel",
+    "aliases": [
+      "microsoftsentinel",
+      "sentinel",
+      "azure sentinel",
+      "microsoft sentinel siem"
+    ]
+  },
+  {
+    "canonical_name": "Mimikatz",
+    "aliases": [
+      "mimikatz credential dumping",
+      "mimikatz tool",
+      "mimikatz password extraction",
+      "mimikatz active directory"
+    ]
+  },
+  {
+    "canonical_name": "MISP",
+    "aliases": [
+      "malware information sharing platform",
+      "misp threat intelligence",
+      "misp platform",
+      "misp sharing"
+    ]
+  },
+  {
+    "canonical_name": "MITRE ATT&CK",
+    "aliases": [
+      "att&ck",
+      "mitre",
+      "mitreatt&ck",
+      "mitre att&ck framework"
+    ]
+  },
+  {
+    "canonical_name": "Mobile Security",
+    "aliases": [
+      "mobilesecurity",
+      "mobile device security",
+      "smartphone security",
+      "mobile app security"
+    ]
+  },
+  {
+    "canonical_name": "Modlishka",
+    "aliases": [
+      "modlishka phishing",
+      "modlishka tool",
+      "modlishka reverse proxy",
+      "modlishka 2fa bypass"
+    ]
+  },
+  {
+    "canonical_name": "MongoDB",
+    "aliases": [
+      "mongo",
+      "mongodb database",
+      "mongodb nosql",
+      "mongodb server"
+    ]
+  },
+  {
+    "canonical_name": "MySQL",
+    "aliases": [
+      "mysql database",
+      "mysql server",
+      "mysql rdbms",
+      "mysql sql"
+    ]
+  },
+  {
+    "canonical_name": "NAT",
+    "aliases": [
+      "network address translation",
+      "nat networking",
+      "nat protocol",
+      "nat firewall"
+    ]
+  },
+  {
+    "canonical_name": "Neo4j",
+    "aliases": [
+      "neo4j graph database",
+      "neo4j database",
+      "neo4j cypher",
+      "neo4j graph"
+    ]
+  },
+  {
+    "canonical_name": "Nessus",
+    "aliases": [
+      "nessus vulnerability scanner",
+      "tenable nessus",
+      "nessus professional",
+      "nessus scan"
+    ]
+  },
+  {
+    "canonical_name": "Network Scanning",
+    "aliases": [
+      "networkscanning",
+      "network scan",
+      "network discovery",
+      "network mapping"
+    ]
+  },
+  {
+    "canonical_name": "Network Security",
+    "aliases": [
+      "networksecurity",
+      "network defense",
+      "network protection",
+      "network security fundamentals"
+    ]
+  },
+  {
+    "canonical_name": "Network Security Monitoring",
+    "aliases": [
+      "nsm",
+      "network security monitoring tools",
+      "network monitoring security",
+      "security monitoring"
+    ]
+  },
+  {
+    "canonical_name": "Network Segmentation",
+    "aliases": [
+      "network segregation",
+      "lan segmentation",
+      "network segmentation security"
+    ]
+  },
+  {
+    "canonical_name": "Networking",
+    "aliases": [
+      "computer networking",
+      "network fundamentals",
+      "network administration",
+      "networking concepts"
+    ]
+  },
+  {
+    "canonical_name": "Nexpose",
+    "aliases": [
+      "rapid7 nexpose",
+      "nexpose vulnerability scanner",
+      "nexpose scanner",
+      "nexpose vulnerability management"
+    ]
+  },
+  {
+    "canonical_name": "nftables",
+    "aliases": [
+      "nftables firewall",
+      "linux nftables",
+      "nftables rules",
+      "nftables network filtering"
+    ]
+  },
+  {
+    "canonical_name": "Nikto",
+    "aliases": [
+      "nikto web scanner",
+      "nikto scanner",
+      "nikto web server scanner",
+      "nikto tool"
+    ]
+  },
+  {
+    "canonical_name": "NIST Cybersecurity Framework",
+    "aliases": [
+      "nist",
+      "nistcsf",
+      "nist security framework",
+      "nist cybersecurity framework csf"
+    ]
+  },
+  {
+    "canonical_name": "Nmap",
+    "aliases": [
+      "nmap scanner",
+      "nmap network mapper",
+      "nmap port scanner",
+      "nmap tool"
+    ]
+  },
+  {
+    "canonical_name": "Node.js",
+    "aliases": [
+      "node",
+      "nodejs",
+      "node javascript",
+      "node runtime"
+    ]
+  },
+  {
+    "canonical_name": "NSE",
+    "aliases": [
+      "nmap scripting engine",
+      "nse scripts",
+      "nmap nse",
+      "nse scripting"
+    ]
+  },
+  {
+    "canonical_name": "Nuclei",
+    "aliases": [
+      "nuclei scanner",
+      "nuclei vulnerability scanner",
+      "nuclei template based",
+      "nuclei projectdiscovery"
+    ]
+  },
+  {
+    "canonical_name": "OllyDbg",
+    "aliases": [
+      "ollydbg debugger",
+      "ollydbg reverse engineering",
+      "ollydbg tool",
+      "ollydbg disassembler"
+    ]
+  },
+  {
+    "canonical_name": "OpenCTI",
+    "aliases": [
+      "opencti threat intelligence",
+      "opencti platform",
+      "opencti cyber threat",
+      "opencti tiptoe"
+    ]
+  },
+  {
+    "canonical_name": "OpenShift",
+    "aliases": [
+      "openshift container platform",
+      "red hat openshift",
+      "openshift kubernetes",
+      "openshift cluster"
+    ]
+  },
+  {
+    "canonical_name": "OpenVAS",
+    "aliases": [
+      "openvas vulnerability scanner",
+      "greenbone openvas",
+      "openvas scanner",
+      "openvas vulnerability assessment"
+    ]
+  },
+  {
+    "canonical_name": "OpenVPN",
+    "aliases": [
+      "openvpn server",
+      "openvpn client",
+      "openvpn vpn",
+      "openvpn protocol"
+    ]
+  },
+  {
+    "canonical_name": "Operating Systems",
+    "aliases": [
+      "os",
+      "operating systems concepts",
+      "operating system fundamentals",
+      "os administration"
+    ]
+  },
+  {
+    "canonical_name": "Oracle Database",
+    "aliases": [
+      "oracle",
+      "oracledb",
+      "oracle db",
+      "oracle rdbms"
+    ]
+  },
+  {
+    "canonical_name": "OS Command Injection",
+    "aliases": [
+      "command injection",
+      "commandinjection",
+      "os command injection vulnerability",
+      "shell command injection"
+    ]
+  },
+  {
+    "canonical_name": "OSCE",
+    "aliases": [
+      "offensive security certified expert",
+      "osce certification",
+      "offensive security osce",
+      "osce penetration testing"
+    ]
+  },
+  {
+    "canonical_name": "OSCP",
+    "aliases": [
+      "offensive security certified professional",
+      "oscp certification",
+      "offensive security oscp",
+      "oscp ethical hacking"
+    ]
+  },
+  {
+    "canonical_name": "OSED",
+    "aliases": [
+      "offensive security exploit developer",
+      "osed certification",
+      "offensive security osed",
+      "osed exploit development"
+    ]
+  },
+  {
+    "canonical_name": "OSEP",
+    "aliases": [
+      "offensive security experienced penetration tester",
+      "osep certification",
+      "offensive security osep",
+      "osep advanced penetration testing"
+    ]
+  },
+  {
+    "canonical_name": "OSI Model",
+    "aliases": [
+      "osi",
+      "osimodel",
+      "open systems interconnection model",
+      "osi networking model"
+    ]
+  },
+  {
+    "canonical_name": "OSINT (Open Source Intelligence)",
+    "aliases": [
+      "osint",
+      "open source intelligence",
+      "osint investigation",
+      "open source research"
+    ]
+  },
+  {
+    "canonical_name": "OSWE",
+    "aliases": [
+      "offensive security web expert",
+      "oswe certification",
+      "offensive security oswe",
+      "oswe web application security"
+    ]
+  },
+  {
+    "canonical_name": "OWASP",
+    "aliases": [
+      "open web application security project",
+      "owasp foundation",
+      "owasp security",
+      "owasp community"
+    ]
+  },
+  {
+    "canonical_name": "OWASP ASVS",
+    "aliases": [
+      "owaspasvs",
+      "application security verification standard",
+      "owasp asvs standard",
+      "owasp verification standard"
+    ]
+  },
+  {
+    "canonical_name": "OWASP Dependency-Check",
+    "aliases": [
+      "dependencycheck",
+      "owasp dependency check",
+      "dependency-check tool",
+      "owasp dependency checker"
+    ]
+  },
+  {
+    "canonical_name": "OWASP Testing Guide",
+    "aliases": [
+      "owasptestingguide",
+      "owasp testing guide v4",
+      "web application testing guide",
+      "owasp pentest guide"
+    ]
+  },
+  {
+    "canonical_name": "OWASP Top 10",
+    "aliases": [
+      "owasptop10",
+      "owasp top ten",
+      "owasp top 10 web risks",
+      "owasp top 10 vulnerabilities"
+    ]
+  },
+  {
+    "canonical_name": "OWASP ZAP",
+    "aliases": [
+      "owasp zap proxy",
+      "owaspzap",
+      "zap",
+      "zed attack proxy"
+    ]
+  },
+  {
+    "canonical_name": "Palo Alto Networks",
+    "aliases": [
+      "paloalto",
+      "pan-os",
+      "palo alto firewall",
+      "palo alto ngfw"
+    ]
+  },
+  {
+    "canonical_name": "Parrot OS",
+    "aliases": [
+      "parrot",
+      "parrotos",
+      "parrot security os",
+      "parrot linux"
+    ]
+  },
+  {
+    "canonical_name": "Pass-the-Hash",
+    "aliases": [
+      "passthehash",
+      "pth attack",
+      "pass the hash attack",
+      "hash pass attack"
+    ]
+  },
+  {
+    "canonical_name": "Pass-the-Ticket",
+    "aliases": [
+      "passtheticket",
+      "ptt attack",
+      "pass the ticket attack",
+      "ticket pass attack"
+    ]
+  },
+  {
+    "canonical_name": "Password Cracking",
+    "aliases": [
+      "passwordcracking",
+      "password guessing",
+      "hash cracking",
+      "cracking passwords"
+    ]
+  },
+  {
+    "canonical_name": "Patch Management",
+    "aliases": [
+      "patchmanagement",
+      "software patching",
+      "vulnerability remediation",
+      "update management"
+    ]
+  },
+  {
+    "canonical_name": "Path Traversal",
+    "aliases": [
+      "directory traversal",
+      "path traversal attack",
+      "../ attack",
+      "dot dot slash"
+    ]
+  },
+  {
+    "canonical_name": "PCI DSS",
+    "aliases": [
+      "pcidss",
+      "payment card industry data security standard",
+      "pci compliance",
+      "pci security standards"
+    ]
+  },
+  {
+    "canonical_name": "PE Studio",
+    "aliases": [
+      "pestudio",
+      "pe studio tool",
+      "pe studio malware analysis",
+      "pe studio static analysis"
+    ]
+  },
+  {
+    "canonical_name": "Penetration Testing",
+    "aliases": [
+      "pentest",
+      "pentesting",
+      "pen test",
+      "ethical hacking testing"
+    ]
+  },
+  {
+    "canonical_name": "Pentoo",
+    "aliases": [
+      "pentoo linux",
+      "pentoo os",
+      "pentoo penetration testing",
+      "pentoo security"
+    ]
+  },
+  {
+    "canonical_name": "Perimeter Security",
+    "aliases": [
+      "perimetersecurity",
+      "network perimeter security",
+      "perimeter defense",
+      "perimeter firewall"
+    ]
+  },
+  {
+    "canonical_name": "Perl",
+    "aliases": [
+      "perl programming",
+      "perl language",
+      "perl scripting",
+      "perl 5"
+    ]
+  },
+  {
+    "canonical_name": "pfSense",
+    "aliases": [
+      "pfsense firewall",
+      "pfsense router",
+      "pfsense security appliance",
+      "pfsense open source"
+    ]
+  },
+  {
+    "canonical_name": "PGP",
+    "aliases": [
+      "pretty good privacy",
+      "pgp encryption",
+      "pgp keys",
+      "pgp cryptography"
+    ]
+  },
+  {
+    "canonical_name": "Phishing",
+    "aliases": [
+      "phishing attack",
+      "email phishing",
+      "phishing campaign"
+    ]
+  },
+  {
+    "canonical_name": "PHP",
+    "aliases": [
+      "php programming",
+      "php language",
+      "php scripting",
+      "php server side"
+    ]
+  },
+  {
+    "canonical_name": "Port Scanning",
+    "aliases": [
+      "portscanning",
+      "port scan",
+      "network port scanning",
+      "tcp port scanning"
+    ]
+  },
+  {
+    "canonical_name": "Post-Exploitation",
+    "aliases": [
+      "postexploitation",
+      "post exploitation",
+      "post compromise",
+      "post-exploitation phase"
+    ]
+  },
+  {
+    "canonical_name": "PostgreSQL",
+    "aliases": [
+      "postgres",
+      "postgresql database",
+      "postgres db",
+      "postgresql rdbms"
+    ]
+  },
+  {
+    "canonical_name": "PowerShell",
+    "aliases": [
+      "powershell scripting",
+      "ps",
+      "powershell command line",
+      "windows powershell"
+    ]
+  },
+  {
+    "canonical_name": "PowerSploit",
+    "aliases": [
+      "powersploit framework",
+      "powersploit powershell",
+      "powersploit exploitation",
+      "powersploit red team"
+    ]
+  },
+  {
+    "canonical_name": "Privilege Escalation",
+    "aliases": [
+      "privesc",
+      "privilegeescalation",
+      "priv escalation",
+      "privilege escalation attack"
+    ]
+  },
+  {
+    "canonical_name": "Programming",
+    "aliases": [
+      "coding",
+      "software development",
+      "programming languages",
+      "coding skills"
+    ]
+  },
+  {
+    "canonical_name": "Prowler",
+    "aliases": [
+      "prowler aws",
+      "prowler security",
+      "prowler tool",
+      "prowler audit"
+    ]
+  },
+  {
+    "canonical_name": "Public Key Infrastructure (PKI)",
+    "aliases": [
+      "pki",
+      "public key infrastructure",
+      "certificate authority",
+      "pki management"
+    ]
+  },
+  {
+    "canonical_name": "Puppet",
+    "aliases": [
+      "puppet configuration management",
+      "puppet enterprise",
+      "puppet agent",
+      "puppet server"
+    ]
+  },
+  {
+    "canonical_name": "Purple Teaming",
+    "aliases": [
+      "purpleteam",
+      "purple teaming",
+      "purple team exercise",
+      "red blue purple team"
+    ]
+  },
+  {
+    "canonical_name": "Python",
+    "aliases": [
+      "py",
+      "python scripting",
+      "python3",
+      "python programming language"
+    ]
+  },
+  {
+    "canonical_name": "Qualys",
+    "aliases": [
+      "qualys vulnerability management",
+      "qualys guard",
+      "qualys scanner",
+      "qualys cloud platform"
+    ]
+  },
+  {
+    "canonical_name": "Qubes OS",
+    "aliases": [
+      "qubes",
+      "qubes os",
+      "qubes operating system",
+      "qubes security"
+    ]
+  },
+  {
+    "canonical_name": "radare2",
+    "aliases": [
+      "r2",
+      "radare2 reverse engineering",
+      "radare2 framework",
+      "radare2 disassembler"
+    ]
+  },
+  
+  {
+    "canonical_name": "RASP",
+    "aliases": [
+      "runtime application self-protection",
+      "rasp security",
+      "rasp tools",
+      "application self-protection"
+    ]
+  },
+  {
+    "canonical_name": "React",
+    "aliases": [
+      "reactjs",
+      "react.js",
+      "react javascript library",
+      "react framework"
+    ]
+  },
+  {
+    "canonical_name": "Reaver",
+    "aliases": [
+      "reaver wifi",
+      "reaver wps",
+      "reaver tool",
+      "reaver attack"
+    ]
+  },
+  {
+    "canonical_name": "Recon-ng",
+    "aliases": [
+      "recon-ng framework",
+      "recon-ng tool",
+      "recon-ng web reconnaissance",
+      "recon-ng osint"
+    ]
+  },
+  {
+    "canonical_name": "Reconnaissance",
+    "aliases": [
+      "recon",
+      "information gathering",
+      "active reconnaissance",
+      "passive reconnaissance"
+    ]
+  },
+  {
+    "canonical_name": "Red Teaming",
+    "aliases": [
+      "redteam",
+      "red teaming",
+      "red team exercise",
+      "adversary simulation"
+    ]
+  },
+  {
+    "canonical_name": "Redis",
+    "aliases": [
+      "redis database",
+      "redis cache",
+      "redis server",
+      "redis key-value store"
+    ]
+  },
+  {
+    "canonical_name": "Rekall",
+    "aliases": [
+      "rekall memory forensics",
+      "rekall framework",
+      "rekall tool",
+      "rekall volatility alternative"
+    ]
+  },
+  {
+    "canonical_name": "Remote File Inclusion (RFI)",
+    "aliases": [
+      "remote file inclusion",
+      "rfi",
+      "rfi attack",
+      "remote file inclusion vulnerability"
+    ]
+  },
+  {
+    "canonical_name": "Responder",
+    "aliases": [
+      "responder tool",
+      "responder llmnr",
+      "responder ntlm",
+      "responder network poisoning"
+    ]
+  },
+  {
+    "canonical_name": "Retire.js",
+    "aliases": [
+      "retirejs",
+      "retire.js scanner",
+      "retire.js javascript",
+      "retire.js vulnerability"
+    ]
+  },
+  {
+    "canonical_name": "Reverse Engineering",
+    "aliases": [
+      "reverseengineering",
+      "re",
+      "reverse code engineering",
+      "software reverse engineering"
+    ]
+  },
+  {
+    "canonical_name": "RFID Security",
+    "aliases": [
+      "rfid",
+      "radio frequency identification security",
+      "rfid hacking",
+      "rfid security testing"
+    ]
+  },
+  {
+    "canonical_name": "Risk Assessment",
+    "aliases": [
+      "riskassessment",
+      "security risk assessment",
+      "risk analysis",
+      "it risk assessment"
+    ]
+  },
+  {
+    "canonical_name": "RSA",
+    "aliases": [
+      "rsa encryption",
+      "rsa algorithm",
+      "rsa cryptography",
+      "rsa public key"
+    ]
+  },
+  {
+    "canonical_name": "Ruby",
+    "aliases": [
+      "ruby programming",
+      "ruby language",
+      "ruby scripting",
+      "ruby development"
+    ]
+  },
+  {
+    "canonical_name": "Rust",
+    "aliases": [
+      "rust programming",
+      "rust language",
+      "rust development",
+      "rust systems programming"
+    ]
+  },
+  {
+    "canonical_name": "SamuraiWTF",
+    "aliases": [
+      "samuraiwtf training",
+      "samuraiwtf web testing",
+      "samuraiwtf framework",
+      "samuraiwtf security"
+    ]
+  },
+  {
+    "canonical_name": "SANS",
+    "aliases": [
+      "sans institute",
+      "sans training",
+      "sans cybersecurity",
+      "sans courses"
+    ]
+  },
+  {
+    "canonical_name": "SAST",
+    "aliases": [
+      "static application security testing",
+      "static analysis security testing",
+      "sast scanner",
+      "sast tools"
+    ]
+  },
+  {
+    "canonical_name": "SC-100",
+    "aliases": [
+      "sc-100 exam",
+      "microsoft cybersecurity architect",
+      "sc100 certification",
+      "sc-100 cybersecurity architect"
+    ]
+  },
+  {
+    "canonical_name": "SC-200",
+    "aliases": [
+      "sc-200 exam",
+      "microsoft security operations analyst",
+      "sc200 certification",
+      "sc-200 soc analyst"
+    ]
+  },
+  {
+    "canonical_name": "SC-300",
+    "aliases": [
+      "sc-300 exam",
+      "microsoft identity and access administrator",
+      "sc300 certification",
+      "sc-300 iam"
+    ]
+  },
+  {
+    "canonical_name": "SCA",
+    "aliases": [
+      "software composition analysis",
+      "sca security",
+      "open source component analysis",
+      "sca tools"
+    ]
+  },
+  {
+    "canonical_name": "Scala",
+    "aliases": [
+      "scala programming",
+      "scala language",
+      "scala functional",
+      "scala jvm"
+    ]
+  },
+  {
+    "canonical_name": "Scapy",
+    "aliases": [
+      "scapy packet manipulation",
+      "scapy tool",
+      "scapy python",
+      "scapy network"
+    ]
+  },
+  {
+    "canonical_name": "ScoutSuite",
+    "aliases": [
+      "scoutsuite aws",
+      "scoutsuite cloud",
+      "scoutsuite security audit",
+      "scoutsuite multi-cloud"
+    ]
+  },
+  {
+    "canonical_name": "Scripting",
+    "aliases": [
+      "scripting languages",
+      "writing scripts",
+      "automation scripting"
+    ]
+  },
+  {
+    "canonical_name": "Secure Code Review",
+    "aliases": [
+      "securecodereview",
+      "code security review",
+      "manual code review",
+      "application source code review"
+    ]
+  },
+  {
+    "canonical_name": "Security Assessment",
+    "aliases": [
+      "securityassessment",
+      "security audit",
+      "security evaluation",
+      "security review"
+    ]
+  },
+  {
+    "canonical_name": "Security Automation",
+    "aliases": [
+      "securityautomation",
+      "automated security",
+      "security orchestration",
+      "automation in security"
+    ]
+  },
+  {
+    "canonical_name": "Security Command Center",
+    "aliases": [
+      "securitycommandcenter",
+      "scc",
+      "google security command center",
+      "gcp security command center"
+    ]
+  },
+  {
+    "canonical_name": "Security Concepts",
+    "aliases": [
+      "information security concepts",
+      
+      "basic security principles",
+      "security theory"
+    ]
+  },
+  {
+    "canonical_name": "Security Operations",
+    "aliases": [
+      "securityoperations",
+      "secops",
+      "security ops",
+      "security operations center"
+    ]
+  },
+  {
+    "canonical_name": "Security Operations Center (SOC)",
+    "aliases": [
+      "soc",
+      "security operations centre",
+      "soc team"
+    ]
+  },
+  {
+    "canonical_name": "Server-Side Request Forgery (SSRF)",
+    "aliases": [
+      "server-side request forgery",
+      "ssrf",
+      "ssrf attack",
+      "ssrf vulnerability"
+    ]
+  },
+  {
+    "canonical_name": "Serverless Security",
+    "aliases": [
+      "serverless security",
+      "serverless computing security",
+      "function as a service security"
+    ]
+  },
+  {
+    "canonical_name": "SFTP",
+    "aliases": [
+      "secure file transfer protocol",
+      "sftp protocol",
+      "sftp server",
+      "sftp client"
+    ]
+  },
+  {
+    "canonical_name": "SHA",
+    "aliases": [
+      "secure hash algorithm",
+      "sha family",
+      "sha cryptographic hash",
+      "sha hashing"
+    ]
+  },
+  {
+    "canonical_name": "SHA-256",
+    "aliases": [
+      "sha256",
+      "sha 256",
+      "sha-256 hashing",
+      "sha256 cryptographic"
+    ]
+  },
+  {
+    "canonical_name": "SharpHound",
+    "aliases": [
+      "sharphound bloodhound",
+      "sharphound collector",
+      "sharphound active directory",
+      "sharphound tool"
+    ]
+  },
+  {
+    "canonical_name": "Shodan",
+    "aliases": [
+      "shodan.io",
+      "shodan search engine",
+      "shodan scanner",
+      "shodan iot search"
+    ]
+  },
+  {
+    "canonical_name": "SIEM",
+    "aliases": [
+      "security information and event management",
+      "siem system",
+      "siem solution",
+      "security information event management"
+    ]
+  },
+  {
+    "canonical_name": "Smishing",
+    "aliases": [
+      "sms phishing",
+      "smishing attack",
+      "text message phishing",
+      "smishing scam"
+    ]
+  },
+  {
+    "canonical_name": "Sn1per",
+    "aliases": [
+      "sn1per scanner",
+      "sn1per tool",
+      "sn1per penetration testing",
+      "sn1per automated"
+    ]
+  },
+  {
+    "canonical_name": "SNMP",
+    "aliases": [
+      "simple network management protocol",
+      "snmp protocol",
+      "snmp networking",
+      "snmp monitoring"
+    ]
+  },
+  {
+    "canonical_name": "Snort",
+    "aliases": [
+      "snort ids",
+      "snort intrusion detection",
+      "snort rules",
+      "snort network security"
+    ]
+  },
+  {
+    "canonical_name": "Snyk",
+    "aliases": [
+      "snyk security",
+      "snyk vulnerability",
+      "snyk open source",
+      "snyk container"
+    ]
+  },
+  {
+    "canonical_name": "SOC 2",
+    "aliases": [
+      "soc2",
+      "service organization control 2",
+      "soc 2 compliance",
+      "soc2 type ii"
+    ]
+  },
+  {
+    "canonical_name": "SOC Analyst",
+    "aliases": [
+      "socanalyst",
+      "security operations center analyst",
+      "soc analyst tier 1",
+      "soc analyst role"
+    ]
+  },
+  {
+    "canonical_name": "SOC Operations",
+    "aliases": [
+      "soc ops",
+      "security operations center operations",
+      "soc daily operations",
+      "soc workflow"
+    ]
+  },
+  {
+    "canonical_name": "Social Engineering",
+    "aliases": [
+      "socialengineering",
+      "human hacking",
+      "social engineering attack",
+      "psychological manipulation security"
+    ]
+  },
+  {
+    "canonical_name": "Social-Engineer Toolkit (SET)",
+    "aliases": [
+      "set",
+      "socialengineertoolkit",
+      "social engineering toolkit",
+      "set toolkit"
+    ]
+  },
+  {
+    "canonical_name": "Spear Phishing",
+    "aliases": [
+      "spearphishing",
+      "targeted phishing",
+      "spear phishing attack",
+      "spear phishing email"
+    ]
+  },
+  {
+    "canonical_name": "SpiderFoot",
+    "aliases": [
+      "spiderfoot osint",
+      "spiderfoot tool",
+      "spiderfoot intelligence",
+      "spiderfoot reconnaissance"
+    ]
+  },
+  {
+    "canonical_name": "Splunk",
+    "aliases": [
+      "splunk siem",
+      "splunk log analysis",
+      "splunk enterprise",
+      "splunk big data"
+    ]
+  },
+  {
+    "canonical_name": "Splunk Enterprise Security",
+    "aliases": [
+      "splunkes",
+      "splunk es",
+      "splunk enterprise security app",
+      "splunk security analytics"
+    ]
+  },
+  {
+    "canonical_name": "Spring",
+    "aliases": [
+      "spring framework",
+      "spring java",
+      "spring mvc"
+    ]
+  },
+  {
+    "canonical_name": "Spring Boot",
+    "aliases": [
+      "springboot",
+      "spring boot framework",
+      "spring boot java",
+      "spring boot application"
+    ]
+  },
+  {
+    "canonical_name": "SQL",
+    "aliases": [
+      "structured query language",
+      "sql query",
+      "sql database",
+      "sql language"
+    ]
+  },
+  {
+    "canonical_name": "SQL Injection",
+    "aliases": [
+      "sql injection testing",
+      "sqli attack",
+      "sql injection vulnerability"
+    ]
+  },
+  {
+    "canonical_name": "SQLi",
+    "aliases": [
+      "sqli",
+      "sqlinjection",
+      "sql injection attack"
+    ]
+  },
+  {
+    "canonical_name": "SQLite",
+    "aliases": [
+      "sqlite database",
+      "sqlite db",
+      "sqlite library",
+      "sqlite embedded database"
+    ]
+  },
+  {
+    "canonical_name": "sqlmap",
+    "aliases": [
+      "sqlmap tool",
+      "sqlmap sql injection",
+      "sqlmap penetration testing",
+      "sqlmap automation"
+    ]
+  },
+  {
+    "canonical_name": "SSH",
+    "aliases": [
+      "secure shell",
+      "ssh protocol",
+      "ssh client",
+      "ssh server"
+    ]
+  },
+  {
+    "canonical_name": "SSL Pinning",
+    "aliases": [
+      "sslpinning",
+      "ssl pinning security",
+      "certificate pinning",
+      "tls pinning"
+    ]
+  },
+  {
+    "canonical_name": "SSL/TLS",
+    "aliases": [
+      "ssl",
+      "ssltls",
+      "tls",
+      "secure sockets layer transport layer security"
+    ]
+  },
+  {
+    "canonical_name": "Steampipe",
+    "aliases": [
+      "steampipe tool",
+      "steampipe cloud security",
+      "steampipe sql",
+      "steampipe compliance"
+    ]
+  },
+  {
+    "canonical_name": "STIX",
+    "aliases": [
+      "structured threat information expression",
+      "stix threat intelligence",
+      "stix format",
+      "stix standard"
+    ]
+  },
+  {
+    "canonical_name": "STRIDE",
+    "aliases": [
+      "stride threat model",
+      "stride methodology",
+      "stride security",
+      "stride risk"
+    ]
+  },
+  {
+    "canonical_name": "Strings Analysis",
+    "aliases": [
+      "strings",
+      "strings extraction",
+      "bintext strings",
+      "static string analysis"
+    ]
+  },
+  {
+    "canonical_name": "Subdomain Enumeration",
+    "aliases": [
+      "subdomainenumeration",
+      "subdomain discovery",
+      "subdomain scanning",
+      "subdomain brute force"
+    ]
+  },
+  {
+    "canonical_name": "Subfinder",
+    "aliases": [
+      "subfinder tool",
+      "subfinder subdomain",
+      "subfinder enumeration",
+      "subfinder projectdiscovery"
+    ]
+  },
+  {
+    "canonical_name": "Sumo Logic",
+    "aliases": [
+      "sumologic",
+      "sumo logic siem",
+      "sumo logic cloud",
+      "sumo logic log management"
+    ]
+  },
+  {
+    "canonical_name": "Suricata",
+    "aliases": [
+      "suricata ids",
+      "suricata ips",
+      "suricata network security",
+      "suricata intrusion detection"
+    ]
+  },
+  {
+    "canonical_name": "Swift",
+    "aliases": [
+      "swift programming",
+      "swift language",
+      "swift ios",
+      "swift apple"
+    ]
+  },
+  {
+    "canonical_name": "Tails",
+    "aliases": [
+      "tails os",
+      "tails linux",
+      "tails amnesic incognito",
+      "tails operating system"
+    ]
+  },
+  {
+    "canonical_name": "TAXII",
+    "aliases": [
+      "trusted automated exchange of intelligence information",
+      "taxii threat intelligence",
+      "taxii protocol",
+      "taxii standard"
+    ]
+  },
+  {
+    "canonical_name": "TCP",
+    "aliases": [
+      "transmission control protocol",
+      "tcp protocol",
+      "tcp networking"
+    ]
+  },
+  {
+    "canonical_name": "TCP/IP",
+    "aliases": [
+      "tcpip",
+      "tcp ip",
+      "tcp/ip protocol suite",
+      "tcp/ip networking"
+    ]
+  },
+  {
+    "canonical_name": "tcpdump",
+    "aliases": [
+      "tcpdump packet analyzer",
+      "tcpdump tool",
+      "tcpdump network",
+      "tcpdump capture"
+    ]
+  },
+  {
+    "canonical_name": "Terraform",
+    "aliases": [
+      "terraform infrastructure as code",
+      "terraform iac",
+      "terraform hcl",
+      "terraform hashicorp"
+    ]
+  },
+  {
+    "canonical_name": "Terrascan",
+    "aliases": [
+      "terrascan iac",
+      "terrascan security",
+      "terrascan policy as code",
+      "terrascan terraform"
+    ]
+  },
+  {
+    "canonical_name": "tfsec",
+    "aliases": [
+      "tfsec terraform",
+      "tfsec security",
+      "tfsec scanner",
+      "tfsec iac"
+    ]
+  },
+  {
+    "canonical_name": "The Sleuth Kit",
+    "aliases": [
+      "tsk",
+      "sleuth kit",
+      "tsk forensic",
+      "sleuth kit forensics"
+    ]
+  },
+  {
+    "canonical_name": "theHarvester",
+    "aliases": [
+      "theharvester tool",
+      "theharvester osint",
+      "theharvester email gathering",
+      "theharvester reconnaissance"
+    ]
+  },
+  {
+    "canonical_name": "Threat Detection",
+    "aliases": [
+      "threat detection and response",
+      "detecting threats",
+      "threat detection technology",
+      "cyber threat detection"
+    ]
+  },
+  {
+    "canonical_name": "Threat Hunting",
+    "aliases": [
+      "threathunting",
+      "cyber threat hunting",
+      "proactive threat hunting",
+      "threat hunting techniques"
+    ]
+  },
+  {
+    "canonical_name": "Threat Intelligence",
+    "aliases": [
+      "cti",
+      "threatintelligence",
+      "cyber threat intelligence",
+      "threat intel"
+    ]
+  },
+  {
+    "canonical_name": "Threat Modeling",
+    "aliases": [
+      "threatmodeling",
+      "threat modelling",
+      "threat model analysis",
+      "application threat modeling"
+    ]
+  },
+  {
+    "canonical_name": "Tier 1 SOC Analyst",
+    "aliases": [
+      "tier1",
+      "tier 1 analyst",
+      "soc level 1 analyst",
+      "tier 1 soc analyst role"
+    ]
+  },
+  {
+    "canonical_name": "Tier 2 SOC Analyst",
+    "aliases": [
+      "tier2",
+      "tier 2 analyst",
+      "soc level 2 analyst",
+      "tier 2 soc analyst role"
+    ]
+  },
+  {
+    "canonical_name": "Tier 3 SOC Analyst",
+    "aliases": [
+      "tier3",
+      "tier 3 analyst",
+      "soc level 3 analyst",
+      "tier 3 soc analyst role"
+    ]
+  },
+  {
+    "canonical_name": "Traffic Analysis",
+    "aliases": [
+      "network traffic analysis",
+      "packet analysis",
+      "packetanalysis",
+      "traffic analysis security"
+    ]
+  },
+  {
+    "canonical_name": "Trivy",
+    "aliases": [
+      "trivy vulnerability scanner",
+      "trivy container scanning",
+      "trivy aqua",
+      "trivy security"
+    ]
+  },
+  {
+    "canonical_name": "TShark",
+    "aliases": [
+      "tshark wireshark",
+      "tshark command line",
+      "tshark packet analysis",
+      "tshark network"
+    ]
+  },
+  {
+    "canonical_name": "TypeScript",
+    "aliases": [
+      "ts",
+      "typescript programming",
+      "typescript javascript",
+      "typescript language"
+    ]
+  },
+  {
+    "canonical_name": "Ubuntu",
+    "aliases": [
+      "ubuntu linux",
+      "ubuntu os",
+      "ubuntu distribution",
+      "ubuntu server"
+    ]
+  },
+  {
+    "canonical_name": "UDP",
+    "aliases": [
+      "user datagram protocol",
+      "udp protocol",
+      "udp networking",
+      "udp transport"
+    ]
+  },
+  {
+    "canonical_name": "UNIX",
+    "aliases": [
+      "unix operating system",
+      "unix os",
+      "unix system",
+      "unix-like"
+    ]
+  },
+  {
+    "canonical_name": "UPX",
+    "aliases": [
+      "upx packer",
+      "upx executable packer",
+      "upx tool",
+      "upx malware packing"
+    ]
+  },
+  {
+    "canonical_name": "Vagrant",
+    "aliases": [
+      "vagrant virtual machine",
+      "vagrant devops",
+      "vagrant provisioning",
+      "vagrant hashicorp"
+    ]
+  },
+  {
+    "canonical_name": "Veracode",
+    "aliases": [
+      "veracode sast",
+      "veracode appsec",
+      "veracode security",
+      "veracode static analysis"
+    ]
+  },
+  {
+    "canonical_name": "VirtualBox",
+    "aliases": [
+      "virtual box",
+      "oracle virtualbox",
+      "virtualbox vm",
+      "virtualbox virtualization"
+    ]
+  },
+  {
+    "canonical_name": "Virtualization",
+    "aliases": [
+      "virtualization platforms",
+      "hypervisor",
+      "server virtualization"
+    ]
+  },
+  {
+    "canonical_name": "VirusTotal",
+    "aliases": [
+      "virustotal malware scan",
+      "virustotal online",
+      "virustotal file analysis",
+      "virustotal url scan"
+    ]
+  },
+  {
+    "canonical_name": "Vishing",
+    "aliases": [
+      "voice phishing",
+      "vishing attack",
+      "phone phishing",
+      "vishing scam"
+    ]
+  },
+  {
+    "canonical_name": "VLANs",
+    "aliases": [
+      "virtual lans",
+      "vlan networking",
+      "vlan segmentation",
+      "vlan trunking"
+    ]
+  },
+  {
+    "canonical_name": "VMware",
+    "aliases": [
+      "vmware esxi",
+      "vmware vsphere",
+      "vmware workstation",
+      "vmware virtualization"
+    ]
+  },
+  {
+    "canonical_name": "Volatility",
+    "aliases": [
+      "volatility framework",
+      "volatility memory forensics",
+      "volatility tool",
+      "volatility foundation"
+    ]
+  },
+  {
+    "canonical_name": "Volatility 3",
+    "aliases": [
+      "volatility3",
+      "volatility3 framework",
+      "volatility3 memory",
+      "vol 3"
+    ]
+  },
+  {
+    "canonical_name": "VPN",
+    "aliases": [
+      "virtual private network",
+      "vpn connection",
+      "vpn server",
+      "vpn client"
+    ]
+  },
+  {
+    "canonical_name": "Vue.js",
+    "aliases": [
+      "vue",
+      "vuejs",
+      "vue.js framework",
+      "vue javascript"
+    ]
+  },
+  {
+    "canonical_name": "Vulnerability Assessment",
+    "aliases": [
+      "vulnerabilityassessment",
+      "vulnerability scan",
+      "vulnerability analysis",
+      "vuln assessment"
+    ]
+  },
+  {
+    "canonical_name": "Vulnerability Management",
+    "aliases": [
+      "vulnerabilitymanagement",
+      "vuln management",
+      "vulnerability program",
+      "risk-based vulnerability management"
+    ]
+  },
+  {
+    "canonical_name": "Vulnerability Research",
+    "aliases": [
+      "vuln research",
+      "vulnerability discovery",
+      "security research",
+      "bug research"
+    ]
+  },
+  {
+    "canonical_name": "Vulnerability Scanning",
+    "aliases": [
+      "vulnerability scanning tools",
+      "vuln scanning",
+      "vulnerability scanner",
+      "automated vulnerability scanning"
+    ]
+  },
+  {
+    "canonical_name": "WaybackURLs",
+    "aliases": [
+      "waybackurls tool",
+      "wayback urls",
+      "wayback machine urls",
+      "waybackurls enumeration"
+    ]
+  },
+  {
+    "canonical_name": "Wazuh",
+    "aliases": [
+      "wazuh siem",
+      "wazuh edr",
+      "wazuh security",
+      "wazuh intrusion detection"
+    ]
+  },
+  {
+    "canonical_name": "Web Application Security",
+    "aliases": [
+      "web app security",
+      "web application security testing",
+      "web appsec",
+      "web application protection"
+    ]
+  },
+  {
+    "canonical_name": "Rapid7",
+    "aliases" : [
+
+    ]
+  },
+  {
+    "canonical_name": "Web Enumeration",
+    "aliases": [
+      "webenumeration",
+      "web enumeration tools",
+      "web resource enumeration",
+      "web directory enumeration"
+    ]
+  },
+  {
+    "canonical_name": "Web Security",
+    "aliases": [
+      "websecurity",
+      "website security",
+      
+      "browser security"
+    ]
+  },
+  {
+    "canonical_name": "Web Technologies",
+    "aliases": [
+      "web tech",
+      "web technology",
+      "web development technologies",
+      "web platforms"
+    ]
+  },
+  {
+    "canonical_name": "Wfuzz",
+    "aliases": [
+      "wfuzz tool",
+      "wfuzz web fuzzer",
+      "wfuzz scanner",
+      "wfuzz brute force"
+    ]
+  },
+  {
+    "canonical_name": "Whonix",
+    "aliases": [
+      "whonix os",
+      "whonix linux",
+      "whonix privacy",
+      "whonix anonymous"
+    ]
+  },
+  {
+    "canonical_name": "WinDbg",
+    "aliases": [
+      "windbg debugger",
+      "windbg windows",
+      "windbg reverse engineering",
+      "windbg tool"
+    ]
+  },
+  {
+    "canonical_name": "Windows",
+    "aliases": [
+      "microsoft windows",
+      "windows os",
+      "windows operating system",
+      "ms windows"
+    ]
+  },
+  {
+    "canonical_name": "Windows Administration",
+    "aliases": [
+      "windows admin",
+      "windows server administration",
+      "windows system administration",
+      "win admin"
+    ]
+  },
+  {
+    "canonical_name": "Windows Server",
+    "aliases": [
+      "windowsserver",
+      "windows server os",
+      "microsoft windows server",
+      "win server"
+    ]
+  },
+  {
+    "canonical_name": "WireGuard",
+    "aliases": [
+      "wireguard vpn",
+      "wireguard protocol",
+      "wireguard tunnel",
+      "wireguard security"
+    ]
+  },
+  {
+    "canonical_name": "Wireless Security",
+    "aliases": [
+      "wifi",
+      "wireless",
+      "wi-fi security",
+      "wireless network security"
+    ]
+  },
+  {
+    "canonical_name": "Wireshark",
+    "aliases": [
+      "wireshark packet analyzer",
+      "wireshark network analysis",
+      "wireshark tool",
+      "wireshark capture"
+    ]
+  },
+  {
+    "canonical_name": "WPScan",
+    "aliases": [
+      "wpscan wordpress",
+      "wpscan scanner",
+      "wpscan tool",
+      "wpscan vulnerability"
+    ]
+  },
+  {
+    "canonical_name": "X-Ways Forensics",
+    "aliases": [
+      "x-ways",
+      "x-ways forensic",
+      "x-ways forensics tool",
+      "x-ways investigation"
+    ]
+  },
+  {
+    "canonical_name": "X.509",
+    "aliases": [
+      "x509",
+      "x.509 certificate",
+      "x509 standard",
+      "x.509 public key certificate"
+    ]
+  },
+  {
+    "canonical_name": "x64dbg",
+    "aliases": [
+      "x64dbg debugger",
+      "x64dbg reverse engineering",
+      "x64dbg tool",
+      "x64dbg windows debugger"
+    ]
+  },
+  {
+    "canonical_name": "XDR",
+    "aliases": [
+      "extended detection and response",
+      "xdr solution",
+      "extended detection & response",
+      "xdr security"
+    ]
+  },
+  {
+    "canonical_name": "XML External Entity (XXE)",
+    "aliases": [
+      "xxe",
+      "xml external entity attack",
+      "xxe injection",
+      "xxe vulnerability"
+    ]
+  },
+  {
+    "canonical_name": "YARA",
+    "aliases": [
+      "yara rules",
+      "yara malware detection",
+      "yara tool",
+      "yara pattern matching"
+    ]
+  },
+  {
+    "canonical_name": "Zeek (formerly Bro)",
+    "aliases": [
+      "bro",
+      "zeek",
+      "zeek network security",
+      "bro ids"
+    ]
+  },
+  {
+    "canonical_name": "Zero-Day",
+    "aliases": [
+      "zeroday",
+      "0-day",
+      "zero day vulnerability",
+      "zero day exploit"
+    ]
+  }
+],
+  "relationships": [
+    {
+      "source": "ACLs",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Active Directory",
+      "target": "IAM",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Acunetix",
+      "target": "DAST",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Acunetix",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "AES",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Aircrack-ng",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Aircrack-ng",
+      "target": "Wireless Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Alert Triage",
+      "target": "Incident Response",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Alert Triage",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Alert Triage",
+      "target": "SOC Operations",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Amass",
+      "target": "Subdomain Enumeration",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Amazon GuardDuty",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Ansible",
+      "target": "Infrastructure as Code (IaC)",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "ANY.RUN",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "ANY.RUN",
+      "target": "Malware Sandbox",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "API Security",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "API Security",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Application Security (AppSec)",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Application Security (AppSec)",
+      "target": "Web Security",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "ArcSight",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "AS-REP Roasting",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Auditing",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Autopsy",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "AWS Certified Security \u2013 Specialty",
+      "target": "AWS Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "AWS Certified Security \u2013 Specialty",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "AWS CloudTrail",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "AWS S3",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "AWS Security",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "AWS Security Hub",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "AZ-500",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Azure Active Directory",
+      "target": "IAM",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Azure Defender for Cloud",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Azure Security",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Bash",
+      "target": "Linux",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Bash",
+      "target": "Scripting",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Bash",
+      "target": "Security Automation",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "BeEF",
+      "target": "Browser Exploitation",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "BeEF",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Binary Ninja",
+      "target": "Reverse Engineering",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "BlackArch",
+      "target": "Linux",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "BlackArch",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "BloodHound",
+      "target": "Active Directory",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "BloodHound",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Blue Teaming",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Blue Teaming",
+      "target": "Incident Response",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Blue Teaming",
+      "target": "Security Operations Center (SOC)",
+      "type": "related_to",
+      "confidence": 0.9
+    },
+    {
+      "source": "Bluetooth Security",
+      "target": "Wireless Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Burp Suite",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Burp Suite",
+      "target": "DAST",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Burp Suite",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Burp Suite",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Burp Suite",
+      "target": "Web Application Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Burp Suite",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "C#",
+      "target": "Programming",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "C/C++",
+      "target": "Programming",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "CAPA",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "CCNA",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "CCSP",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "CEH",
+      "target": "Ethical Hacking",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "CEH",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "Cellebrite",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Censys",
+      "target": "Network Scanning",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Censys",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Check Point",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Checkmarx",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Checkov",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Checkov",
+      "target": "Infrastructure as Code (IaC)",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "CIS Benchmarks",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "CIS Controls",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "CISA",
+      "target": "Auditing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Cisco ASA",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "CISM",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "CISSP",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "CISSP",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Cloud Infrastructure Entitlement Management (CIEM)",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Cloud Security",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Cloud Security",
+      "target": "Network Security",
+      "type": "related_to",
+      "confidence": 0.75
+    },
+    {
+      "source": "Cloud Security",
+      "target": "Vulnerability Assessment",
+      "type": "related_to",
+      "confidence": 0.7
+    },
+    {
+      "source": "Cloud Security Posture Management (CSPM)",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Cloud Workload Protection Platform (CWPP)",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "CloudMapper",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "CloudSploit",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Cobalt Strike",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Cobalt Strike",
+      "target": "Red Teaming",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Compliance",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "CompTIA Security+",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Container Security",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Container Security",
+      "target": "Cloud Security",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "CrackMapExec",
+      "target": "Lateral Movement",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "CrackMapExec",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "CrackMapExec",
+      "target": "Post-Exploitation",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Cross-Site Request Forgery (CSRF)",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Cross-Site Scripting (XSS)",
+      "target": "Web Application Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Cross-Site Scripting (XSS)",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Cryptography",
+      "target": "Blockchain Security",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Cryptography",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Cryptography",
+      "target": "Web Security",
+      "type": "related_to",
+      "confidence": 0.7
+    },
+    {
+      "source": "Cuckoo Sandbox",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Cuckoo Sandbox",
+      "target": "Malware Sandbox",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Cyber Kill Chain",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "DAST",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "DCSync",
+      "target": "Active Directory",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Debian",
+      "target": "Linux",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Detect It Easy",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "DHCP",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "DHCP",
+      "target": "Networking",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Diamond Model",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Digital Certificates",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Digital Forensics",
+      "target": "Incident Response",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Digital Forensics",
+      "target": "Investigations",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Dirb",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "DirBuster",
+      "target": "Directory Enumeration",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "DirBuster",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "dirsearch",
+      "target": "Web Enumeration",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "DNS",
+      "target": "DNS Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "DNS",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "DNS",
+      "target": "Networking",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "DNSSEC",
+      "target": "DNS Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Docker",
+      "target": "Container Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Docker",
+      "target": "DevSecOps",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Docker Security",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "DREAD",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "Elastic Stack",
+      "target": "SIEM",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "ELK Stack",
+      "target": "Incident Response",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "ELK Stack",
+      "target": "Log Analysis",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "ELK Stack",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "ELK Stack",
+      "target": "SIEM",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Elliptic Curve Cryptography (ECC)",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Empire",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Empire",
+      "target": "Red Teaming",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "EnCase",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "EvilGinx",
+      "target": "Phishing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Feroxbuster",
+      "target": "Directory Enumeration",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "ffuf",
+      "target": "Directory Enumeration",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "ffuf",
+      "target": "Fuzzing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "ffuf",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Firewall",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Firewall",
+      "target": "Perimeter Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Firewalls",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "FLOSS",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Forensic Toolkit (FTK)",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Fortify",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "FortiGate",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "FTK Imager",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Gap Analysis",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "GCFA",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "GCIA",
+      "target": "Intrusion Detection System (IDS)",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "GCIA",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "GCIH",
+      "target": "Incident Response",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "GCIH",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "GCP Security",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "GDPR",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Ghidra",
+      "target": "Reverse Engineering",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "GitLab",
+      "target": "DevSecOps",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Gobuster",
+      "target": "Directory Enumeration",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Gobuster",
+      "target": "Web Enumeration",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Gobuster",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "GPEN",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "GPG",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "GraphQL Security",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Graylog",
+      "target": "SIEM",
+      "type": "evidence_for",
+      "confidence": 0.75
+    },
+    {
+      "source": "GREM",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "GSEC",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "GWAPT",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Hardware Security Module (HSM)",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Hashcat",
+      "target": "Password Cracking",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Hashcat",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Hashing",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "HCL AppScan",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "HIPAA",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Hopper Disassembler",
+      "target": "Reverse Engineering",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "HTTP/HTTPS",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "HTTP/HTTPS",
+      "target": "Web Technologies",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Hybrid Analysis",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Hybrid Analysis",
+      "target": "Malware Sandbox",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Hydra",
+      "target": "Password Cracking",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Hydra",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Hyper-V",
+      "target": "Virtualization",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "IAM",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "IAM",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "IAST",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "IBM QRadar",
+      "target": "Incident Response",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "IBM QRadar",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "IBM QRadar",
+      "target": "SIEM",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "ICS/SCADA Security",
+      "target": "Network Security",
+      "type": "related_to",
+      "confidence": 0.75
+    },
+    {
+      "source": "IDA Pro",
+      "target": "Reverse Engineering",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "IDOR",
+      "target": "Web Application Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "IDS",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "IDS",
+      "target": "Traffic Analysis",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "IDS/IPS",
+      "target": "Perimeter Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "IDS/IPS",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Impacket",
+      "target": "Lateral Movement",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Impacket",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Impacket",
+      "target": "Post-Exploitation",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Incident Response",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Incident Response",
+      "target": "Security Operations",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Incident Response",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Incident Response",
+      "target": "SOC Operations",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "InsightVM",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Invicti (formerly Netsparker)",
+      "target": "DAST",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Invicti (formerly Netsparker)",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "IoT Security",
+      "target": "Embedded Security",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "IPS",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "IPsec",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "IPsec",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "iptables",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "ISO 27001",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Java",
+      "target": "Programming",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Jenkins",
+      "target": "DevSecOps",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "John the Ripper",
+      "target": "Password Cracking",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "John the Ripper",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "JoomScan",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Kali Linux",
+      "target": "Linux",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Kali Linux",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Kerberoasting",
+      "target": "Active Directory",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Kerberoasting",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Kismet",
+      "target": "Wireless Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Kubernetes",
+      "target": "Container Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Kubernetes",
+      "target": "DevSecOps",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Kubernetes Security",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "KVM",
+      "target": "Virtualization",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Lateral Movement",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Lateral Movement",
+      "target": "Post-Exploitation",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Linux",
+      "target": "Operating Systems",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Linux Administration",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Local File Inclusion (LFI)",
+      "target": "Web Application Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Local File Inclusion (LFI)",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Log Analysis",
+      "target": "Incident Response",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Log Analysis",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Log Analysis",
+      "target": "SIEM",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "LOKI",
+      "target": "Incident Response",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Magnet AXIOM",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Maltego",
+      "target": "OSINT (Open Source Intelligence)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Malware Analysis",
+      "target": "Incident Response",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Malware Analysis",
+      "target": "Reverse Engineering",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Masscan",
+      "target": "Network Scanning",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Masscan",
+      "target": "Port Scanning",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "MD5",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Metasploit",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Metasploit",
+      "target": "Post-Exploitation",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Micro Focus WebInspect",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Microsoft Entra ID",
+      "target": "IAM",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Microsoft Sentinel",
+      "target": "Incident Response",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Microsoft Sentinel",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Microsoft Sentinel",
+      "target": "SIEM",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Mimikatz",
+      "target": "Credential Dumping",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Mimikatz",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "MISP",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "MITRE ATT&CK",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Mobile Security",
+      "target": "Android Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Mobile Security",
+      "target": "Application Security (AppSec)",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Mobile Security",
+      "target": "iOS Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Modlishka",
+      "target": "Phishing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "MongoDB",
+      "target": "Database Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "MySQL",
+      "target": "Database Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "NAT",
+      "target": "Networking",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Nessus",
+      "target": "Security Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Nessus",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Nessus",
+      "target": "Vulnerability Management",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Nessus",
+      "target": "Vulnerability Scanning",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Network Scanning",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Network Security",
+      "target": "Cloud Security",
+      "type": "related_to",
+      "confidence": 0.7
+    },
+    {
+      "source": "Network Security",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Network Security",
+      "target": "Incident Response",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Network Security",
+      "target": "Penetration Testing",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Network Security",
+      "target": "Security Concepts",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Network Security",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "Network Security",
+      "target": "Traffic Analysis",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Network Security",
+      "target": "Vulnerability Assessment",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Nexpose",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "nftables",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Nikto",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Nikto",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "NIST Cybersecurity Framework",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Nmap",
+      "target": "Network Scanning",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Nmap",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Nmap",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Nmap",
+      "target": "Port Scanning",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Nmap",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Nuclei",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "OllyDbg",
+      "target": "Reverse Engineering",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OpenCTI",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OpenVAS",
+      "target": "Security Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OpenVAS",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "OpenVAS",
+      "target": "Vulnerability Management",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OpenVAS",
+      "target": "Vulnerability Scanning",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "OpenVPN",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "OS Command Injection",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OSCP",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "OSI Model",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.7
+    },
+    {
+      "source": "OSINT (Open Source Intelligence)",
+      "target": "Reconnaissance",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "OSINT (Open Source Intelligence)",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OWASP",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OWASP ASVS",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OWASP Testing Guide",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OWASP Top 10",
+      "target": "Web Application Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OWASP Top 10",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OWASP ZAP",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OWASP ZAP",
+      "target": "DAST",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OWASP ZAP",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OWASP ZAP",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OWASP ZAP",
+      "target": "Web Application Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "OWASP ZAP",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Palo Alto Networks",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Parrot OS",
+      "target": "Linux",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Parrot OS",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Pass-the-Hash",
+      "target": "Active Directory",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Pass-the-Hash",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Pass-the-Ticket",
+      "target": "Active Directory",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Pass-the-Ticket",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "PCI DSS",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "PE Studio",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Penetration Testing",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Penetration Testing",
+      "target": "Ethical Hacking",
+      "type": "related_to",
+      "confidence": 0.9
+    },
+    {
+      "source": "Penetration Testing",
+      "target": "Red Teaming",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Penetration Testing",
+      "target": "Security Assessment",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "pfSense",
+      "target": "Firewall",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "pfSense",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "PGP",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Phishing",
+      "target": "Social Engineering",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "PostgreSQL",
+      "target": "Database Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "PowerShell",
+      "target": "Scripting",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "PowerShell",
+      "target": "Security Automation",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "PowerShell",
+      "target": "Windows Administration",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "PowerSploit",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "PowerSploit",
+      "target": "Red Teaming",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Privilege Escalation",
+      "target": "IAM",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Privilege Escalation",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Privilege Escalation",
+      "target": "Post-Exploitation",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Prowler",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Public Key Infrastructure (PKI)",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Purple Teaming",
+      "target": "Blue Teaming",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Purple Teaming",
+      "target": "Red Teaming",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Python",
+      "target": "Scripting",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Python",
+      "target": "Security Automation",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Qualys",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Qualys",
+      "target": "Vulnerability Management",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Qualys",
+      "target": "Vulnerability Scanning",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "radare2",
+      "target": "Reverse Engineering",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Rapid7",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "InsightVM",
+      "target": "Vulnerability Scanning",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "RASP",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Recon-ng",
+      "target": "OSINT (Open Source Intelligence)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Reconnaissance",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Red Teaming",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Red Teaming",
+      "target": "Penetration Testing",
+      "type": "related_to",
+      "confidence": 0.9
+    },
+    {
+      "source": "Red Teaming",
+      "target": "Purple Teaming",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Red Teaming",
+      "target": "Security Assessment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Red Teaming",
+      "target": "Threat Intelligence",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Rekall",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Rekall",
+      "target": "Memory Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Remote File Inclusion (RFI)",
+      "target": "Web Application Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Remote File Inclusion (RFI)",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Responder",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Reverse Engineering",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "RFID Security",
+      "target": "Wireless Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Risk Assessment",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "RSA",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "SAST",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "SCA",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Scapy",
+      "target": "Traffic Analysis",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "ScoutSuite",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Secure Code Review",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Security Command Center",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Server-Side Request Forgery (SSRF)",
+      "target": "Web Application Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Server-Side Request Forgery (SSRF)",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Serverless Security",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "SHA-256",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "SharpHound",
+      "target": "Active Directory",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "SharpHound",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Shodan",
+      "target": "Network Scanning",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Shodan",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "SIEM",
+      "target": "Security Operations",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "SIEM",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "SIEM",
+      "target": "SOC Operations",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Smishing",
+      "target": "Social Engineering",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "SNMP",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "Snort",
+      "target": "IDS",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Snort",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Snort",
+      "target": "Traffic Analysis",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "SOC 2",
+      "target": "Compliance",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "SOC Analyst",
+      "target": "Security Operations",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "SOC Analyst",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Social-Engineer Toolkit (SET)",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Social-Engineer Toolkit (SET)",
+      "target": "Social Engineering",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Spear Phishing",
+      "target": "Social Engineering",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "SpiderFoot",
+      "target": "OSINT (Open Source Intelligence)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Splunk",
+      "target": "Incident Response",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Splunk",
+      "target": "Log Analysis",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Splunk",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Splunk",
+      "target": "SIEM",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Splunk Enterprise Security",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Splunk Enterprise Security",
+      "target": "SIEM",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "SQL",
+      "target": "Database Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "SQL Injection",
+      "target": "Web Application Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "SQLi",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "sqlmap",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "sqlmap",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "SSL/TLS",
+      "target": "Cryptography",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "SSL/TLS",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "SSL/TLS",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "STIX",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "STRIDE",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Strings Analysis",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Subfinder",
+      "target": "Subdomain Enumeration",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Suricata",
+      "target": "IDS",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Suricata",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Suricata",
+      "target": "Traffic Analysis",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "TAXII",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "TCP/IP",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "TCP/IP",
+      "target": "Networking",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "tcpdump",
+      "target": "Network Scanning",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "tcpdump",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "tcpdump",
+      "target": "Traffic Analysis",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Terraform",
+      "target": "Infrastructure as Code (IaC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Terrascan",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "tfsec",
+      "target": "Cloud Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "tfsec",
+      "target": "Infrastructure as Code (IaC)",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "The Sleuth Kit",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "theHarvester",
+      "target": "OSINT (Open Source Intelligence)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Threat Detection",
+      "target": "IDS",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Threat Detection",
+      "target": "SIEM",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Threat Hunting",
+      "target": "Incident Response",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Threat Hunting",
+      "target": "Security Operations",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Threat Hunting",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Threat Hunting",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Threat Intelligence",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Threat Intelligence",
+      "target": "Security Operations Center (SOC)",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Threat Modeling",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Tier 1 SOC Analyst",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Tier 2 SOC Analyst",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Tier 3 SOC Analyst",
+      "target": "Security Operations Center (SOC)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Traffic Analysis",
+      "target": "IDS",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Traffic Analysis",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "TShark",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "TShark",
+      "target": "Traffic Analysis",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Ubuntu",
+      "target": "Linux",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "UPX",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "Veracode",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "VirtualBox",
+      "target": "Virtualization",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "VirusTotal",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "VirusTotal",
+      "target": "Threat Intelligence",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Vishing",
+      "target": "Social Engineering",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "VLANs",
+      "target": "Network Segmentation",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "VMware",
+      "target": "Virtualization",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Volatility",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Volatility",
+      "target": "Memory Forensics",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Volatility 3",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Volatility 3",
+      "target": "Memory Forensics",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "VPN",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "VPN",
+      "target": "Perimeter Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Vulnerability Assessment",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Vulnerability Assessment",
+      "target": "Penetration Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Vulnerability Assessment",
+      "target": "Penetration Testing",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Vulnerability Assessment",
+      "target": "Security Assessment",
+      "type": "related_to",
+      "confidence": 0.9
+    },
+    {
+      "source": "Vulnerability Assessment",
+      "target": "Vulnerability Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Vulnerability Assessment",
+      "target": "Vulnerability Research",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Vulnerability Management",
+      "target": "Patch Management",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Wazuh",
+      "target": "SIEM",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Web Security",
+      "target": "Application Security (AppSec)",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Web Security",
+      "target": "Cybersecurity Fundamentals",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "Web Security",
+      "target": "Penetration Testing",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Web Security",
+      "target": "Vulnerability Assessment",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Wfuzz",
+      "target": "Fuzzing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Wfuzz",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "WinDbg",
+      "target": "Reverse Engineering",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Windows Server",
+      "target": "Active Directory",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "WireGuard",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Wireshark",
+      "target": "Network Scanning",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Wireshark",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Wireshark",
+      "target": "Traffic Analysis",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "WPScan",
+      "target": "Vulnerability Assessment",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "WPScan",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "X-Ways Forensics",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "x64dbg",
+      "target": "Reverse Engineering",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "XML External Entity (XXE)",
+      "target": "Web Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "YARA",
+      "target": "Digital Forensics",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "YARA",
+      "target": "Malware Analysis",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Zeek (formerly Bro)",
+      "target": "Network Security",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Zeek (formerly Bro)",
+      "target": "Network Security Monitoring",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Zeek (formerly Bro)",
+      "target": "Traffic Analysis",
+      "type": "evidence_for",
+      "confidence": 0.85
+    }
+  ]
+}

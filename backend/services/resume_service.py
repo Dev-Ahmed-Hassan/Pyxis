@@ -10,6 +10,8 @@ from sqlalchemy.orm import Session
 from models.resume import Resume, ResumeProcessingStatus
 from models.user import User
 from schemas.resume import ResumeUpdate
+from services.analysis_staleness_service import mark_resume_analyses_stale
+from services.user_profile_facts_service import delete_profile_facts_for_resume
 
 UPLOAD_DIRECTORY = Path(__file__).resolve().parent.parent / "uploads"
 MAX_RESUME_SIZE_BYTES = 10 * 1024 * 1024
@@ -153,6 +155,8 @@ def soft_delete_resume(database: Session, user: User, resume_id: uuid.UUID) -> N
     resume = _get_owned_resume(database, user, resume_id)
     resume.deleted_at = datetime.now(UTC)
     resume.is_default = False
+    delete_profile_facts_for_resume(database, resume.id)
+    mark_resume_analyses_stale(database, resume.id, stale_at=resume.deleted_at)
     database.commit()
 
 
@@ -170,6 +174,7 @@ def retry_resume_processing(database: Session, user: User, resume_id: uuid.UUID)
     resume.processing_started_at = None
     resume.processing_completed_at = None
     resume.next_retry_at = None
+    mark_resume_analyses_stale(database, resume.id)
     database.commit()
     database.refresh(resume)
     return resume

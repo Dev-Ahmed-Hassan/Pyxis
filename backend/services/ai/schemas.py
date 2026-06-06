@@ -1,4 +1,6 @@
-from pydantic import BaseModel, ConfigDict, Field
+from typing import Literal
+
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 
 class StrictSchema(BaseModel):
@@ -13,8 +15,10 @@ class ExtractedText(StrictSchema):
 
 class ExtractedSkill(StrictSchema):
     name: str
+    canonical_name: str | None = None
     confidence: float = Field(ge=0.0, le=1.0)
     evidence: str | None
+    source: Literal["explicit", "inferred", "manual"] = "explicit"
 
 
 class Experience(StrictSchema):
@@ -23,17 +27,27 @@ class Experience(StrictSchema):
     start_date: str | None
     end_date: str | None
     description: list[str]
-    skills: list[str]
+    skills: list[ExtractedSkill]
     confidence: float = Field(ge=0.0, le=1.0)
     evidence: str | None
+
+    @field_validator("skills", mode="before")
+    @classmethod
+    def accept_legacy_skill_names(cls, skills: list) -> list:
+        return [_legacy_skill(skill) for skill in skills]
 
 
 class Project(StrictSchema):
     name: str | None
     description: list[str]
-    skills: list[str]
+    skills: list[ExtractedSkill]
     confidence: float = Field(ge=0.0, le=1.0)
     evidence: str | None
+
+    @field_validator("skills", mode="before")
+    @classmethod
+    def accept_legacy_skill_names(cls, skills: list) -> list:
+        return [_legacy_skill(skill) for skill in skills]
 
 
 class Education(StrictSchema):
@@ -43,6 +57,20 @@ class Education(StrictSchema):
     start_date: str | None
     end_date: str | None
     confidence: float = Field(ge=0.0, le=1.0)
+    evidence: str | None
+
+
+class Certification(StrictSchema):
+    name: str
+    issuer: str | None = None
+    date: str | None = None
+    confidence: float = Field(ge=0.0, le=1.0)
+    evidence: str | None
+
+
+class ReviewWarning(StrictSchema):
+    field: str
+    message: str
     evidence: str | None
 
 
@@ -56,3 +84,16 @@ class ParsedResume(StrictSchema):
     experience: list[Experience]
     projects: list[Project]
     education: list[Education]
+    certifications: list[Certification] = Field(default_factory=list)
+    review_warnings: list[ReviewWarning] = Field(default_factory=list)
+
+
+def _legacy_skill(skill: str | dict) -> str | dict:
+    if isinstance(skill, str):
+        return {
+            "name": skill,
+            "confidence": 1.0,
+            "evidence": None,
+            "source": "explicit",
+        }
+    return skill

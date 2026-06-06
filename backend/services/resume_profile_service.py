@@ -14,8 +14,14 @@ from schemas.resume_profile import (
     apply_manual_updates,
 )
 from services.ai.schemas import ParsedResume
+from services.analysis_staleness_service import mark_resume_analyses_stale
 from services.resume_parsing_service import PARSED_RESUME_FIELDS
 from services.resume_service import get_resume
+from services.semantic_embedding_service import (
+    invalidate_resume_section_embeddings,
+)
+from services.semantic_embedding_queue_service import enqueue_resume_embedding_refresh
+from services.user_profile_facts_service import replace_profile_facts_for_resume
 
 
 def get_parsed_resume_profile(
@@ -100,6 +106,11 @@ def update_parsed_resume_profile(
             detail="Parsed resume storage is temporarily unavailable",
         ) from error
 
+    invalidate_resume_section_embeddings(database, resume.id)
+    replace_profile_facts_for_resume(database, user.id, resume.id, updated_resume)
+    mark_resume_analyses_stale(database, resume.id, stale_at=now)
+    database.commit()
+    enqueue_resume_embedding_refresh(database, resume.id)
     return get_parsed_resume_profile(database, user, resume_id)
 
 

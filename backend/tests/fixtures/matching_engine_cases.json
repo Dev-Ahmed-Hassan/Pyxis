@@ -1,0 +1,195 @@
+{
+  "cases": [
+    {
+      "id": "software-engineering-exact-alias-match",
+      "domain": "software engineering",
+      "description": "Known aliases should behave like exact matches.",
+      "resume_skills": ["js", "postgres", "Git"],
+      "required_skills": ["JavaScript", "PostgreSQL"],
+      "preferred_skills": ["Git"],
+      "expected": {
+        "overall_score": {"minimum": 100.0, "maximum": 100.0},
+        "exact_overlap_score": {"minimum": 100.0, "maximum": 100.0}
+      }
+    },
+    {
+      "id": "cybersecurity-indirect-related-match",
+      "domain": "cybersecurity",
+      "description": "A reviewed two-step path should award conservative partial credit once.",
+      "resume_skills": ["Nessus", "Burp Suite", "OWASP ZAP"],
+      "required_skills": ["Vulnerability Research"],
+      "expected": {
+        "overall_score": {"minimum": 24.23, "maximum": 24.23},
+        "exact_overlap_score": {"minimum": 0.0, "maximum": 0.0},
+        "supported_required_skills": ["Vulnerability Research"],
+        "evidence_paths": [
+          {
+            "supported_requirement": "Vulnerability Research",
+            "support_path": ["Nessus", "Vulnerability Assessment", "Vulnerability Research"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cybersecurity-inferred-list-evidence",
+      "domain": "cybersecurity",
+      "description": "A cautious parser inference should earn less related credit than an explicit skills-list mention.",
+      "resume_skills": [
+        {"name": "Nessus", "extraction_source": "inferred"}
+      ],
+      "required_skills": ["Vulnerability Research"],
+      "expected": {
+        "overall_score": {"minimum": 15.75, "maximum": 15.75},
+        "exact_overlap_score": {"minimum": 0.0, "maximum": 0.0},
+        "supported_required_skills": ["Vulnerability Research"]
+      }
+    },
+    {
+      "id": "cybersecurity-project-evidence",
+      "domain": "cybersecurity",
+      "description": "A project-demonstrated skill should earn more related credit than a bare skills-list mention.",
+      "resume_skills": [],
+      "resume_projects": [
+        {"context": "Vulnerability Scanner Lab", "skills": ["Nessus"]}
+      ],
+      "required_skills": ["Vulnerability Research"],
+      "expected": {
+        "overall_score": {"minimum": 29.07, "maximum": 29.07},
+        "exact_overlap_score": {"minimum": 0.0, "maximum": 0.0},
+        "supported_required_skills": ["Vulnerability Research"]
+      }
+    },
+    {
+      "id": "cybersecurity-experience-evidence",
+      "domain": "cybersecurity",
+      "description": "Experience-demonstrated evidence should retain the full relationship-path value.",
+      "resume_skills": [],
+      "resume_experience": [
+        {"context": "Security Operations Internship", "skills": ["Nessus"]}
+      ],
+      "required_skills": ["Vulnerability Research"],
+      "expected": {
+        "overall_score": {"minimum": 32.3, "maximum": 32.3},
+        "exact_overlap_score": {"minimum": 0.0, "maximum": 0.0},
+        "supported_required_skills": ["Vulnerability Research"]
+      }
+    },
+    {
+      "id": "cybersecurity-certification-evidence",
+      "domain": "cybersecurity",
+      "description": "A certification name can provide auditable related evidence when it names a recognized skill.",
+      "resume_skills": [],
+      "resume_certifications": [
+        {"name": "Vulnerability Assessment", "issuer": "Evaluation Issuer"}
+      ],
+      "required_skills": ["Vulnerability Research"],
+      "expected": {
+        "overall_score": {"minimum": 34.0, "maximum": 34.0},
+        "exact_overlap_score": {"minimum": 0.0, "maximum": 0.0},
+        "supported_required_skills": ["Vulnerability Research"]
+      }
+    },
+    {
+      "id": "software-engineering-project-exact-match",
+      "domain": "software engineering",
+      "description": "A project-demonstrated skill should participate in exact matching.",
+      "resume_skills": [],
+      "resume_projects": [
+        {"context": "API Project", "skills": ["Python"]}
+      ],
+      "required_skills": ["Python"],
+      "expected": {
+        "overall_score": {"minimum": 100.0, "maximum": 100.0},
+        "exact_overlap_score": {"minimum": 100.0, "maximum": 100.0}
+      }
+    },
+    {
+      "id": "networking-domain-alias-evidence",
+      "domain": "networking",
+      "description": "A domain alias should normalize before evidence lookup without adding numeric credit.",
+      "resume_skills": ["Nmap", "DNS", "Firewalls"],
+      "preferred_domain_concepts": ["Network Security Principles"],
+      "expected": {
+        "overall_score": {"minimum": 0.0, "maximum": 0.0},
+        "exact_overlap_score": {"minimum": 0.0, "maximum": 0.0},
+        "evidence_paths": [
+          {
+            "supported_requirement": "Network Security",
+            "support_path": ["Nmap", "Network Security"]
+          }
+        ],
+        "warning_substrings": [
+          "did not identify concrete technical skills",
+          "domain concepts do not add numeric credit yet"
+        ]
+      }
+    },
+    {
+      "id": "cloud-devops-partial-exact-match",
+      "domain": "cloud and DevOps",
+      "description": "Required and preferred exact matches should retain their independent weights.",
+      "resume_skills": ["aws", "Docker", "Git"],
+      "required_skills": ["AWS", "Docker", "Kubernetes"],
+      "preferred_skills": ["Git"],
+      "expected": {
+        "overall_score": {"minimum": 73.33, "maximum": 73.35},
+        "exact_overlap_score": {"minimum": 73.33, "maximum": 73.35}
+      }
+    },
+    {
+      "id": "data-ai-obvious-non-match",
+      "domain": "data and AI",
+      "description": "Unrelated frontend skills must not create technical credit for data requirements.",
+      "resume_skills": ["HTML", "CSS", "JavaScript"],
+      "required_skills": ["PyTorch", "Pandas"],
+      "preferred_skills": ["scikit-learn"],
+      "expected": {
+        "overall_score": {"minimum": 0.0, "maximum": 0.0},
+        "exact_overlap_score": {"minimum": 0.0, "maximum": 0.0}
+      }
+    },
+    {
+      "id": "qa-support-broad-requirement-warning",
+      "domain": "QA and support",
+      "description": "Broad requirements should remain visible and produce a manual-review warning.",
+      "resume_skills": ["Git"],
+      "required_skills": ["Troubleshooting"],
+      "required_soft_skills": ["Communication Skills"],
+      "expected": {
+        "overall_score": {"minimum": 0.0, "maximum": 0.0},
+        "exact_overlap_score": {"minimum": 0.0, "maximum": 0.0},
+        "warning_substrings": [
+          "broad and may need manual review: Troubleshooting",
+          "Soft skills are shown separately"
+        ]
+      }
+    },
+    {
+      "id": "empty-resume-skills-warning",
+      "domain": "software engineering",
+      "description": "A resume without extracted skills should score zero and warn the caller.",
+      "resume_skills": [],
+      "required_skills": ["Python"],
+      "expected": {
+        "overall_score": {"minimum": 0.0, "maximum": 0.0},
+        "exact_overlap_score": {"minimum": 0.0, "maximum": 0.0},
+        "warning_substrings": ["resume did not identify any skills"]
+      }
+    },
+    {
+      "id": "soft-skill-only-posting",
+      "domain": "QA and support",
+      "description": "Soft-skill-only postings should not receive a technical score.",
+      "resume_skills": ["Python"],
+      "required_soft_skills": ["Teamwork", "Attention to Detail"],
+      "expected": {
+        "overall_score": {"minimum": 0.0, "maximum": 0.0},
+        "exact_overlap_score": {"minimum": 0.0, "maximum": 0.0},
+        "warning_substrings": [
+          "did not identify concrete technical skills",
+          "Soft skills are shown separately"
+        ]
+      }
+    }
+  ]
+}

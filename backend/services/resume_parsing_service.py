@@ -10,8 +10,9 @@ from services.ai.prompt_security import (
     inspect_untrusted_resume_text,
 )
 from services.ai.schemas import ParsedResume
+from services.skill_canonicalizer import canonicalize_parsed_resume
 
-PARSER_VERSION = "resume-parser-v1"
+PARSER_VERSION = "resume-parser-v2"
 PARSED_RESUME_FIELDS = (
     "full_name",
     "email",
@@ -22,6 +23,7 @@ PARSED_RESUME_FIELDS = (
     "experience",
     "projects",
     "education",
+    "certifications",
 )
 
 
@@ -33,7 +35,7 @@ class TemporaryResumeParsingError(ResumeParsingError):
     pass
 
 
-def parse_and_store_resume(resume_id: str, mongodb: Database) -> None:
+def parse_and_store_resume(resume_id: str, mongodb: Database) -> ParsedResume:
     resume_document = mongodb.resumes.find_one({"postgres_resume_id": resume_id})
     if not resume_document or not resume_document.get("raw_text"):
         raise ResumeParsingError("Extracted resume text is missing")
@@ -54,7 +56,7 @@ def parse_and_store_resume(resume_id: str, mongodb: Database) -> None:
         raise ResumeParsingError(str(error)) from error
 
     try:
-        parsed_resume = ParsedResume.model_validate(output.data)
+        parsed_resume = canonicalize_parsed_resume(ParsedResume.model_validate(output.data))
     except ValidationError as error:
         raise ResumeParsingError("AI resume output failed schema validation") from error
 
@@ -81,3 +83,4 @@ def parse_and_store_resume(resume_id: str, mongodb: Database) -> None:
             }
         },
     )
+    return parsed_resume

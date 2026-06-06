@@ -15,6 +15,12 @@ from services.resume_parsing_service import (
     TemporaryResumeParsingError,
     parse_and_store_resume,
 )
+from services.analysis_staleness_service import mark_resume_analyses_stale
+from services.semantic_embedding_service import (
+    invalidate_resume_section_embeddings,
+)
+from services.semantic_embedding_queue_service import enqueue_resume_embedding_refresh
+from services.user_profile_facts_service import replace_profile_facts_for_resume
 
 MAX_PROCESSING_ATTEMPTS = 3
 POLL_INTERVAL_SECONDS = 3
@@ -117,10 +123,24 @@ def _process_claimed_resume(resume_id) -> None:
             database.commit()
             _log(resume.id, "parsing resume through configured AI providers")
 
-            parse_and_store_resume(str(resume.id), mongodb)
+            parsed_resume = parse_and_store_resume(str(resume.id), mongodb)
             resume.processing_status = ResumeProcessingStatus.VALIDATING
             database.commit()
             _log(resume.id, "validated structured AI response")
+
+            replace_profile_facts_for_resume(
+                database,
+                resume.user_id,
+                resume.id,
+                parsed_resume,
+            )
+            invalidate_resume_section_embeddings(database, resume.id)
+            mark_resume_analyses_stale(database, resume.id)
+            database.commit()
+            if enqueue_resume_embedding_refresh(database, resume.id):
+                _log(resume.id, "queued semantic section embedding refresh")
+            else:
+                _log(resume.id, "semantic embedding queue is unavailable")
 
             resume.processing_status = ResumeProcessingStatus.READY
             resume.parser_version = PARSER_VERSION

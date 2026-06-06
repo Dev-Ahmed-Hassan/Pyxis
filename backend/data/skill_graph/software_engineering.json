@@ -1,0 +1,766 @@
+{
+  "schema_version": 1,
+  "domain": "software_engineering",
+  "description": "Software design, architecture, testing, APIs, databases, build systems, and engineering practices.",
+  "skills": [
+    {
+      "canonical_name": "Software Engineering",
+      "aliases": [
+        "software development engineering",
+        "software engineer skills"
+      ]
+    },
+    {
+      "canonical_name": "Object-Oriented Programming",
+      "aliases": [
+        "OOP",
+        "object oriented programming"
+      ]
+    },
+    {
+      "canonical_name": "Data Structures",
+      "aliases": [
+        "data structure",
+        "DSA data structures"
+      ]
+    },
+    {
+      "canonical_name": "Algorithms",
+      "aliases": [
+        "algorithm design",
+        "algorithmic problem solving"
+      ]
+    },
+    {
+      "canonical_name": "Data Structures and Algorithms",
+      "aliases": [
+        "DSA",
+        "data structures & algorithms"
+      ]
+    },
+    {
+      "canonical_name": "Design Patterns",
+      "aliases": [
+        "software design patterns",
+        "GoF patterns"
+      ]
+    },
+    {
+      "canonical_name": "SOLID Principles",
+      "aliases": [
+        "SOLID",
+        "solid design principles"
+      ]
+    },
+    {
+      "canonical_name": "Clean Architecture",
+      "aliases": [
+        "clean software architecture"
+      ]
+    },
+    {
+      "canonical_name": "Software Architecture",
+      "aliases": [
+        "application architecture",
+        "system architecture"
+      ]
+    },
+    {
+      "canonical_name": "Microservices",
+      "aliases": [
+        "microservice architecture",
+        "microservices architecture"
+      ]
+    },
+    {
+      "canonical_name": "Monolithic Architecture",
+      "aliases": [
+        "monolith",
+        "monolithic application"
+      ]
+    },
+    {
+      "canonical_name": "REST API",
+      "aliases": [
+        "REST APIs",
+        "RESTful API",
+        "RESTful web services"
+      ]
+    },
+    {
+      "canonical_name": "GraphQL",
+      "aliases": [
+        "graphql api",
+        "graphql query language"
+      ]
+    },
+    {
+      "canonical_name": "gRPC",
+      "aliases": [
+        "grpc api",
+        "google remote procedure call"
+      ]
+    },
+    {
+      "canonical_name": "SOAP",
+      "aliases": [
+        "soap api",
+        "soap web services"
+      ]
+    },
+    {
+      "canonical_name": "API Development",
+      "aliases": [
+        "developing APIs",
+        "backend API development"
+      ]
+    },
+    {
+      "canonical_name": "API Integration",
+      "aliases": [
+        "integrating APIs",
+        "third party api integration"
+      ]
+    },
+    {
+      "canonical_name": "Distributed Systems",
+      "aliases": [
+        "distributed computing",
+        "distributed architecture"
+      ]
+    },
+    {
+      "canonical_name": "Concurrency",
+      "aliases": [
+        "concurrent programming"
+      ]
+    },
+    {
+      "canonical_name": "Multithreading",
+      "aliases": [
+        "multi-threading",
+        "threaded programming"
+      ]
+    },
+    {
+      "canonical_name": "Event-Driven Architecture",
+      "aliases": [
+        "EDA architecture",
+        "event driven systems"
+      ]
+    },
+    {
+      "canonical_name": "Message Queues",
+      "aliases": [
+        "message queue",
+        "messaging systems"
+      ]
+    },
+    {
+      "canonical_name": "Apache Kafka",
+      "aliases": [
+        "Kafka",
+        "kafka streaming"
+      ]
+    },
+    {
+      "canonical_name": "RabbitMQ",
+      "aliases": [
+        "rabbit mq",
+        "rabbit messaging"
+      ]
+    },
+    {
+      "canonical_name": "Unit Testing",
+      "aliases": [
+        "unit tests",
+        "unit test"
+      ]
+    },
+    {
+      "canonical_name": "Integration Testing",
+      "aliases": [
+        "integration tests"
+      ]
+    },
+    {
+      "canonical_name": "End-to-End Testing",
+      "aliases": [
+        "E2E testing",
+        "end to end tests"
+      ]
+    },
+    {
+      "canonical_name": "Test-Driven Development",
+      "aliases": [
+        "TDD",
+        "test driven development"
+      ]
+    },
+    {
+      "canonical_name": "Behavior-Driven Development",
+      "aliases": [
+        "BDD",
+        "behaviour driven development"
+      ]
+    },
+    {
+      "canonical_name": "pytest",
+      "aliases": [
+        "py.test",
+        "python testing pytest"
+      ]
+    },
+    {
+      "canonical_name": "JUnit",
+      "aliases": [
+        "junit testing"
+      ]
+    },
+    {
+      "canonical_name": "Selenium",
+      "aliases": [
+        "selenium webdriver",
+        "selenium automation"
+      ]
+    },
+    {
+      "canonical_name": "Playwright",
+      "aliases": [
+        "playwright testing",
+        "microsoft playwright"
+      ]
+    },
+    {
+      "canonical_name": "Cypress",
+      "aliases": [
+        "cypress testing",
+        "cypress.io"
+      ]
+    },
+    {
+      "canonical_name": "Code Review",
+      "aliases": [
+        "peer code review",
+        "reviewing code"
+      ]
+    },
+    {
+      "canonical_name": "Debugging",
+      "aliases": [
+        "software debugging",
+        "debugging code"
+      ]
+    },
+    {
+      "canonical_name": "Refactoring",
+      "aliases": [
+        "code refactoring"
+      ]
+    },
+    {
+      "canonical_name": "Version Control",
+      "aliases": [
+        "source control",
+        "version control systems"
+      ]
+    },
+    {
+      "canonical_name": "Software Development Life Cycle",
+      "aliases": [
+        "SDLC",
+        "software lifecycle"
+      ]
+    },
+    {
+      "canonical_name": "UML",
+      "aliases": [
+        "unified modeling language",
+        "uml diagrams"
+      ]
+    },
+    {
+      "canonical_name": "System Design",
+      "aliases": [
+        "software system design",
+        "designing systems"
+      ]
+    },
+    {
+      "canonical_name": "Database Design",
+      "aliases": [
+        "database modeling",
+        "relational database design"
+      ]
+    },
+    {
+      "canonical_name": "Object-Relational Mapping",
+      "aliases": [
+        "ORM",
+        "object relational mapper"
+      ]
+    },
+    {
+      "canonical_name": "SQLAlchemy",
+      "aliases": [
+        "sql alchemy",
+        "python orm sqlalchemy"
+      ]
+    },
+    {
+      "canonical_name": "Prisma",
+      "aliases": [
+        "prisma orm",
+        "prisma client"
+      ]
+    },
+    {
+      "canonical_name": "Hibernate",
+      "aliases": [
+        "hibernate orm",
+        "java hibernate"
+      ]
+    },
+    {
+      "canonical_name": "Maven",
+      "aliases": [
+        "apache maven",
+        "maven build"
+      ]
+    },
+    {
+      "canonical_name": "Gradle",
+      "aliases": [
+        "gradle build",
+        "gradle build tool"
+      ]
+    },
+    {
+      "canonical_name": "Build Automation",
+      "aliases": [
+        "automated builds",
+        "build tools"
+      ]
+    },
+    {
+      "canonical_name": "Dependency Management",
+      "aliases": [
+        "package dependency management"
+      ]
+    },
+    {
+      "canonical_name": "Package Management",
+      "aliases": [
+        "package managers"
+      ]
+    },
+    {
+      "canonical_name": "Clean Code",
+      "aliases": [
+        "clean coding",
+        "code quality"
+      ]
+    },
+    {
+      "canonical_name": "Coding Standards",
+      "aliases": [
+        "coding conventions",
+        "style guidelines"
+      ]
+    },
+    {
+      "canonical_name": "Software Testing",
+      "aliases": [
+        "application testing",
+        "software QA testing"
+      ]
+    },
+    {
+      "canonical_name": "Test Automation",
+      "aliases": [
+        "automated testing",
+        "automation testing"
+      ]
+    },
+    {
+      "canonical_name": "Mocking",
+      "aliases": [
+        "test mocks",
+        "mock objects"
+      ]
+    },
+    {
+      "canonical_name": "Domain-Driven Design",
+      "aliases": [
+        "DDD",
+        "domain driven design"
+      ]
+    },
+    {
+      "canonical_name": "Hexagonal Architecture",
+      "aliases": [
+        "ports and adapters",
+        "hexagonal design"
+      ]
+    },
+    {
+      "canonical_name": "Layered Architecture",
+      "aliases": [
+        "n-tier architecture",
+        "three tier architecture"
+      ]
+    },
+    {
+      "canonical_name": "Repository Pattern",
+      "aliases": [
+        "data repository pattern"
+      ]
+    },
+    {
+      "canonical_name": "Dependency Injection",
+      "aliases": [
+        "DI",
+        "inversion of control"
+      ]
+    },
+    {
+      "canonical_name": "Functional Programming",
+      "aliases": [
+        "FP",
+        "functional paradigm"
+      ]
+    },
+    {
+      "canonical_name": "Reactive Programming",
+      "aliases": [
+        "reactive systems",
+        "reactive paradigm"
+      ]
+    },
+    {
+      "canonical_name": "Asynchronous Programming",
+      "aliases": [
+        "async programming",
+        "asynchronous code"
+      ]
+    },
+    {
+      "canonical_name": "WebSockets",
+      "aliases": [
+        "web sockets",
+        "websocket"
+      ]
+    },
+    {
+      "canonical_name": "Caching",
+      "aliases": [
+        "application cache",
+        "cache design"
+      ]
+    },
+    {
+      "canonical_name": "Database Transactions",
+      "aliases": [
+        "ACID transactions",
+        "transaction management"
+      ]
+    },
+    {
+      "canonical_name": "Database Indexing",
+      "aliases": [
+        "database indexes",
+        "query indexing"
+      ]
+    },
+    {
+      "canonical_name": "Query Optimization",
+      "aliases": [
+        "SQL optimization",
+        "query performance tuning"
+      ]
+    },
+    {
+      "canonical_name": "Scalability",
+      "aliases": [
+        "scalable systems",
+        "scaling applications"
+      ]
+    },
+    {
+      "canonical_name": "Performance Optimization",
+      "aliases": [
+        "performance tuning",
+        "application optimization"
+      ]
+    },
+    {
+      "canonical_name": "Memory Management",
+      "aliases": [
+        "managing memory",
+        "memory allocation"
+      ]
+    },
+    {
+      "canonical_name": "Garbage Collection",
+      "aliases": [
+        "GC",
+        "automatic memory management"
+      ]
+    },
+    {
+      "canonical_name": "Command-Line Interfaces",
+      "aliases": [
+        "CLI",
+        "command line applications"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Data Structures",
+      "target": "Data Structures and Algorithms",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Algorithms",
+      "target": "Data Structures and Algorithms",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Object-Oriented Programming",
+      "target": "Software Engineering",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Design Patterns",
+      "target": "Software Architecture",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "SOLID Principles",
+      "target": "Clean Architecture",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Microservices",
+      "target": "Distributed Systems",
+      "type": "related_to",
+      "confidence": 0.9
+    },
+    {
+      "source": "REST API",
+      "target": "API Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "GraphQL",
+      "target": "API Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "gRPC",
+      "target": "API Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "SOAP",
+      "target": "API Development",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Apache Kafka",
+      "target": "Event-Driven Architecture",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "RabbitMQ",
+      "target": "Message Queues",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Message Queues",
+      "target": "Event-Driven Architecture",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "pytest",
+      "target": "Unit Testing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "JUnit",
+      "target": "Unit Testing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Selenium",
+      "target": "Test Automation",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Playwright",
+      "target": "End-to-End Testing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Cypress",
+      "target": "End-to-End Testing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Unit Testing",
+      "target": "Software Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Integration Testing",
+      "target": "Software Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "End-to-End Testing",
+      "target": "Software Testing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Test-Driven Development",
+      "target": "Software Testing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Test Automation",
+      "target": "Quality Assurance",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Git",
+      "target": "Version Control",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "GitHub",
+      "target": "Version Control",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "GitLab",
+      "target": "Version Control",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "SQLAlchemy",
+      "target": "Object-Relational Mapping",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Prisma",
+      "target": "Object-Relational Mapping",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Hibernate",
+      "target": "Object-Relational Mapping",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Maven",
+      "target": "Build Automation",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Gradle",
+      "target": "Build Automation",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Database Indexing",
+      "target": "Query Optimization",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Caching",
+      "target": "Performance Optimization",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "Asynchronous Programming",
+      "target": "Concurrency",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Multithreading",
+      "target": "Concurrency",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "System Design",
+      "target": "Software Architecture",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Clean Code",
+      "target": "Software Engineering",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "Code Review",
+      "target": "Software Engineering",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "Data Structures and Algorithms",
+      "target": "System Design",
+      "type": "prerequisite_for",
+      "confidence": 0.75
+    },
+    {
+      "source": "Database Design",
+      "target": "Database Management",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Scalability",
+      "target": "Distributed Systems",
+      "type": "related_to",
+      "confidence": 0.85
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+{
+  "schema_version": 1,
+  "domain": "common_skills",
+  "description": "Shared workplace, project, productivity, and analytical skills commonly found on resumes.",
+  "skills": [
+    {
+      "canonical_name": "Automation",
+      "aliases": [
+        "process automation",
+        "workflow automation",
+        "automating tasks"
+      ]
+    },
+    {
+      "canonical_name": "Communication",
+      "aliases": [
+        "communication skills",
+        "verbal communication",
+        "written communication"
+      ]
+    },
+    {
+      "canonical_name": "Teamwork",
+      "aliases": [
+        "team work",
+        "team player",
+        "working in teams"
+      ]
+    },
+    {
+      "canonical_name": "Problem Solving",
+      "aliases": [
+        "problem-solving",
+        "problem solving skills",
+        "troubleshooting mindset"
+      ]
+    },
+    {
+      "canonical_name": "Critical Thinking",
+      "aliases": [
+        "critical-thinking",
+        "critical analysis"
+      ]
+    },
+    {
+      "canonical_name": "Analytical Skills",
+      "aliases": [
+        "analytical skill",
+        "analytical thinking",
+        "analysis skills"
+      ]
+    },
+    {
+      "canonical_name": "Leadership",
+      "aliases": [
+        "leadership skills",
+        "team leadership",
+        "leading teams"
+      ]
+    },
+    {
+      "canonical_name": "Time Management",
+      "aliases": [
+        "time-management",
+        "managing deadlines"
+      ]
+    },
+    {
+      "canonical_name": "Adaptability",
+      "aliases": [
+        "adaptable",
+        "flexibility",
+        "learning agility"
+      ]
+    },
+    {
+      "canonical_name": "Collaboration",
+      "aliases": [
+        "collaborative",
+        "cross-functional collaboration",
+        "cross functional teamwork"
+      ]
+    },
+    {
+      "canonical_name": "Attention to Detail",
+      "aliases": [
+        "detail oriented",
+        "detail-oriented",
+        "attention to details"
+      ]
+    },
+    {
+      "canonical_name": "Project Management",
+      "aliases": [
+        "project coordination",
+        "managing projects"
+      ]
+    },
+    {
+      "canonical_name": "Agile",
+      "aliases": [
+        "agile methodology",
+        "agile development",
+        "agile practices"
+      ]
+    },
+    {
+      "canonical_name": "Scrum",
+      "aliases": [
+        "scrum methodology",
+        "scrum framework"
+      ]
+    },
+    {
+      "canonical_name": "Kanban",
+      "aliases": [
+        "kanban methodology",
+        "kanban board"
+      ]
+    },
+    {
+      "canonical_name": "Jira",
+      "aliases": [
+        "atlassian jira",
+        "jira software"
+      ]
+    },
+    {
+      "canonical_name": "Confluence",
+      "aliases": [
+        "atlassian confluence"
+      ]
+    },
+    {
+      "canonical_name": "Microsoft Office",
+      "aliases": [
+        "ms office",
+        "microsoft office suite"
+      ]
+    },
+    {
+      "canonical_name": "Microsoft Excel",
+      "aliases": [
+        "excel",
+        "ms excel",
+        "excel spreadsheets"
+      ]
+    },
+    {
+      "canonical_name": "Microsoft Word",
+      "aliases": [
+        "word",
+        "ms word"
+      ]
+    },
+    {
+      "canonical_name": "Microsoft PowerPoint",
+      "aliases": [
+        "powerpoint",
+        "ms powerpoint"
+      ]
+    },
+    {
+      "canonical_name": "Google Workspace",
+      "aliases": [
+        "g suite",
+        "google suite"
+      ]
+    },
+    {
+      "canonical_name": "Technical Writing",
+      "aliases": [
+        "technical writer",
+        "writing technical content"
+      ]
+    },
+    {
+      "canonical_name": "Documentation",
+      "aliases": [
+        "documenting systems",
+        "software documentation",
+        "process documentation"
+      ]
+    },
+    {
+      "canonical_name": "Presentation Skills",
+      "aliases": [
+        "presentations",
+        "public speaking"
+      ]
+    },
+    {
+      "canonical_name": "Stakeholder Management",
+      "aliases": [
+        "stakeholder communication",
+        "stakeholder engagement"
+      ]
+    },
+    {
+      "canonical_name": "Requirements Gathering",
+      "aliases": [
+        "requirements elicitation",
+        "gathering requirements"
+      ]
+    },
+    {
+      "canonical_name": "Business Analysis",
+      "aliases": [
+        "business analyst",
+        "business requirements analysis"
+      ]
+    },
+    {
+      "canonical_name": "Data Analysis",
+      "aliases": [
+        "data analytics",
+        "analyzing data"
+      ]
+    },
+    {
+      "canonical_name": "Data Visualization",
+      "aliases": [
+        "data visualisation",
+        "visualizing data"
+      ]
+    },
+    {
+      "canonical_name": "Research",
+      "aliases": [
+        "research skills",
+        "technical research"
+      ]
+    },
+    {
+      "canonical_name": "Mentoring",
+      "aliases": [
+        "mentorship",
+        "coaching"
+      ]
+    },
+    {
+      "canonical_name": "Decision Making",
+      "aliases": [
+        "decision-making",
+        "making decisions"
+      ]
+    },
+    {
+      "canonical_name": "Conflict Resolution",
+      "aliases": [
+        "conflict management"
+      ]
+    },
+    {
+      "canonical_name": "Customer Service",
+      "aliases": [
+        "customer support",
+        "client support"
+      ]
+    },
+    {
+      "canonical_name": "Client Communication",
+      "aliases": [
+        "client-facing communication",
+        "customer communication"
+      ]
+    },
+    {
+      "canonical_name": "Process Improvement",
+      "aliases": [
+        "continuous improvement",
+        "process optimization"
+      ]
+    },
+    {
+      "canonical_name": "Quality Assurance",
+      "aliases": [
+        "quality assurance testing",
+        "QA"
+      ]
+    },
+    {
+      "canonical_name": "Quality Control",
+      "aliases": [
+        "QC",
+        "quality checks"
+      ]
+    },
+    {
+      "canonical_name": "Root Cause Analysis",
+      "aliases": [
+        "RCA",
+        "root-cause analysis"
+      ]
+    },
+    {
+      "canonical_name": "Troubleshooting",
+      "aliases": [
+        "problem diagnosis",
+        "technical troubleshooting"
+      ]
+    },
+    {
+      "canonical_name": "Task Prioritization",
+      "aliases": [
+        "prioritization",
+        "priority management"
+      ]
+    },
+    {
+      "canonical_name": "Remote Collaboration",
+      "aliases": [
+        "remote teamwork",
+        "distributed collaboration"
+      ]
+    },
+    {
+      "canonical_name": "Self Learning",
+      "aliases": [
+        "self-learning",
+        "independent learning",
+        "continuous learning"
+      ]
+    },
+    {
+      "canonical_name": "Creativity",
+      "aliases": [
+        "creative thinking",
+        "innovation"
+      ]
+    },
+    {
+      "canonical_name": "Negotiation",
+      "aliases": [
+        "negotiation skills"
+      ]
+    },
+    {
+      "canonical_name": "Operations Management",
+      "aliases": [
+        "operational management"
+      ]
+    },
+    {
+      "canonical_name": "Change Management",
+      "aliases": [
+        "organizational change management"
+      ]
+    },
+    {
+      "canonical_name": "Resource Planning",
+      "aliases": [
+        "resource allocation",
+        "capacity planning"
+      ]
+    },
+    {
+      "canonical_name": "Risk Management",
+      "aliases": [
+        "managing risk",
+        "risk management process"
+      ]
+    },
+    {
+      "canonical_name": "Performance Reporting",
+      "aliases": [
+        "status reporting",
+        "management reporting"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Agile",
+      "target": "Project Management",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Scrum",
+      "target": "Agile",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Kanban",
+      "target": "Agile",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Jira",
+      "target": "Project Management",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "Confluence",
+      "target": "Documentation",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Microsoft Excel",
+      "target": "Data Analysis",
+      "type": "evidence_for",
+      "confidence": 0.75
+    },
+    {
+      "source": "Data Analysis",
+      "target": "Data Visualization",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Requirements Gathering",
+      "target": "Business Analysis",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Root Cause Analysis",
+      "target": "Troubleshooting",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Quality Control",
+      "target": "Quality Assurance",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Communication",
+      "target": "Stakeholder Management",
+      "type": "prerequisite_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Time Management",
+      "target": "Project Management",
+      "type": "prerequisite_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "Critical Thinking",
+      "target": "Problem Solving",
+      "type": "prerequisite_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Data Analysis",
+      "target": "Performance Reporting",
+      "type": "evidence_for",
+      "confidence": 0.8
+    }
+  ]
+}

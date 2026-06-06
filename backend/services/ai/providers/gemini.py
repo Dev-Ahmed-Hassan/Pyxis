@@ -35,10 +35,13 @@ class GeminiProvider:
                     url,
                     headers={"x-goog-api-key": api_key},
                     json=payload,
-                    timeout=45,
+                    timeout=180,
                 )
             except httpx.RequestError as error:
-                raise AITemporaryProviderError("Gemini is temporarily unreachable") from error
+                raise AITemporaryProviderError(
+                    "Gemini is temporarily unreachable "
+                    f"({type(error).__name__}: {error})"
+                ) from error
 
             if response.status_code in {401, 403}:
                 if index < len(self.api_keys) - 1:
