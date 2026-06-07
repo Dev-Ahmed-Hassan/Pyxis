@@ -1,0 +1,92 @@
+{
+  "cases": [
+    {
+      "id": "cybersecurity-project-positive",
+      "domain": "cybersecurity",
+      "resume_section": "project",
+      "resume_text": "Built a vulnerability scanner lab and investigated exposed services.",
+      "requirement": "Vulnerability Research",
+      "cosine_similarity": 0.84,
+      "should_report": true,
+      "source": "synthetic_baseline",
+      "reviewer_note": "Closely aligned demonstrated project evidence."
+    },
+    {
+      "id": "backend-experience-positive",
+      "domain": "software engineering",
+      "resume_section": "experience",
+      "resume_text": "Implemented REST APIs and asynchronous backend jobs in Python.",
+      "requirement": "Backend Development",
+      "cosine_similarity": 0.81,
+      "should_report": true,
+      "source": "synthetic_baseline",
+      "reviewer_note": "Strongly aligned experience evidence."
+    },
+    {
+      "id": "networking-project-positive",
+      "domain": "networking",
+      "resume_section": "project",
+      "resume_text": "Configured VLANs, subnetting, routing, and firewall rules in a network lab.",
+      "requirement": "Network Configuration",
+      "cosine_similarity": 0.77,
+      "should_report": true,
+      "source": "synthetic_baseline",
+      "reviewer_note": "Aligned project evidence above the reporting baseline."
+    },
+    {
+      "id": "data-summary-borderline-positive",
+      "domain": "data and AI",
+      "resume_section": "summary",
+      "resume_text": "Data student who cleans datasets and builds exploratory notebooks.",
+      "requirement": "Data Analysis",
+      "cosine_similarity": 0.72,
+      "should_report": true,
+      "source": "synthetic_baseline",
+      "reviewer_note": "Useful but borderline summary evidence."
+    },
+    {
+      "id": "qa-project-borderline-negative",
+      "domain": "QA and support",
+      "resume_section": "project",
+      "resume_text": "Documented application behavior and manually explored several screens.",
+      "requirement": "Automated Testing",
+      "cosine_similarity": 0.71,
+      "should_report": false,
+      "source": "synthetic_baseline",
+      "reviewer_note": "Related to testing but insufficient evidence for automation."
+    },
+    {
+      "id": "frontend-summary-negative",
+      "domain": "software engineering",
+      "resume_section": "summary",
+      "resume_text": "Frontend student focused on responsive HTML and CSS interfaces.",
+      "requirement": "Machine Learning",
+      "cosine_similarity": 0.55,
+      "should_report": false,
+      "source": "synthetic_baseline",
+      "reviewer_note": "Clearly unrelated requirement."
+    },
+    {
+      "id": "education-broad-negative",
+      "domain": "cloud and DevOps",
+      "resume_section": "education",
+      "resume_text": "Bachelor of Science in Computer Science.",
+      "requirement": "Kubernetes",
+      "cosine_similarity": 0.62,
+      "should_report": false,
+      "source": "synthetic_baseline",
+      "reviewer_note": "Broad education text must not imply a concrete platform skill."
+    },
+    {
+      "id": "security-summary-negative",
+      "domain": "cybersecurity",
+      "resume_section": "summary",
+      "resume_text": "Interested in technology, learning, and solving challenging problems.",
+      "requirement": "Incident Response",
+      "cosine_similarity": 0.68,
+      "should_report": false,
+      "source": "synthetic_baseline",
+      "reviewer_note": "Generic interest is not requirement evidence."
+    }
+  ]
+}

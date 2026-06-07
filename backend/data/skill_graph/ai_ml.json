@@ -1,0 +1,835 @@
+{
+  "schema_version": 1,
+  "domain": "ai_ml",
+  "description": "Artificial intelligence, machine learning, data science, generative AI, and MLOps skills.",
+  "skills": [
+    {
+      "canonical_name": "Artificial Intelligence",
+      "aliases": [
+        "AI",
+        "artificial intelligence systems"
+      ]
+    },
+    {
+      "canonical_name": "Machine Learning",
+      "aliases": [
+        "ML",
+        "machine-learning"
+      ]
+    },
+    {
+      "canonical_name": "Deep Learning",
+      "aliases": [
+        "DL",
+        "deep neural learning"
+      ]
+    },
+    {
+      "canonical_name": "Data Science",
+      "aliases": [
+        "data scientist",
+        "data science workflows"
+      ]
+    },
+    {
+      "canonical_name": "NumPy",
+      "aliases": [
+        "numpy library"
+      ]
+    },
+    {
+      "canonical_name": "pandas",
+      "aliases": [
+        "pandas library",
+        "python pandas"
+      ]
+    },
+    {
+      "canonical_name": "scikit-learn",
+      "aliases": [
+        "sklearn",
+        "scikit learn"
+      ]
+    },
+    {
+      "canonical_name": "TensorFlow",
+      "aliases": [
+        "tensorflow framework",
+        "tf machine learning"
+      ]
+    },
+    {
+      "canonical_name": "Keras",
+      "aliases": [
+        "keras api"
+      ]
+    },
+    {
+      "canonical_name": "PyTorch",
+      "aliases": [
+        "pytorch framework",
+        "torch"
+      ]
+    },
+    {
+      "canonical_name": "JAX",
+      "aliases": [
+        "jax library"
+      ]
+    },
+    {
+      "canonical_name": "Hugging Face",
+      "aliases": [
+        "huggingface",
+        "hugging face hub"
+      ]
+    },
+    {
+      "canonical_name": "Transformers Library",
+      "aliases": [
+        "hugging face transformers",
+        "transformers library"
+      ]
+    },
+    {
+      "canonical_name": "Natural Language Processing",
+      "aliases": [
+        "NLP",
+        "language processing"
+      ]
+    },
+    {
+      "canonical_name": "Computer Vision",
+      "aliases": [
+        "CV",
+        "image understanding"
+      ]
+    },
+    {
+      "canonical_name": "Generative AI",
+      "aliases": [
+        "GenAI",
+        "generative artificial intelligence"
+      ]
+    },
+    {
+      "canonical_name": "Large Language Models",
+      "aliases": [
+        "LLM",
+        "LLMs",
+        "large language model"
+      ]
+    },
+    {
+      "canonical_name": "Retrieval-Augmented Generation",
+      "aliases": [
+        "RAG",
+        "retrieval augmented generation"
+      ]
+    },
+    {
+      "canonical_name": "Prompt Engineering",
+      "aliases": [
+        "prompt design",
+        "LLM prompting"
+      ]
+    },
+    {
+      "canonical_name": "Model Fine-Tuning",
+      "aliases": [
+        "fine tuning",
+        "fine-tuning",
+        "model finetuning"
+      ]
+    },
+    {
+      "canonical_name": "LoRA",
+      "aliases": [
+        "low rank adaptation",
+        "low-rank adaptation"
+      ]
+    },
+    {
+      "canonical_name": "LangChain",
+      "aliases": [
+        "langchain framework"
+      ]
+    },
+    {
+      "canonical_name": "LlamaIndex",
+      "aliases": [
+        "llama index"
+      ]
+    },
+    {
+      "canonical_name": "OpenAI API",
+      "aliases": [
+        "openai",
+        "chatgpt api"
+      ]
+    },
+    {
+      "canonical_name": "Gemini API",
+      "aliases": [
+        "google gemini api",
+        "gemini ai"
+      ]
+    },
+    {
+      "canonical_name": "Groq API",
+      "aliases": [
+        "groq ai",
+        "groq inference"
+      ]
+    },
+    {
+      "canonical_name": "MLflow",
+      "aliases": [
+        "ml flow"
+      ]
+    },
+    {
+      "canonical_name": "Kubeflow",
+      "aliases": [
+        "kube flow"
+      ]
+    },
+    {
+      "canonical_name": "MLOps",
+      "aliases": [
+        "machine learning operations",
+        "ml operations"
+      ]
+    },
+    {
+      "canonical_name": "Model Deployment",
+      "aliases": [
+        "deploying models",
+        "ML deployment"
+      ]
+    },
+    {
+      "canonical_name": "Model Serving",
+      "aliases": [
+        "serving models",
+        "inference serving"
+      ]
+    },
+    {
+      "canonical_name": "Feature Engineering",
+      "aliases": [
+        "feature creation",
+        "feature extraction"
+      ]
+    },
+    {
+      "canonical_name": "Data Preprocessing",
+      "aliases": [
+        "data preparation",
+        "preprocessing data"
+      ]
+    },
+    {
+      "canonical_name": "Data Cleaning",
+      "aliases": [
+        "cleaning data",
+        "data cleansing"
+      ]
+    },
+    {
+      "canonical_name": "Exploratory Data Analysis",
+      "aliases": [
+        "EDA",
+        "exploratory analysis"
+      ]
+    },
+    {
+      "canonical_name": "Supervised Learning",
+      "aliases": [
+        "supervised ML"
+      ]
+    },
+    {
+      "canonical_name": "Unsupervised Learning",
+      "aliases": [
+        "unsupervised ML"
+      ]
+    },
+    {
+      "canonical_name": "Reinforcement Learning",
+      "aliases": [
+        "RL",
+        "reinforcement learning algorithms"
+      ]
+    },
+    {
+      "canonical_name": "Regression",
+      "aliases": [
+        "regression modeling",
+        "regression analysis"
+      ]
+    },
+    {
+      "canonical_name": "Classification",
+      "aliases": [
+        "classification modeling",
+        "classification algorithms"
+      ]
+    },
+    {
+      "canonical_name": "Clustering",
+      "aliases": [
+        "cluster analysis",
+        "clustering algorithms"
+      ]
+    },
+    {
+      "canonical_name": "Time Series Analysis",
+      "aliases": [
+        "time-series analysis",
+        "time series forecasting"
+      ]
+    },
+    {
+      "canonical_name": "Recommendation Systems",
+      "aliases": [
+        "recommender systems",
+        "recommendation engine"
+      ]
+    },
+    {
+      "canonical_name": "Anomaly Detection",
+      "aliases": [
+        "outlier detection",
+        "anomaly analysis"
+      ]
+    },
+    {
+      "canonical_name": "Model Evaluation",
+      "aliases": [
+        "evaluating models",
+        "ML evaluation"
+      ]
+    },
+    {
+      "canonical_name": "Hyperparameter Tuning",
+      "aliases": [
+        "hyperparameter optimization",
+        "parameter tuning"
+      ]
+    },
+    {
+      "canonical_name": "Cross-Validation",
+      "aliases": [
+        "cross validation",
+        "k-fold validation"
+      ]
+    },
+    {
+      "canonical_name": "Statistics",
+      "aliases": [
+        "statistical analysis",
+        "statistical methods"
+      ]
+    },
+    {
+      "canonical_name": "Probability",
+      "aliases": [
+        "probability theory",
+        "probabilistic methods"
+      ]
+    },
+    {
+      "canonical_name": "Linear Algebra",
+      "aliases": [
+        "matrix algebra"
+      ]
+    },
+    {
+      "canonical_name": "Calculus",
+      "aliases": [
+        "differential calculus",
+        "integral calculus"
+      ]
+    },
+    {
+      "canonical_name": "Matplotlib",
+      "aliases": [
+        "matplotlib plotting"
+      ]
+    },
+    {
+      "canonical_name": "Seaborn",
+      "aliases": [
+        "seaborn visualization"
+      ]
+    },
+    {
+      "canonical_name": "Plotly",
+      "aliases": [
+        "plotly charts",
+        "plotly visualization"
+      ]
+    },
+    {
+      "canonical_name": "Jupyter Notebook",
+      "aliases": [
+        "jupyter",
+        "jupyter notebooks"
+      ]
+    },
+    {
+      "canonical_name": "Google Colab",
+      "aliases": [
+        "colab",
+        "google colaboratory"
+      ]
+    },
+    {
+      "canonical_name": "spaCy",
+      "aliases": [
+        "spacy nlp"
+      ]
+    },
+    {
+      "canonical_name": "NLTK",
+      "aliases": [
+        "natural language toolkit"
+      ]
+    },
+    {
+      "canonical_name": "OpenCV",
+      "aliases": [
+        "open cv",
+        "opencv python"
+      ]
+    },
+    {
+      "canonical_name": "YOLO",
+      "aliases": [
+        "you only look once",
+        "yolo object detection"
+      ]
+    },
+    {
+      "canonical_name": "Convolutional Neural Networks",
+      "aliases": [
+        "CNN",
+        "CNNs",
+        "convolutional networks"
+      ]
+    },
+    {
+      "canonical_name": "Recurrent Neural Networks",
+      "aliases": [
+        "RNN",
+        "RNNs",
+        "recurrent networks"
+      ]
+    },
+    {
+      "canonical_name": "Long Short-Term Memory",
+      "aliases": [
+        "LSTM",
+        "LSTMs"
+      ]
+    },
+    {
+      "canonical_name": "Transformer Architecture",
+      "aliases": [
+        "transformer models",
+        "attention transformers"
+      ]
+    },
+    {
+      "canonical_name": "Vector Databases",
+      "aliases": [
+        "vector database",
+        "vector stores"
+      ]
+    },
+    {
+      "canonical_name": "Pinecone",
+      "aliases": [
+        "pinecone vector database"
+      ]
+    },
+    {
+      "canonical_name": "Chroma",
+      "aliases": [
+        "chromadb",
+        "chroma db"
+      ]
+    },
+    {
+      "canonical_name": "FAISS",
+      "aliases": [
+        "facebook ai similarity search"
+      ]
+    },
+    {
+      "canonical_name": "Embeddings",
+      "aliases": [
+        "vector embeddings",
+        "text embeddings"
+      ]
+    },
+    {
+      "canonical_name": "Semantic Search",
+      "aliases": [
+        "vector search",
+        "meaning based search"
+      ]
+    },
+    {
+      "canonical_name": "ONNX",
+      "aliases": [
+        "open neural network exchange"
+      ]
+    },
+    {
+      "canonical_name": "XGBoost",
+      "aliases": [
+        "xg boost",
+        "extreme gradient boosting"
+      ]
+    },
+    {
+      "canonical_name": "LightGBM",
+      "aliases": [
+        "light gbm"
+      ]
+    },
+    {
+      "canonical_name": "CatBoost",
+      "aliases": [
+        "cat boost"
+      ]
+    },
+    {
+      "canonical_name": "Random Forest",
+      "aliases": [
+        "random forests"
+      ]
+    },
+    {
+      "canonical_name": "Decision Trees",
+      "aliases": [
+        "decision tree"
+      ]
+    },
+    {
+      "canonical_name": "Support Vector Machines",
+      "aliases": [
+        "SVM",
+        "support vector machine"
+      ]
+    },
+    {
+      "canonical_name": "Principal Component Analysis",
+      "aliases": [
+        "PCA",
+        "principal components"
+      ]
+    },
+    {
+      "canonical_name": "Sentiment Analysis",
+      "aliases": [
+        "opinion mining"
+      ]
+    },
+    {
+      "canonical_name": "Named Entity Recognition",
+      "aliases": [
+        "NER",
+        "entity recognition"
+      ]
+    },
+    {
+      "canonical_name": "Object Detection",
+      "aliases": [
+        "image object detection"
+      ]
+    },
+    {
+      "canonical_name": "Image Classification",
+      "aliases": [
+        "image recognition"
+      ]
+    },
+    {
+      "canonical_name": "Speech Recognition",
+      "aliases": [
+        "automatic speech recognition",
+        "ASR"
+      ]
+    },
+    {
+      "canonical_name": "Text-to-Speech",
+      "aliases": [
+        "TTS",
+        "text to speech"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "Python",
+      "target": "Machine Learning",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "NumPy",
+      "target": "Data Science",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "pandas",
+      "target": "Data Analysis",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "scikit-learn",
+      "target": "Machine Learning",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "TensorFlow",
+      "target": "Deep Learning",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Keras",
+      "target": "Deep Learning",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "PyTorch",
+      "target": "Deep Learning",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "JAX",
+      "target": "Deep Learning",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Transformers Library",
+      "target": "Natural Language Processing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Hugging Face",
+      "target": "Large Language Models",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "LangChain",
+      "target": "Retrieval-Augmented Generation",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "LlamaIndex",
+      "target": "Retrieval-Augmented Generation",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Embeddings",
+      "target": "Semantic Search",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Pinecone",
+      "target": "Vector Databases",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Chroma",
+      "target": "Vector Databases",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "FAISS",
+      "target": "Vector Databases",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "MLflow",
+      "target": "MLOps",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Kubeflow",
+      "target": "MLOps",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Model Deployment",
+      "target": "MLOps",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Model Serving",
+      "target": "Model Deployment",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Matplotlib",
+      "target": "Data Visualization",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Seaborn",
+      "target": "Data Visualization",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Plotly",
+      "target": "Data Visualization",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OpenCV",
+      "target": "Computer Vision",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "YOLO",
+      "target": "Object Detection",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Convolutional Neural Networks",
+      "target": "Computer Vision",
+      "type": "related_to",
+      "confidence": 0.9
+    },
+    {
+      "source": "Recurrent Neural Networks",
+      "target": "Natural Language Processing",
+      "type": "related_to",
+      "confidence": 0.75
+    },
+    {
+      "source": "Long Short-Term Memory",
+      "target": "Recurrent Neural Networks",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Transformer Architecture",
+      "target": "Large Language Models",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Prompt Engineering",
+      "target": "Generative AI",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Model Fine-Tuning",
+      "target": "Large Language Models",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "LoRA",
+      "target": "Model Fine-Tuning",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Statistics",
+      "target": "Machine Learning",
+      "type": "prerequisite_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Probability",
+      "target": "Machine Learning",
+      "type": "prerequisite_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Linear Algebra",
+      "target": "Deep Learning",
+      "type": "prerequisite_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Data Cleaning",
+      "target": "Data Preprocessing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Feature Engineering",
+      "target": "Machine Learning",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Cross-Validation",
+      "target": "Model Evaluation",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "XGBoost",
+      "target": "Machine Learning",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "LightGBM",
+      "target": "Machine Learning",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "CatBoost",
+      "target": "Machine Learning",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "spaCy",
+      "target": "Natural Language Processing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "NLTK",
+      "target": "Natural Language Processing",
+      "type": "evidence_for",
+      "confidence": 0.9
+    }
+  ]
+}

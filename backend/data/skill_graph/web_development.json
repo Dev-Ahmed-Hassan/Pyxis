@@ -1,0 +1,822 @@
+{
+  "schema_version": 1,
+  "domain": "web_development",
+  "description": "Frontend, backend, full-stack, browser, API, styling, and web testing skills.",
+  "skills": [
+    {
+      "canonical_name": "Sass",
+      "aliases": [
+        "SCSS",
+        "syntactically awesome style sheets"
+      ]
+    },
+    {
+      "canonical_name": "Less",
+      "aliases": [
+        "less css",
+        "less stylesheet"
+      ]
+    },
+    {
+      "canonical_name": "Tailwind CSS",
+      "aliases": [
+        "tailwind",
+        "tailwindcss"
+      ]
+    },
+    {
+      "canonical_name": "Bootstrap",
+      "aliases": [
+        "bootstrap css",
+        "twitter bootstrap"
+      ]
+    },
+    {
+      "canonical_name": "Material UI",
+      "aliases": [
+        "MUI",
+        "material-ui"
+      ]
+    },
+    {
+      "canonical_name": "Next.js",
+      "aliases": [
+        "nextjs",
+        "next js"
+      ]
+    },
+    {
+      "canonical_name": "Nuxt.js",
+      "aliases": [
+        "nuxtjs",
+        "nuxt js"
+      ]
+    },
+    {
+      "canonical_name": "Svelte",
+      "aliases": [
+        "sveltejs",
+        "svelte js"
+      ]
+    },
+    {
+      "canonical_name": "SvelteKit",
+      "aliases": [
+        "svelte kit"
+      ]
+    },
+    {
+      "canonical_name": "Redux",
+      "aliases": [
+        "redux toolkit",
+        "react redux"
+      ]
+    },
+    {
+      "canonical_name": "Zustand",
+      "aliases": [
+        "zustand state management"
+      ]
+    },
+    {
+      "canonical_name": "Pinia",
+      "aliases": [
+        "vue pinia"
+      ]
+    },
+    {
+      "canonical_name": "Vite",
+      "aliases": [
+        "vitejs",
+        "vite build tool"
+      ]
+    },
+    {
+      "canonical_name": "Webpack",
+      "aliases": [
+        "webpack bundler"
+      ]
+    },
+    {
+      "canonical_name": "Babel",
+      "aliases": [
+        "babeljs",
+        "babel compiler"
+      ]
+    },
+    {
+      "canonical_name": "NestJS",
+      "aliases": [
+        "nest.js",
+        "nestjs framework"
+      ]
+    },
+    {
+      "canonical_name": "Laravel",
+      "aliases": [
+        "laravel framework"
+      ]
+    },
+    {
+      "canonical_name": "ASP.NET Core",
+      "aliases": [
+        "asp.net",
+        "dotnet core web"
+      ]
+    },
+    {
+      "canonical_name": "Ruby on Rails",
+      "aliases": [
+        "Rails",
+        "RoR"
+      ]
+    },
+    {
+      "canonical_name": "jQuery",
+      "aliases": [
+        "jquery library"
+      ]
+    },
+    {
+      "canonical_name": "Frontend Development",
+      "aliases": [
+        "front-end development",
+        "frontend engineering"
+      ]
+    },
+    {
+      "canonical_name": "Backend Development",
+      "aliases": [
+        "back-end development",
+        "backend engineering"
+      ]
+    },
+    {
+      "canonical_name": "Full-Stack Development",
+      "aliases": [
+        "full stack development",
+        "fullstack development"
+      ]
+    },
+    {
+      "canonical_name": "Responsive Web Design",
+      "aliases": [
+        "responsive design",
+        "mobile responsive design"
+      ]
+    },
+    {
+      "canonical_name": "Web Accessibility",
+      "aliases": [
+        "accessibility",
+        "a11y",
+        "WCAG"
+      ]
+    },
+    {
+      "canonical_name": "Document Object Model",
+      "aliases": [
+        "DOM",
+        "browser dom"
+      ]
+    },
+    {
+      "canonical_name": "Browser APIs",
+      "aliases": [
+        "web apis",
+        "browser api"
+      ]
+    },
+    {
+      "canonical_name": "Single-Page Applications",
+      "aliases": [
+        "SPA",
+        "single page application"
+      ]
+    },
+    {
+      "canonical_name": "Progressive Web Apps",
+      "aliases": [
+        "PWA",
+        "progressive web application"
+      ]
+    },
+    {
+      "canonical_name": "Server-Side Rendering",
+      "aliases": [
+        "SSR",
+        "server side rendering"
+      ]
+    },
+    {
+      "canonical_name": "Static Site Generation",
+      "aliases": [
+        "SSG",
+        "static generation"
+      ]
+    },
+    {
+      "canonical_name": "Client-Side Rendering",
+      "aliases": [
+        "CSR",
+        "client side rendering"
+      ]
+    },
+    {
+      "canonical_name": "Model-View-Controller",
+      "aliases": [
+        "MVC",
+        "model view controller"
+      ]
+    },
+    {
+      "canonical_name": "OAuth 2.0",
+      "aliases": [
+        "OAuth2",
+        "oauth 2"
+      ]
+    },
+    {
+      "canonical_name": "JSON Web Tokens",
+      "aliases": [
+        "JWT",
+        "json web token"
+      ]
+    },
+    {
+      "canonical_name": "Session Management",
+      "aliases": [
+        "web sessions",
+        "user sessions"
+      ]
+    },
+    {
+      "canonical_name": "Authentication",
+      "aliases": [
+        "user authentication",
+        "authn"
+      ]
+    },
+    {
+      "canonical_name": "Authorization",
+      "aliases": [
+        "access authorization",
+        "authz"
+      ]
+    },
+    {
+      "canonical_name": "API Documentation",
+      "aliases": [
+        "documenting APIs",
+        "api docs"
+      ]
+    },
+    {
+      "canonical_name": "OpenAPI",
+      "aliases": [
+        "openapi specification",
+        "oas"
+      ]
+    },
+    {
+      "canonical_name": "Swagger",
+      "aliases": [
+        "swagger ui",
+        "swagger docs"
+      ]
+    },
+    {
+      "canonical_name": "Postman",
+      "aliases": [
+        "postman api",
+        "postman collections"
+      ]
+    },
+    {
+      "canonical_name": "Insomnia",
+      "aliases": [
+        "insomnia api client"
+      ]
+    },
+    {
+      "canonical_name": "npm",
+      "aliases": [
+        "node package manager",
+        "npmjs"
+      ]
+    },
+    {
+      "canonical_name": "Yarn",
+      "aliases": [
+        "yarn package manager"
+      ]
+    },
+    {
+      "canonical_name": "pnpm",
+      "aliases": [
+        "performant npm",
+        "pnpm package manager"
+      ]
+    },
+    {
+      "canonical_name": "Jest",
+      "aliases": [
+        "jest testing",
+        "jestjs"
+      ]
+    },
+    {
+      "canonical_name": "Vitest",
+      "aliases": [
+        "vite test",
+        "vitest testing"
+      ]
+    },
+    {
+      "canonical_name": "React Testing Library",
+      "aliases": [
+        "RTL",
+        "testing library react"
+      ]
+    },
+    {
+      "canonical_name": "Storybook",
+      "aliases": [
+        "storybook js",
+        "component storybook"
+      ]
+    },
+    {
+      "canonical_name": "Component-Based Architecture",
+      "aliases": [
+        "component architecture",
+        "component driven development"
+      ]
+    },
+    {
+      "canonical_name": "State Management",
+      "aliases": [
+        "application state management",
+        "frontend state"
+      ]
+    },
+    {
+      "canonical_name": "Routing",
+      "aliases": [
+        "client side routing",
+        "web routing"
+      ]
+    },
+    {
+      "canonical_name": "Form Validation",
+      "aliases": [
+        "web form validation",
+        "input form validation"
+      ]
+    },
+    {
+      "canonical_name": "Web Performance",
+      "aliases": [
+        "frontend performance",
+        "website performance"
+      ]
+    },
+    {
+      "canonical_name": "Search Engine Optimization",
+      "aliases": [
+        "SEO",
+        "search optimization"
+      ]
+    },
+    {
+      "canonical_name": "Cross-Browser Compatibility",
+      "aliases": [
+        "cross browser testing",
+        "browser compatibility"
+      ]
+    },
+    {
+      "canonical_name": "Web Development",
+      "aliases": [
+        "webdev",
+        "web engineering"
+      ]
+    },
+    {
+      "canonical_name": "Frontend Build Tools",
+      "aliases": [
+        "frontend tooling",
+        "web build tools"
+      ]
+    },
+    {
+      "canonical_name": "Template Engines",
+      "aliases": [
+        "templating engines",
+        "server templates"
+      ]
+    },
+    {
+      "canonical_name": "Jinja2",
+      "aliases": [
+        "jinja",
+        "jinja templates"
+      ]
+    },
+    {
+      "canonical_name": "Handlebars",
+      "aliases": [
+        "handlebars.js",
+        "handlebars templates"
+      ]
+    },
+    {
+      "canonical_name": "EJS",
+      "aliases": [
+        "embedded javascript templates"
+      ]
+    },
+    {
+      "canonical_name": "Webhooks",
+      "aliases": [
+        "web hooks",
+        "http callbacks"
+      ]
+    },
+    {
+      "canonical_name": "Content Management Systems",
+      "aliases": [
+        "CMS",
+        "content management system"
+      ]
+    },
+    {
+      "canonical_name": "WordPress",
+      "aliases": [
+        "wordpress cms",
+        "wp"
+      ]
+    },
+    {
+      "canonical_name": "Headless CMS",
+      "aliases": [
+        "headless content management"
+      ]
+    },
+    {
+      "canonical_name": "Strapi",
+      "aliases": [
+        "strapi cms"
+      ]
+    },
+    {
+      "canonical_name": "Sanity",
+      "aliases": [
+        "sanity cms",
+        "sanity.io"
+      ]
+    },
+    {
+      "canonical_name": "Firebase",
+      "aliases": [
+        "google firebase",
+        "firebase platform"
+      ]
+    },
+    {
+      "canonical_name": "Supabase",
+      "aliases": [
+        "supabase backend",
+        "supabase platform"
+      ]
+    },
+    {
+      "canonical_name": "Web Hosting",
+      "aliases": [
+        "website hosting",
+        "hosting websites"
+      ]
+    },
+    {
+      "canonical_name": "Domain Management",
+      "aliases": [
+        "domain configuration",
+        "managing domains"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "HTML5",
+      "target": "Frontend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "CSS",
+      "target": "Frontend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "JavaScript",
+      "target": "Frontend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "TypeScript",
+      "target": "Frontend Development",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "React",
+      "target": "Frontend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Angular",
+      "target": "Frontend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Vue.js",
+      "target": "Frontend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Svelte",
+      "target": "Frontend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Tailwind CSS",
+      "target": "Frontend Development",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Bootstrap",
+      "target": "Responsive Web Design",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Next.js",
+      "target": "React",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Nuxt.js",
+      "target": "Vue.js",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "SvelteKit",
+      "target": "Svelte",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Redux",
+      "target": "State Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Zustand",
+      "target": "State Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Pinia",
+      "target": "State Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Webpack",
+      "target": "Frontend Build Tools",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Vite",
+      "target": "Frontend Build Tools",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Babel",
+      "target": "Frontend Build Tools",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Node.js",
+      "target": "Backend Development",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Express.js",
+      "target": "Backend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "NestJS",
+      "target": "Backend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Django",
+      "target": "Backend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Flask",
+      "target": "Backend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "FastAPI",
+      "target": "Backend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Laravel",
+      "target": "Backend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Spring Boot",
+      "target": "Backend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "ASP.NET Core",
+      "target": "Backend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Ruby on Rails",
+      "target": "Backend Development",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Frontend Development",
+      "target": "Full-Stack Development",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "Backend Development",
+      "target": "Full-Stack Development",
+      "type": "related_to",
+      "confidence": 0.85
+    },
+    {
+      "source": "OAuth 2.0",
+      "target": "Authentication",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "JSON Web Tokens",
+      "target": "Authentication",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "OpenAPI",
+      "target": "API Documentation",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Swagger",
+      "target": "API Documentation",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Postman",
+      "target": "API Development",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Jest",
+      "target": "Unit Testing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Vitest",
+      "target": "Unit Testing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "React Testing Library",
+      "target": "Frontend Development",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Storybook",
+      "target": "Component-Based Architecture",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Responsive Web Design",
+      "target": "Web Development",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Web Accessibility",
+      "target": "Frontend Development",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Search Engine Optimization",
+      "target": "Web Development",
+      "type": "evidence_for",
+      "confidence": 0.8
+    },
+    {
+      "source": "WordPress",
+      "target": "Content Management Systems",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Strapi",
+      "target": "Headless CMS",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Sanity",
+      "target": "Headless CMS",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Firebase",
+      "target": "Backend Development",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Supabase",
+      "target": "Backend Development",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "HTML5",
+      "target": "CSS",
+      "type": "prerequisite_for",
+      "confidence": 0.7
+    },
+    {
+      "source": "JavaScript",
+      "target": "React",
+      "type": "prerequisite_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "JavaScript",
+      "target": "Vue.js",
+      "type": "prerequisite_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "JavaScript",
+      "target": "Angular",
+      "type": "prerequisite_for",
+      "confidence": 0.9
+    }
+  ]
+}

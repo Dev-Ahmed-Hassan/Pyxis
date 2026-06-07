@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "domain": "career_roles",
+  "description": "Initial role catalog for deterministic profile-level graph recommendations.",
+  "skills": [],
+  "relationships": [],
+  "roles": [
+    {
+      "name": "SOC Analyst",
+      "aliases": ["Security Operations Center Analyst", "Cybersecurity Analyst"],
+      "description": "Monitors security events, investigates alerts, and supports incident response."
+    },
+    {
+      "name": "Penetration Tester",
+      "aliases": ["Pentester", "Ethical Hacker"],
+      "description": "Finds and reports exploitable weaknesses in systems and applications."
+    },
+    {
+      "name": "Application Security Engineer",
+      "aliases": ["AppSec Engineer", "Application Security Analyst"],
+      "description": "Improves software security through testing, review, and secure development practices."
+    },
+    {
+      "name": "Digital Forensics and Incident Response Analyst",
+      "aliases": ["DFIR Analyst", "Incident Response Analyst"],
+      "description": "Investigates incidents, preserves evidence, and supports recovery."
+    },
+    {
+      "name": "Backend Developer",
+      "aliases": ["Backend Engineer", "Server-Side Developer"],
+      "description": "Builds APIs, application services, and database-backed systems."
+    },
+    {
+      "name": "Frontend Developer",
+      "aliases": ["Frontend Engineer", "UI Developer"],
+      "description": "Builds accessible, responsive, and maintainable browser interfaces."
+    },
+    {
+      "name": "Full-Stack Developer",
+      "aliases": ["Full Stack Engineer", "Fullstack Developer"],
+      "description": "Works across frontend interfaces, backend services, and databases."
+    },
+    {
+      "name": "Software Engineer",
+      "aliases": ["Software Developer", "Application Developer"],
+      "description": "Designs, implements, tests, and maintains software systems."
+    },
+    {
+      "name": "QA Automation Engineer",
+      "aliases": ["Test Automation Engineer", "SDET"],
+      "description": "Builds automated test suites and improves software quality workflows."
+    },
+    {
+      "name": "Machine Learning Engineer",
+      "aliases": ["ML Engineer", "AI Engineer"],
+      "description": "Builds, evaluates, deploys, and operates machine-learning systems."
+    },
+    {
+      "name": "Data Scientist",
+      "aliases": ["Applied Data Scientist", "Junior Data Scientist"],
+      "description": "Uses statistics, programming, and machine learning to derive insights."
+    },
+    {
+      "name": "Data Engineer",
+      "aliases": ["Data Platform Engineer", "ETL Developer"],
+      "description": "Builds reliable data pipelines, storage systems, and processing platforms."
+    },
+    {
+      "name": "Cloud Engineer",
+      "aliases": ["Cloud Infrastructure Engineer", "Cloud Operations Engineer"],
+      "description": "Builds and operates cloud infrastructure, networking, and managed services."
+    },
+    {
+      "name": "DevOps Engineer",
+      "aliases": ["DevOps Specialist", "Build and Release Engineer"],
+      "description": "Automates delivery, infrastructure, deployment, and operational workflows."
+    },
+    {
+      "name": "Site Reliability Engineer",
+      "aliases": ["SRE", "Reliability Engineer"],
+      "description": "Improves system reliability through automation, monitoring, and engineering."
+    },
+    {
+      "name": "Technical Project Manager",
+      "aliases": ["IT Project Manager", "Software Project Manager"],
+      "description": "Coordinates technical delivery, requirements, stakeholders, and project risks."
+    }
+  ],
+  "role_requirements": [
+    {"role": "SOC Analyst", "skill": "SIEM", "importance": "required", "confidence": 0.95},
+    {"role": "SOC Analyst", "skill": "Log Analysis", "importance": "required", "confidence": 0.95},
+    {"role": "SOC Analyst", "skill": "Alert Triage", "importance": "required", "confidence": 0.95},
+    {"role": "SOC Analyst", "skill": "Networking", "importance": "required", "confidence": 0.85},
+    {"role": "SOC Analyst", "skill": "Incident Response", "importance": "preferred", "confidence": 0.9},
+    {"role": "SOC Analyst", "skill": "Splunk", "importance": "preferred", "confidence": 0.85},
+    {"role": "SOC Analyst", "skill": "Threat Detection", "importance": "preferred", "confidence": 0.85},
+    {"role": "Penetration Tester", "skill": "Penetration Testing", "importance": "required", "confidence": 0.95},
+    {"role": "Penetration Tester", "skill": "Nmap", "importance": "required", "confidence": 0.9},
+    {"role": "Penetration Tester", "skill": "Burp Suite", "importance": "required", "confidence": 0.9},
+    {"role": "Penetration Tester", "skill": "Linux", "importance": "required", "confidence": 0.85},
+    {"role": "Penetration Tester", "skill": "Web Application Security", "importance": "required", "confidence": 0.9},
+    {"role": "Penetration Tester", "skill": "Metasploit", "importance": "preferred", "confidence": 0.85},
+    {"role": "Penetration Tester", "skill": "Technical Writing", "importance": "preferred", "confidence": 0.8},
+    {"role": "Application Security Engineer", "skill": "Application Security (AppSec)", "importance": "required", "confidence": 0.95},
+    {"role": "Application Security Engineer", "skill": "Secure Code Review", "importance": "required", "confidence": 0.9},
+    {"role": "Application Security Engineer", "skill": "SAST", "importance": "required", "confidence": 0.85},
+    {"role": "Application Security Engineer", "skill": "DAST", "importance": "required", "confidence": 0.85},
+    {"role": "Application Security Engineer", "skill": "API Security", "importance": "preferred", "confidence": 0.85},
+    {"role": "Application Security Engineer", "skill": "Threat Modeling", "importance": "preferred", "confidence": 0.85},
+    {"role": "Application Security Engineer", "skill": "DevSecOps", "importance": "preferred", "confidence": 0.8},
+    {"role": "Digital Forensics and Incident Response Analyst", "skill": "Digital Forensics", "importance": "required", "confidence": 0.95},
+    {"role": "Digital Forensics and Incident Response Analyst", "skill": "Incident Response", "importance": "required", "confidence": 0.95},
+    {"role": "Digital Forensics and Incident Response Analyst", "skill": "Memory Forensics", "importance": "required", "confidence": 0.85},
+    {"role": "Digital Forensics and Incident Response Analyst", "skill": "Log Analysis", "importance": "required", "confidence": 0.85},
+    {"role": "Digital Forensics and Incident Response Analyst", "skill": "Volatility", "importance": "preferred", "confidence": 0.85},
+    {"role": "Digital Forensics and Incident Response Analyst", "skill": "Malware Analysis", "importance": "preferred", "confidence": 0.8},
+    {"role": "Backend Developer", "skill": "Backend Development", "importance": "required", "confidence": 0.95},
+    {"role": "Backend Developer", "skill": "REST API", "importance": "required", "confidence": 0.95},
+    {"role": "Backend Developer", "skill": "SQL", "importance": "required", "confidence": 0.9},
+    {"role": "Backend Developer", "skill": "Git", "importance": "required", "confidence": 0.85},
+    {"role": "Backend Developer", "skill": "Database Design", "importance": "preferred", "confidence": 0.85},
+    {"role": "Backend Developer", "skill": "Docker", "importance": "preferred", "confidence": 0.8},
+    {"role": "Backend Developer", "skill": "Unit Testing", "importance": "preferred", "confidence": 0.8},
+    {"role": "Frontend Developer", "skill": "Frontend Development", "importance": "required", "confidence": 0.95},
+    {"role": "Frontend Developer", "skill": "HTML5", "importance": "required", "confidence": 0.95},
+    {"role": "Frontend Developer", "skill": "CSS", "importance": "required", "confidence": 0.95},
+    {"role": "Frontend Developer", "skill": "JavaScript", "importance": "required", "confidence": 0.95},
+    {"role": "Frontend Developer", "skill": "Responsive Web Design", "importance": "required", "confidence": 0.85},
+    {"role": "Frontend Developer", "skill": "React", "importance": "preferred", "confidence": 0.85},
+    {"role": "Frontend Developer", "skill": "Web Accessibility", "importance": "preferred", "confidence": 0.8},
+    {"role": "Full-Stack Developer", "skill": "Full-Stack Development", "importance": "required", "confidence": 0.95},
+    {"role": "Full-Stack Developer", "skill": "Frontend Development", "importance": "required", "confidence": 0.9},
+    {"role": "Full-Stack Developer", "skill": "Backend Development", "importance": "required", "confidence": 0.9},
+    {"role": "Full-Stack Developer", "skill": "REST API", "importance": "required", "confidence": 0.9},
+    {"role": "Full-Stack Developer", "skill": "SQL", "importance": "required", "confidence": 0.85},
+    {"role": "Full-Stack Developer", "skill": "Git", "importance": "preferred", "confidence": 0.8},
+    {"role": "Software Engineer", "skill": "Software Engineering", "importance": "required", "confidence": 0.95},
+    {"role": "Software Engineer", "skill": "Programming", "importance": "required", "confidence": 0.95},
+    {"role": "Software Engineer", "skill": "Data Structures and Algorithms", "importance": "required", "confidence": 0.9},
+    {"role": "Software Engineer", "skill": "Git", "importance": "required", "confidence": 0.85},
+    {"role": "Software Engineer", "skill": "Unit Testing", "importance": "preferred", "confidence": 0.8},
+    {"role": "Software Engineer", "skill": "System Design", "importance": "preferred", "confidence": 0.8},
+    {"role": "QA Automation Engineer", "skill": "Quality Assurance", "importance": "required", "confidence": 0.95},
+    {"role": "QA Automation Engineer", "skill": "Software Testing", "importance": "required", "confidence": 0.95},
+    {"role": "QA Automation Engineer", "skill": "Test Automation", "importance": "required", "confidence": 0.95},
+    {"role": "QA Automation Engineer", "skill": "Selenium", "importance": "preferred", "confidence": 0.85},
+    {"role": "QA Automation Engineer", "skill": "API Development", "importance": "preferred", "confidence": 0.7},
+    {"role": "QA Automation Engineer", "skill": "CI/CD", "importance": "preferred", "confidence": 0.8},
+    {"role": "Machine Learning Engineer", "skill": "Machine Learning", "importance": "required", "confidence": 0.95},
+    {"role": "Machine Learning Engineer", "skill": "Python", "importance": "required", "confidence": 0.95},
+    {"role": "Machine Learning Engineer", "skill": "scikit-learn", "importance": "required", "confidence": 0.85},
+    {"role": "Machine Learning Engineer", "skill": "Model Evaluation", "importance": "required", "confidence": 0.85},
+    {"role": "Machine Learning Engineer", "skill": "MLOps", "importance": "preferred", "confidence": 0.85},
+    {"role": "Machine Learning Engineer", "skill": "PyTorch", "importance": "preferred", "confidence": 0.8},
+    {"role": "Machine Learning Engineer", "skill": "Model Deployment", "importance": "preferred", "confidence": 0.85},
+    {"role": "Data Scientist", "skill": "Data Science", "importance": "required", "confidence": 0.95},
+    {"role": "Data Scientist", "skill": "Python", "importance": "required", "confidence": 0.9},
+    {"role": "Data Scientist", "skill": "Statistics", "importance": "required", "confidence": 0.95},
+    {"role": "Data Scientist", "skill": "Data Analysis", "importance": "required", "confidence": 0.95},
+    {"role": "Data Scientist", "skill": "Machine Learning", "importance": "preferred", "confidence": 0.85},
+    {"role": "Data Scientist", "skill": "Data Visualization", "importance": "preferred", "confidence": 0.85},
+    {"role": "Data Engineer", "skill": "SQL", "importance": "required", "confidence": 0.95},
+    {"role": "Data Engineer", "skill": "Python", "importance": "required", "confidence": 0.9},
+    {"role": "Data Engineer", "skill": "Database Management", "importance": "required", "confidence": 0.9},
+    {"role": "Data Engineer", "skill": "Apache Kafka", "importance": "preferred", "confidence": 0.85},
+    {"role": "Data Engineer", "skill": "Cloud Computing", "importance": "preferred", "confidence": 0.8},
+    {"role": "Data Engineer", "skill": "Docker", "importance": "preferred", "confidence": 0.75},
+    {"role": "Cloud Engineer", "skill": "Cloud Computing", "importance": "required", "confidence": 0.95},
+    {"role": "Cloud Engineer", "skill": "Networking", "importance": "required", "confidence": 0.9},
+    {"role": "Cloud Engineer", "skill": "Linux", "importance": "required", "confidence": 0.9},
+    {"role": "Cloud Engineer", "skill": "Infrastructure as Code (IaC)", "importance": "required", "confidence": 0.85},
+    {"role": "Cloud Engineer", "skill": "AWS", "importance": "preferred", "confidence": 0.85},
+    {"role": "Cloud Engineer", "skill": "Microsoft Azure", "importance": "preferred", "confidence": 0.85},
+    {"role": "Cloud Engineer", "skill": "Google Cloud Platform", "importance": "preferred", "confidence": 0.85},
+    {"role": "DevOps Engineer", "skill": "DevOps", "importance": "required", "confidence": 0.95},
+    {"role": "DevOps Engineer", "skill": "CI/CD", "importance": "required", "confidence": 0.95},
+    {"role": "DevOps Engineer", "skill": "Linux", "importance": "required", "confidence": 0.9},
+    {"role": "DevOps Engineer", "skill": "Docker", "importance": "required", "confidence": 0.9},
+    {"role": "DevOps Engineer", "skill": "Infrastructure as Code (IaC)", "importance": "required", "confidence": 0.85},
+    {"role": "DevOps Engineer", "skill": "Kubernetes", "importance": "preferred", "confidence": 0.85},
+    {"role": "DevOps Engineer", "skill": "Ansible", "importance": "preferred", "confidence": 0.8},
+    {"role": "Site Reliability Engineer", "skill": "Site Reliability Engineering", "importance": "required", "confidence": 0.95},
+    {"role": "Site Reliability Engineer", "skill": "Linux", "importance": "required", "confidence": 0.9},
+    {"role": "Site Reliability Engineer", "skill": "Observability", "importance": "required", "confidence": 0.95},
+    {"role": "Site Reliability Engineer", "skill": "Infrastructure Monitoring", "importance": "required", "confidence": 0.9},
+    {"role": "Site Reliability Engineer", "skill": "Automation", "importance": "preferred", "confidence": 0.85},
+    {"role": "Site Reliability Engineer", "skill": "Kubernetes", "importance": "preferred", "confidence": 0.8},
+    {"role": "Technical Project Manager", "skill": "Project Management", "importance": "required", "confidence": 0.95},
+    {"role": "Technical Project Manager", "skill": "Communication", "importance": "required", "confidence": 0.95},
+    {"role": "Technical Project Manager", "skill": "Requirements Gathering", "importance": "required", "confidence": 0.9},
+    {"role": "Technical Project Manager", "skill": "Stakeholder Management", "importance": "required", "confidence": 0.9},
+    {"role": "Technical Project Manager", "skill": "Agile", "importance": "preferred", "confidence": 0.85},
+    {"role": "Technical Project Manager", "skill": "Risk Management", "importance": "preferred", "confidence": 0.8}
+  ]
+}

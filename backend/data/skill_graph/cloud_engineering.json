@@ -1,0 +1,707 @@
+{
+  "schema_version": 1,
+  "domain": "cloud_engineering",
+  "description": "Cloud platforms, infrastructure, containers, DevOps, observability, and delivery automation skills.",
+  "skills": [
+    {
+      "canonical_name": "Microsoft Azure",
+      "aliases": [
+        "Azure",
+        "azure cloud",
+        "microsoft cloud"
+      ]
+    },
+    {
+      "canonical_name": "Google Cloud Platform",
+      "aliases": [
+        "GCP",
+        "google cloud",
+        "google cloud platform"
+      ]
+    },
+    {
+      "canonical_name": "Amazon EC2",
+      "aliases": [
+        "EC2",
+        "aws ec2",
+        "elastic compute cloud"
+      ]
+    },
+    {
+      "canonical_name": "AWS Lambda",
+      "aliases": [
+        "lambda",
+        "amazon lambda",
+        "serverless lambda"
+      ]
+    },
+    {
+      "canonical_name": "Amazon RDS",
+      "aliases": [
+        "RDS",
+        "aws rds",
+        "relational database service"
+      ]
+    },
+    {
+      "canonical_name": "Amazon VPC",
+      "aliases": [
+        "VPC",
+        "aws vpc",
+        "virtual private cloud"
+      ]
+    },
+    {
+      "canonical_name": "Amazon Route 53",
+      "aliases": [
+        "Route 53",
+        "route53",
+        "aws dns"
+      ]
+    },
+    {
+      "canonical_name": "Amazon CloudWatch",
+      "aliases": [
+        "CloudWatch",
+        "aws cloudwatch"
+      ]
+    },
+    {
+      "canonical_name": "Amazon EKS",
+      "aliases": [
+        "EKS",
+        "elastic kubernetes service"
+      ]
+    },
+    {
+      "canonical_name": "Amazon ECS",
+      "aliases": [
+        "ECS",
+        "elastic container service"
+      ]
+    },
+    {
+      "canonical_name": "AWS Fargate",
+      "aliases": [
+        "Fargate",
+        "amazon fargate"
+      ]
+    },
+    {
+      "canonical_name": "AWS CloudFormation",
+      "aliases": [
+        "CloudFormation",
+        "aws cloud formation"
+      ]
+    },
+    {
+      "canonical_name": "Azure Virtual Machines",
+      "aliases": [
+        "Azure VM",
+        "Azure VMs"
+      ]
+    },
+    {
+      "canonical_name": "Azure Functions",
+      "aliases": [
+        "azure function",
+        "azure serverless functions"
+      ]
+    },
+    {
+      "canonical_name": "Azure Blob Storage",
+      "aliases": [
+        "blob storage",
+        "azure blobs"
+      ]
+    },
+    {
+      "canonical_name": "Azure Kubernetes Service",
+      "aliases": [
+        "AKS",
+        "azure kubernetes"
+      ]
+    },
+    {
+      "canonical_name": "Azure DevOps",
+      "aliases": [
+        "azure devops services",
+        "azure pipelines"
+      ]
+    },
+    {
+      "canonical_name": "Google Compute Engine",
+      "aliases": [
+        "GCE",
+        "compute engine"
+      ]
+    },
+    {
+      "canonical_name": "Google Cloud Storage",
+      "aliases": [
+        "GCS",
+        "google storage"
+      ]
+    },
+    {
+      "canonical_name": "Google Kubernetes Engine",
+      "aliases": [
+        "GKE",
+        "google kubernetes engine"
+      ]
+    },
+    {
+      "canonical_name": "Google Cloud Run",
+      "aliases": [
+        "Cloud Run",
+        "gcp cloud run"
+      ]
+    },
+    {
+      "canonical_name": "Google Cloud Functions",
+      "aliases": [
+        "GCF",
+        "cloud functions"
+      ]
+    },
+    {
+      "canonical_name": "DevOps",
+      "aliases": [
+        "development operations",
+        "dev ops"
+      ]
+    },
+    {
+      "canonical_name": "CI/CD",
+      "aliases": [
+        "continuous integration",
+        "continuous delivery",
+        "continuous deployment"
+      ]
+    },
+    {
+      "canonical_name": "GitHub Actions",
+      "aliases": [
+        "github workflows",
+        "github ci"
+      ]
+    },
+    {
+      "canonical_name": "CircleCI",
+      "aliases": [
+        "circle ci"
+      ]
+    },
+    {
+      "canonical_name": "Travis CI",
+      "aliases": [
+        "travis",
+        "travisci"
+      ]
+    },
+    {
+      "canonical_name": "Argo CD",
+      "aliases": [
+        "argocd",
+        "argo continuous delivery"
+      ]
+    },
+    {
+      "canonical_name": "Helm",
+      "aliases": [
+        "helm charts",
+        "kubernetes helm"
+      ]
+    },
+    {
+      "canonical_name": "Prometheus",
+      "aliases": [
+        "prometheus monitoring"
+      ]
+    },
+    {
+      "canonical_name": "Grafana",
+      "aliases": [
+        "grafana dashboards"
+      ]
+    },
+    {
+      "canonical_name": "Datadog",
+      "aliases": [
+        "data dog",
+        "datadog monitoring"
+      ]
+    },
+    {
+      "canonical_name": "New Relic",
+      "aliases": [
+        "newrelic",
+        "new relic monitoring"
+      ]
+    },
+    {
+      "canonical_name": "Containerization",
+      "aliases": [
+        "containerisation",
+        "containers"
+      ]
+    },
+    {
+      "canonical_name": "Container Orchestration",
+      "aliases": [
+        "orchestrating containers"
+      ]
+    },
+    {
+      "canonical_name": "Configuration Management",
+      "aliases": [
+        "configuration automation"
+      ]
+    },
+    {
+      "canonical_name": "Infrastructure Monitoring",
+      "aliases": [
+        "cloud monitoring",
+        "system monitoring"
+      ]
+    },
+    {
+      "canonical_name": "Application Monitoring",
+      "aliases": [
+        "app monitoring",
+        "APM"
+      ]
+    },
+    {
+      "canonical_name": "Observability",
+      "aliases": [
+        "system observability",
+        "application observability"
+      ]
+    },
+    {
+      "canonical_name": "Distributed Tracing",
+      "aliases": [
+        "request tracing",
+        "trace monitoring"
+      ]
+    },
+    {
+      "canonical_name": "Load Balancing",
+      "aliases": [
+        "load balancer",
+        "traffic balancing"
+      ]
+    },
+    {
+      "canonical_name": "Auto Scaling",
+      "aliases": [
+        "autoscaling",
+        "automatic scaling"
+      ]
+    },
+    {
+      "canonical_name": "Content Delivery Network",
+      "aliases": [
+        "CDN",
+        "content delivery"
+      ]
+    },
+    {
+      "canonical_name": "High Availability",
+      "aliases": [
+        "HA",
+        "highly available systems"
+      ]
+    },
+    {
+      "canonical_name": "Fault Tolerance",
+      "aliases": [
+        "fault-tolerant systems",
+        "resilience"
+      ]
+    },
+    {
+      "canonical_name": "Cloud Migration",
+      "aliases": [
+        "migrating to cloud",
+        "cloud adoption"
+      ]
+    },
+    {
+      "canonical_name": "Cloud Architecture",
+      "aliases": [
+        "cloud solution architecture"
+      ]
+    },
+    {
+      "canonical_name": "Cloud Computing",
+      "aliases": [
+        "cloud technologies",
+        "cloud platforms"
+      ]
+    },
+    {
+      "canonical_name": "Hybrid Cloud",
+      "aliases": [
+        "hybrid-cloud"
+      ]
+    },
+    {
+      "canonical_name": "Multi-Cloud",
+      "aliases": [
+        "multicloud",
+        "multi cloud"
+      ]
+    },
+    {
+      "canonical_name": "Serverless Computing",
+      "aliases": [
+        "serverless architecture",
+        "serverless"
+      ]
+    },
+    {
+      "canonical_name": "Site Reliability Engineering",
+      "aliases": [
+        "SRE",
+        "site reliability"
+      ]
+    },
+    {
+      "canonical_name": "Platform Engineering",
+      "aliases": [
+        "internal developer platform",
+        "platform engineer"
+      ]
+    },
+    {
+      "canonical_name": "FinOps",
+      "aliases": [
+        "cloud financial operations",
+        "cloud cost management"
+      ]
+    },
+    {
+      "canonical_name": "Cloud Cost Optimization",
+      "aliases": [
+        "cloud cost optimisation",
+        "cost optimization"
+      ]
+    },
+    {
+      "canonical_name": "Secrets Management",
+      "aliases": [
+        "secret management",
+        "managing secrets"
+      ]
+    },
+    {
+      "canonical_name": "HashiCorp Vault",
+      "aliases": [
+        "Vault",
+        "hashicorp vault"
+      ]
+    },
+    {
+      "canonical_name": "Consul",
+      "aliases": [
+        "hashicorp consul"
+      ]
+    },
+    {
+      "canonical_name": "Packer",
+      "aliases": [
+        "hashicorp packer"
+      ]
+    },
+    {
+      "canonical_name": "Nomad",
+      "aliases": [
+        "hashicorp nomad"
+      ]
+    },
+    {
+      "canonical_name": "Kustomize",
+      "aliases": [
+        "kubernetes kustomize"
+      ]
+    },
+    {
+      "canonical_name": "OpenTelemetry",
+      "aliases": [
+        "otel",
+        "open telemetry"
+      ]
+    },
+    {
+      "canonical_name": "Nginx",
+      "aliases": [
+        "nginx web server",
+        "nginx proxy"
+      ]
+    },
+    {
+      "canonical_name": "Apache HTTP Server",
+      "aliases": [
+        "apache2",
+        "apache web server"
+      ]
+    },
+    {
+      "canonical_name": "Linux Shell Scripting",
+      "aliases": [
+        "linux shell scripts",
+        "linux scripting"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "source": "AWS",
+      "target": "Cloud Computing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Microsoft Azure",
+      "target": "Cloud Computing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Google Cloud Platform",
+      "target": "Cloud Computing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Amazon EC2",
+      "target": "AWS",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "AWS Lambda",
+      "target": "Serverless Computing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Azure Functions",
+      "target": "Serverless Computing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Google Cloud Functions",
+      "target": "Serverless Computing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Google Cloud Run",
+      "target": "Serverless Computing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Amazon EKS",
+      "target": "Kubernetes",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Azure Kubernetes Service",
+      "target": "Kubernetes",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Google Kubernetes Engine",
+      "target": "Kubernetes",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Docker",
+      "target": "Containerization",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Kubernetes",
+      "target": "Container Orchestration",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Helm",
+      "target": "Kubernetes",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Kustomize",
+      "target": "Kubernetes",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "GitHub Actions",
+      "target": "CI/CD",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "GitLab",
+      "target": "CI/CD",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Jenkins",
+      "target": "CI/CD",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "CircleCI",
+      "target": "CI/CD",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Travis CI",
+      "target": "CI/CD",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Argo CD",
+      "target": "CI/CD",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "AWS CloudFormation",
+      "target": "Infrastructure as Code (IaC)",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Ansible",
+      "target": "Configuration Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Chef",
+      "target": "Configuration Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Puppet",
+      "target": "Configuration Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Prometheus",
+      "target": "Infrastructure Monitoring",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Grafana",
+      "target": "Observability",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "OpenTelemetry",
+      "target": "Distributed Tracing",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Datadog",
+      "target": "Observability",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "New Relic",
+      "target": "Application Monitoring",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "HashiCorp Vault",
+      "target": "Secrets Management",
+      "type": "evidence_for",
+      "confidence": 0.95
+    },
+    {
+      "source": "Cloud Architecture",
+      "target": "High Availability",
+      "type": "related_to",
+      "confidence": 0.8
+    },
+    {
+      "source": "Load Balancing",
+      "target": "High Availability",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Auto Scaling",
+      "target": "High Availability",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Observability",
+      "target": "Site Reliability Engineering",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "CI/CD",
+      "target": "DevOps",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Infrastructure as Code (IaC)",
+      "target": "DevOps",
+      "type": "evidence_for",
+      "confidence": 0.9
+    },
+    {
+      "source": "Linux",
+      "target": "DevOps",
+      "type": "prerequisite_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Networking",
+      "target": "Cloud Computing",
+      "type": "prerequisite_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "Nginx",
+      "target": "Load Balancing",
+      "type": "evidence_for",
+      "confidence": 0.85
+    },
+    {
+      "source": "FinOps",
+      "target": "Cloud Cost Optimization",
+      "type": "evidence_for",
+      "confidence": 0.95
+    }
+  ]
+}
