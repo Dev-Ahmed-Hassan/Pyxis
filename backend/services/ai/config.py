@@ -62,6 +62,15 @@ def get_github_analyzer_routes() -> list[ModelRoute]:
     return [_parse_route(value) for value in [primary, *_split_csv(fallbacks)] if value]
 
 
+def get_interview_routes() -> list[ModelRoute]:
+    primary = os.getenv("LLM_INTERVIEW_PRIMARY", "")
+    fallbacks = os.getenv("LLM_INTERVIEW_FALLBACKS", "")
+    if not primary:
+        return get_github_analyzer_routes()
+    return [_parse_route(value) for value in [primary, *_split_csv(fallbacks)] if value]
+
+
+
 def get_embedding_route() -> ModelRoute | None:
     value = os.getenv("EMBEDDING_MODEL_ROUTE", "")
     return _parse_route(value) if value else None

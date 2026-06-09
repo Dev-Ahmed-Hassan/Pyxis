@@ -1,4 +1,9 @@
 from models.career_recommendation import CareerRecommendation
+from models.interview_answer import InterviewAnswer
+from models.interview_evaluation import InterviewEvaluation
+from models.interview_preparation import InterviewPreparation
+from models.interview_question import InterviewQuestion
+from models.interview_session import InterviewSession
 from models.github_match_evidence import GitHubMatchEvidence
 from models.github_profile_analysis import GitHubProfileAnalysis
 from models.github_profile_snapshot import GitHubProfileSnapshot
@@ -19,6 +24,11 @@ from models.user_profile_facts import (
 )
 
 __all__ = [
+    "InterviewAnswer",
+    "InterviewEvaluation",
+    "InterviewPreparation",
+    "InterviewQuestion",
+    "InterviewSession",
     "InternshipInput",
     "InternshipProcessingStatus",
     "CareerRecommendation",
