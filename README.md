@@ -12,6 +12,8 @@ Current API behavior and frontend workflow are documented in
 [docs/api-workings.md](docs/api-workings.md). The implementation contract for
 the planned interview feature is in
 [docs/interview-module-handoff.md](docs/interview-module-handoff.md).
+Frontend implementation coverage is tracked in
+[docs/frontend-feature-coverage.md](docs/frontend-feature-coverage.md).
 
 ## Current Backend
 

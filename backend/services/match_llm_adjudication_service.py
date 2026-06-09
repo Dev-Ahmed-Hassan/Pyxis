@@ -289,36 +289,81 @@ def _add_structured_fallback_candidates(
 
 def _validate_judgments(adjudication, missing_requirements, retrieved_evidence):
     expected = {
-        (category, requirement.casefold())
+        (category, _normalize_requirement_name(requirement)): requirement
         for category, requirement in missing_requirements
     }
     candidate_keys: dict[tuple[str, str], set[str]] = {}
     for evidence in retrieved_evidence:
-        key = (evidence.requirement_category, evidence.requirement.casefold())
+        key = (
+            evidence.requirement_category,
+            _normalize_requirement_name(evidence.requirement),
+        )
         candidate_keys.setdefault(key, set()).add(evidence.resume_section_key)
 
     judgments = []
-    seen = set()
+    judgments_by_key = {}
     for output in adjudication.requirement_judgments:
-        key = (output.requirement_category, output.requirement.casefold())
+        key = (
+            output.requirement_category,
+            _normalize_requirement_name(output.requirement),
+        )
         cited = set(output.cited_resume_section_keys)
-        if key not in expected or key in seen:
-            _invalid_output("The LLM returned an unknown or duplicate requirement.")
+        if key not in expected:
+            _invalid_output("The LLM returned an unknown requirement.")
         if not cited.issubset(candidate_keys.get(key, set())):
             _invalid_output("The LLM cited resume evidence outside the retrieved passages.")
         if output.support_level != "absent" and not cited:
             _invalid_output("The LLM returned supported evidence without a citation.")
-        seen.add(key)
-        judgments.append(LlmRequirementJudgment.model_validate(output.model_dump()))
-    if seen != expected:
-        _invalid_output("The LLM omitted one or more missing requirements.")
-    missing_names = {requirement for _, requirement in expected}
+
+        judgment = LlmRequirementJudgment.model_validate(
+            {
+                **output.model_dump(),
+                "requirement": expected[key],
+            }
+        )
+        existing = judgments_by_key.get(key)
+        if existing:
+            if not _compatible_duplicate_judgment(existing, judgment):
+                _invalid_output(
+                    "The LLM returned duplicate conflicting judgments for a requirement."
+                )
+            continue
+        judgments_by_key[key] = judgment
+
+    for key, requirement in expected.items():
+        if key not in judgments_by_key:
+            judgments_by_key[key] = LlmRequirementJudgment(
+                requirement=requirement,
+                requirement_category=key[0],
+                support_level="absent",
+                confidence=0.0,
+                cited_resume_section_keys=[],
+                reason="The adjudicator omitted this requirement, so it was treated as absent.",
+            )
+
+    judgments = list(judgments_by_key.values())
+    missing_names = {requirement_key for _, requirement_key in expected}
     if not {
-        requirement.casefold()
+        _normalize_requirement_name(requirement)
         for requirement in adjudication.fairness_audit.review_requirements
     }.issubset(missing_names):
         _invalid_output("The fairness audit named a requirement outside the review set.")
     return judgments
+
+
+def _normalize_requirement_name(requirement: str) -> str:
+    return " ".join(requirement.casefold().split())
+
+
+def _compatible_duplicate_judgment(
+    existing: LlmRequirementJudgment,
+    candidate: LlmRequirementJudgment,
+) -> bool:
+    return (
+        existing.support_level == candidate.support_level
+        and set(existing.cited_resume_section_keys)
+        == set(candidate.cited_resume_section_keys)
+    )
 
 
 def _calculate_shadow_credits(match, judgments):

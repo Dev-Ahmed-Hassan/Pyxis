@@ -26,23 +26,31 @@ def _candidate() -> LlmRetrievedEvidence:
     )
 
 
-def _adjudication(citations: list[str]) -> LlmMatchAdjudicationOutput:
+def _adjudication(
+    citations: list[str],
+    requirement: str = "Vulnerability Research",
+    extra_judgments: list[dict] | None = None,
+    review_requirements: list[str] | None = None,
+) -> LlmMatchAdjudicationOutput:
     return LlmMatchAdjudicationOutput.model_validate(
         {
             "requirement_judgments": [
                 {
-                    "requirement": "Vulnerability Research",
+                    "requirement": requirement,
                     "requirement_category": "required_skill",
                     "support_level": "strong_partial",
                     "confidence": 0.8,
                     "cited_resume_section_keys": citations,
                     "reason": "The project demonstrates adjacent hands-on work.",
                 }
-            ],
+            ]
+            + (extra_judgments or []),
             "fairness_audit": {
                 "assessment": "potentially_underestimated",
                 "reason": "A missing requirement has partial evidence.",
-                "review_requirements": ["Vulnerability Research"],
+                "review_requirements": review_requirements
+                if review_requirements is not None
+                else ["Vulnerability Research"],
             },
         }
     )
@@ -76,6 +84,74 @@ class MatchLlmAdjudicationTests(unittest.TestCase):
         )
 
         self.assertEqual(judgments[0].support_level, "strong_partial")
+
+    def test_judgment_maps_requirement_casing_back_to_expected_name(self) -> None:
+        judgments = _validate_judgments(
+            _adjudication(
+                ["project:0:bullet:0"],
+                requirement=" vulnerability   research ",
+                review_requirements=[" vulnerability   research "],
+            ),
+            [("required_skill", "Vulnerability Research")],
+            [_candidate()],
+        )
+
+        self.assertEqual(judgments[0].requirement, "Vulnerability Research")
+
+    def test_judgment_deduplicates_identical_requirement_repeats(self) -> None:
+        judgments = _validate_judgments(
+            _adjudication(
+                ["project:0:bullet:0"],
+                extra_judgments=[
+                    {
+                        "requirement": "vulnerability research",
+                        "requirement_category": "required_skill",
+                        "support_level": "strong_partial",
+                        "confidence": 0.7,
+                        "cited_resume_section_keys": ["project:0:bullet:0"],
+                        "reason": "Duplicate wording with different casing.",
+                    }
+                ],
+            ),
+            [("required_skill", "Vulnerability Research")],
+            [_candidate()],
+        )
+
+        self.assertEqual(len(judgments), 1)
+
+    def test_judgment_rejects_conflicting_duplicate_requirement(self) -> None:
+        with self.assertRaises(HTTPException):
+            _validate_judgments(
+                _adjudication(
+                    ["project:0:bullet:0"],
+                    extra_judgments=[
+                        {
+                            "requirement": "vulnerability research",
+                            "requirement_category": "required_skill",
+                            "support_level": "absent",
+                            "confidence": 0.9,
+                            "cited_resume_section_keys": [],
+                            "reason": "Conflicting duplicate.",
+                        }
+                    ],
+                ),
+                [("required_skill", "Vulnerability Research")],
+                [_candidate()],
+            )
+
+    def test_judgment_fills_omitted_requirements_as_absent(self) -> None:
+        judgments = _validate_judgments(
+            _adjudication(["project:0:bullet:0"]),
+            [
+                ("required_skill", "Vulnerability Research"),
+                ("preferred_skill", "PowerShell"),
+            ],
+            [_candidate()],
+        )
+
+        self.assertEqual(len(judgments), 2)
+        omitted = next(judgment for judgment in judgments if judgment.requirement == "PowerShell")
+        self.assertEqual(omitted.support_level, "absent")
 
     def test_supported_judgment_requires_a_citation(self) -> None:
         with self.assertRaises(HTTPException):

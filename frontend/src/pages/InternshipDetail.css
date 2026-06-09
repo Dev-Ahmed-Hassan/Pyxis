@@ -1,0 +1,260 @@
+.internship-back-link {
+  display: inline-block;
+  margin-bottom: 34px;
+  color: var(--secondary);
+  font-size: 0.7rem;
+  font-weight: 650;
+}
+
+.internship-profile-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 70px;
+  padding-bottom: 54px;
+}
+
+.internship-profile-header h1,
+.internship-detail-message h1 {
+  margin: 12px 0 18px;
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1;
+}
+
+.internship-profile-header > div > p,
+.internship-detail-message p {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.internship-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.internship-detail-actions a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.internship-profile-header dl {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.internship-profile-header dl > div {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.internship-profile-header dt {
+  color: var(--quiet);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+}
+
+.internship-profile-header dd {
+  margin: 0;
+  color: var(--primary);
+  font-size: 0.72rem;
+}
+
+.internship-profile-header dd small {
+  display: block;
+  margin-top: 4px;
+  color: var(--quiet);
+  font-size: 0.56rem;
+}
+
+.internship-data-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 46px;
+  border: 1px solid var(--line-strong);
+  background: var(--line);
+  gap: 1px;
+}
+
+.internship-data-overview > article {
+  min-height: 300px;
+  padding: 28px;
+  background: var(--surface);
+}
+
+.internship-data-overview h2 {
+  margin: 8px 0 24px;
+  font-family: var(--serif);
+  font-size: 1.45rem;
+}
+
+.requirement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid var(--line-strong);
+  background: var(--line);
+  gap: 1px;
+}
+
+.requirement-card {
+  min-height: 190px;
+  padding: 24px;
+  background: var(--surface);
+}
+
+.requirement-card header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.requirement-card header span {
+  font-size: 0.68rem;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+
+.requirement-card header strong {
+  color: var(--line-strong);
+  font-family: var(--serif);
+  font-size: 1.5rem;
+}
+
+.requirement-card > .requirement-skill-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  padding-top: 18px;
+}
+
+.requirement-skill-list > article {
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.requirement-card.is-required .requirement-skill-list > article {
+  border-color: #b8cec4;
+  background: #edf4f1;
+}
+
+.requirement-skill-list > article > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.requirement-skill-list strong {
+  font-size: 0.66rem;
+}
+
+.requirement-skill-list article > div > span {
+  color: var(--quiet);
+  font-size: 0.5rem;
+  text-transform: uppercase;
+}
+
+.requirement-skill-list article > small {
+  display: block;
+  margin-top: 6px;
+  color: var(--quiet);
+  font-size: 0.55rem;
+}
+
+.requirement-card p,
+.internship-empty-copy {
+  color: var(--quiet);
+  font-size: 0.72rem;
+}
+
+.internship-text-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 64px 0;
+}
+
+.internship-text-columns h2,
+.internship-warning-section h2 {
+  margin: 10px 0 26px;
+  font-family: var(--serif);
+  font-size: 1.8rem;
+}
+
+.internship-text-columns ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.internship-text-columns li {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  color: var(--secondary);
+  font-size: 0.73rem;
+  line-height: 1.55;
+}
+
+.internship-text-columns li > span {
+  color: var(--quiet);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+}
+
+.internship-warning-section {
+  padding: 46px 0;
+  border-top: 1px solid var(--line-strong);
+}
+
+.internship-warning-section article {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 20px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.internship-warning-section strong {
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+.internship-warning-section p {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 0.72rem;
+}
+
+.internship-detail-message {
+  padding: 60px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+@media (max-width: 800px) {
+  .internship-profile-header,
+  .internship-data-overview,
+  .requirement-grid,
+  .internship-text-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .requirement-card > .requirement-skill-list {
+    grid-template-columns: 1fr;
+  }
+}

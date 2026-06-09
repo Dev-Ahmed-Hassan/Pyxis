@@ -1,0 +1,297 @@
+.internship-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 28px;
+  border: 1px solid var(--line-strong);
+  background: var(--line);
+  gap: 1px;
+}
+
+.internship-summary > div {
+  display: flex;
+  min-height: 92px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--surface);
+}
+
+.internship-summary span {
+  color: var(--quiet);
+  font-size: 0.64rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.internship-summary strong {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+}
+
+.internship-library {
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+}
+
+.internship-library-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.internship-library-header h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+}
+
+.internship-library-header p {
+  margin: 6px 0 0;
+  color: var(--secondary);
+  font-size: 0.72rem;
+}
+
+.internship-list > article {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(150px, 0.35fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: 18px 22px;
+  border-top: 1px solid var(--line);
+}
+
+.internship-list > article:hover {
+  background: #fafafa;
+}
+
+.internship-main {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  align-items: center;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.internship-document {
+  display: grid;
+  width: 44px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid var(--line-strong);
+  font-family: var(--mono);
+  font-size: 0.55rem;
+}
+
+.internship-main h3 {
+  margin: 0;
+  font-size: 0.82rem;
+}
+
+.internship-main p {
+  margin: 5px 0 0;
+  color: var(--quiet);
+  font-size: 0.64rem;
+}
+
+.internship-state > span {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid #d9caa3;
+  color: #6b571d;
+  background: #fff9e9;
+  font-size: 0.62rem;
+}
+
+.internship-state > span.is-ready {
+  border-color: #b8cec4;
+  color: #285843;
+  background: #edf4f1;
+}
+
+.internship-state > span.is-failed {
+  border-color: #e3b9b5;
+  color: #8b2028;
+  background: #fff0ee;
+}
+
+.internship-state small {
+  display: block;
+  max-width: 260px;
+  margin-top: 6px;
+  color: #8b2028;
+  font-size: 0.58rem;
+  line-height: 1.4;
+}
+
+.internship-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.internship-actions button {
+  padding: 7px 9px;
+  border: 1px solid var(--line-strong);
+  color: var(--primary);
+  background: transparent;
+  font: inherit;
+  font-size: 0.62rem;
+  cursor: pointer;
+}
+
+.internship-actions button.is-danger {
+  color: #8b2028;
+}
+
+.internship-error,
+.internship-loading,
+.internship-empty {
+  margin: 22px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: var(--surface-muted);
+  font-size: 0.75rem;
+}
+
+.internship-error {
+  color: #8b2028;
+}
+
+.internship-empty span {
+  color: var(--quiet);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+}
+
+.internship-empty h3 {
+  margin: 36px 0 8px;
+  font-family: var(--serif);
+  font-size: 1.5rem;
+}
+
+.internship-empty p {
+  max-width: 620px;
+  color: var(--secondary);
+  line-height: 1.55;
+}
+
+.internship-empty .app-primary-action {
+  margin-top: 18px;
+}
+
+.internship-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  padding: 24px;
+  place-items: center;
+  background: rgb(5 27 23 / 48%);
+  z-index: 50;
+}
+
+.internship-dialog {
+  width: min(100%, 680px);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  box-shadow: 0 24px 80px rgb(5 27 23 / 20%);
+}
+
+.internship-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 26px 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.internship-dialog-header h2 {
+  margin: 8px 0 0;
+  font-family: var(--serif);
+  font-size: 1.65rem;
+}
+
+.internship-dialog-header button {
+  border: 0;
+  color: var(--secondary);
+  background: transparent;
+  font: inherit;
+  font-size: 0.68rem;
+  cursor: pointer;
+}
+
+.internship-dialog form {
+  display: grid;
+  gap: 20px;
+  padding: 28px;
+}
+
+.internship-dialog label {
+  display: grid;
+  gap: 8px;
+}
+
+.internship-dialog label > span {
+  font-size: 0.65rem;
+  font-weight: 650;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.internship-dialog input,
+.internship-dialog textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid var(--line-strong);
+  outline: 0;
+  color: var(--primary);
+  background: var(--surface);
+  font: inherit;
+  font-size: 0.78rem;
+}
+
+.internship-dialog textarea {
+  min-height: 240px;
+  line-height: 1.55;
+  resize: vertical;
+}
+
+.internship-dialog input:focus,
+.internship-dialog textarea:focus {
+  border-color: var(--primary);
+}
+
+.internship-dialog label small {
+  justify-self: end;
+  color: var(--quiet);
+  font-size: 0.58rem;
+}
+
+.internship-form-error {
+  margin: 0;
+  padding: 11px 13px;
+  border-left: 3px solid #93000a;
+  color: #7a1820;
+  background: #fff0ee;
+  font-size: 0.72rem;
+}
+
+.internship-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+@media (max-width: 800px) {
+  .internship-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .internship-list > article {
+    grid-template-columns: 1fr;
+  }
+}

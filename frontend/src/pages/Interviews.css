@@ -1,0 +1,227 @@
+.interviews-page {
+  --interview-soft: #f4f1ef;
+  --interview-ink: #061f1a;
+  --interview-line: #d8d7d3;
+  --interview-line-strong: #aeb5b1;
+}
+
+.interview-control-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 1px;
+  margin-bottom: 36px;
+  border: 1px solid var(--interview-line-strong);
+  background: var(--interview-line-strong);
+}
+
+.interview-control-panel > label,
+.interview-control-panel > div {
+  display: grid;
+  gap: 10px;
+  padding: 24px;
+  background: var(--surface);
+}
+
+.interview-control-panel label {
+  color: var(--secondary);
+  font-size: 0.72rem;
+  font-weight: 650;
+}
+
+.interview-control-panel select {
+  min-height: 44px;
+  border: 0;
+  border-bottom: 1px solid var(--interview-line);
+  color: var(--interview-ink);
+  background: var(--interview-soft);
+  font: inherit;
+  padding: 0 12px;
+}
+
+.interview-control-panel strong {
+  color: var(--primary);
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 0.9;
+}
+
+.interview-readiness-grid,
+.interview-mode-grid,
+.interview-context-layout {
+  display: grid;
+  gap: 1px;
+  border: 1px solid var(--interview-line);
+  background: var(--interview-line);
+}
+
+.interview-empty-state {
+  margin-bottom: 36px;
+  padding: 28px;
+  border: 1px solid var(--interview-line);
+  background: var(--surface);
+}
+
+.interview-empty-state h2 {
+  margin: 12px 0;
+  color: var(--primary);
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+}
+
+.interview-empty-state p {
+  max-width: 620px;
+  color: var(--secondary);
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.interview-empty-state a {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 14px;
+  text-decoration: none;
+}
+
+.interview-readiness-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 58px;
+}
+
+.interview-readiness-grid article,
+.interview-mode-grid article,
+.interview-context-layout > article {
+  padding: 24px;
+  background: var(--surface);
+}
+
+.interview-readiness-grid span {
+  color: #93000a;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.interview-readiness-grid article.is-ready span {
+  color: var(--primary);
+}
+
+.interview-readiness-grid h2,
+.interview-mode-grid h2,
+.interview-context-layout h2 {
+  margin: 14px 0 10px;
+  color: var(--primary);
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 3vw, 2.2rem);
+  line-height: 1.1;
+}
+
+.interview-readiness-grid p,
+.interview-mode-grid p,
+.interview-context-layout p,
+.interview-context-list li {
+  color: var(--secondary);
+  font-size: 0.76rem;
+  line-height: 1.65;
+}
+
+.interview-mode-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 58px;
+}
+
+.interview-mode-grid article {
+  min-height: 310px;
+}
+
+.interview-mode-grid .app-primary-action {
+  margin-top: 28px;
+}
+
+.interview-mode-grid ul {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.interview-mode-grid li {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  color: var(--secondary);
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.interview-mode-grid li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-top: 7px;
+  background: var(--primary);
+}
+
+.interview-mode-grid small {
+  display: block;
+  margin-top: 12px;
+  color: var(--quiet);
+  font-size: 0.68rem;
+}
+
+.interview-context-layout {
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+}
+
+.interview-context-list {
+  display: grid;
+  gap: 0;
+  margin-top: 22px;
+}
+
+.interview-context-list section {
+  padding: 18px 0;
+  border-top: 1px solid var(--interview-line);
+}
+
+.interview-context-list strong,
+.interview-practice-list strong {
+  display: block;
+  color: var(--primary);
+  font-size: 0.82rem;
+}
+
+.interview-context-list ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.interview-practice-list {
+  display: grid;
+  gap: 1px;
+  margin-top: 22px;
+  border: 1px solid var(--interview-line);
+  background: var(--interview-line);
+}
+
+.interview-practice-list section {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  background: var(--surface);
+}
+
+@media (max-width: 980px) {
+  .interview-readiness-grid,
+  .interview-mode-grid,
+  .interview-context-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .interview-control-panel {
+    grid-template-columns: 1fr;
+  }
+}

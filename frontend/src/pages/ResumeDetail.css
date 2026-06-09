@@ -1,0 +1,334 @@
+.resume-back-link {
+  display: inline-block;
+  margin-bottom: 34px;
+  color: var(--secondary);
+  font-size: 0.7rem;
+  font-weight: 650;
+}
+
+.resume-profile-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 70px;
+  padding-bottom: 54px;
+}
+
+.resume-profile-header h1,
+.resume-detail-message h1 {
+  margin: 12px 0 18px;
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1;
+}
+
+.resume-profile-header > div > p,
+.resume-detail-message p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--secondary);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.resume-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.resume-detail-actions a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.resume-profile-header dl {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+
+.resume-profile-header dl > div {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.resume-profile-header dt {
+  color: var(--quiet);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+}
+
+.resume-profile-header dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: var(--primary);
+  font-size: 0.72rem;
+}
+
+.resume-profile-header dd small {
+  display: block;
+  margin-top: 4px;
+  color: var(--quiet);
+  font-size: 0.56rem;
+  text-transform: capitalize;
+}
+
+.resume-data-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--line-strong);
+  background: var(--line);
+  gap: 1px;
+}
+
+.resume-data-overview > article {
+  min-height: 310px;
+  padding: 28px;
+  background: var(--surface);
+}
+
+.resume-data-overview h2 {
+  margin: 8px 0 26px;
+  font-family: var(--serif);
+  font-size: 1.45rem;
+}
+
+.resume-signal-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 36px;
+  border: 1px solid var(--line);
+  background: var(--line);
+  gap: 1px;
+}
+
+.resume-signal-stats > div {
+  display: flex;
+  min-height: 70px;
+  padding: 12px;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--surface-muted);
+}
+
+.resume-signal-stats strong {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+}
+
+.resume-signal-stats span {
+  color: var(--quiet);
+  font-size: 0.58rem;
+  text-transform: uppercase;
+}
+
+.resume-profile-section {
+  padding: 46px 0;
+  border-top: 1px solid var(--line-strong);
+}
+
+.resume-section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.resume-section-heading h2 {
+  margin: 8px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+}
+
+.resume-section-heading > strong {
+  color: var(--line-strong);
+  font-family: var(--serif);
+  font-size: 2.2rem;
+}
+
+.resume-skill-list,
+.resume-entry-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.resume-skill-card,
+.resume-entry-skills > span {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  color: var(--primary);
+  background: var(--surface);
+  font-size: 0.68rem;
+}
+
+.resume-skill-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.resume-skill-card {
+  min-width: 0;
+}
+
+.resume-skill-card > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.resume-skill-card > div > strong {
+  font-size: 0.7rem;
+}
+
+.resume-skill-card > div > span {
+  color: var(--quiet);
+  font-size: 0.52rem;
+  text-transform: uppercase;
+}
+
+.resume-skill-card > small {
+  display: block;
+  margin-top: 7px;
+  color: var(--quiet);
+  font-size: 0.58rem;
+}
+
+.resume-entry-list {
+  border: 1px solid var(--line);
+}
+
+.resume-entry-list > article {
+  padding: 26px;
+}
+
+.resume-entry-list > article + article {
+  border-top: 1px solid var(--line);
+}
+
+.resume-entry-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.resume-entry-title h3,
+.resume-compact-list h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+}
+
+.resume-entry-title > span {
+  color: var(--quiet);
+  font-size: 0.65rem;
+  text-align: right;
+}
+
+.resume-entry-list ul {
+  margin: 18px 0;
+  padding-left: 18px;
+  color: var(--secondary);
+  font-size: 0.74rem;
+  line-height: 1.65;
+}
+
+.resume-entry-skills > span {
+  padding: 5px 7px;
+  background: var(--surface-muted);
+  font-size: 0.6rem;
+}
+
+.resume-profile-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.resume-compact-list article {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.resume-compact-list p {
+  margin: 7px 0;
+  color: var(--secondary);
+  font-size: 0.72rem;
+}
+
+.resume-compact-list small {
+  color: var(--quiet);
+  font-size: 0.62rem;
+}
+
+.resume-profile-empty {
+  color: var(--quiet);
+  font-size: 0.76rem;
+}
+
+.resume-review-warnings article {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 24px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.resume-review-warnings strong {
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+.resume-review-warnings p {
+  margin: 0;
+  color: var(--secondary);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.resume-detail-loading,
+.resume-detail-message {
+  padding: 60px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.resume-detail-loading {
+  color: var(--secondary);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .resume-profile-header,
+  .resume-profile-columns,
+  .resume-data-overview {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .resume-entry-title {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .resume-entry-title > span {
+    text-align: left;
+  }
+
+  .resume-skill-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .resume-skill-list {
+    grid-template-columns: 1fr;
+  }
+}
