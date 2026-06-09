@@ -30,6 +30,7 @@ from schemas.interview import (
 from services.ai.config import get_interview_routes
 from services.ai.interview_schemas import (
     InterviewPlanOutput,
+    NextQuestionDecisionOutput,
     PrivateAnswerAssessmentOutput,
     RollingSummaryOutput,
 )
@@ -190,9 +191,11 @@ def submit_answer(
     summary, _, _ = _run_rolling_summary(session, question, request.answer_text, assessment)
     session.rolling_summary = summary.updated_summary
 
+    follow_up_needed = assessment.follow_up_needed and not question.is_follow_up
+
     # Check if this completes the session
     session_complete = False
-    if not assessment.follow_up_needed and session.current_question_number >= session.question_target:
+    if not follow_up_needed and session.current_question_number >= session.question_target:
         session.status = "completed"
         session.completed_at = datetime.now(timezone.utc)
         session_complete = True
@@ -202,7 +205,7 @@ def submit_answer(
     return InterviewAnswerAcknowledgement(
         answer_id=answer.id,
         session_id=session.id,
-        next_is_follow_up=assessment.follow_up_needed,
+        next_is_follow_up=follow_up_needed,
         session_complete=session_complete,
     )
 
@@ -239,15 +242,31 @@ def get_next_question(
 
     # Check if the latest question has been answered
     if latest_question:
-        has_answer = database.scalar(
+        latest_answer = database.scalar(
             select(InterviewAnswer)
             .where(InterviewAnswer.question_id == latest_question.id)
             .limit(1)
         )
-        if not has_answer:
+        if not latest_answer:
             # The user is asking for the next question but hasn't answered the current one.
             # Just return the current one again.
             return _to_next_question_response(latest_question, session)
+        if _should_generate_follow_up(latest_question, latest_answer):
+            decision, _, _ = _run_next_question_decision(
+                session,
+                latest_question,
+                latest_answer,
+            )
+            if decision.decision == "follow_up":
+                follow_up = _create_follow_up_question(
+                    session,
+                    latest_question,
+                    decision,
+                )
+                database.add(follow_up)
+                database.commit()
+                database.refresh(follow_up)
+                return _to_next_question_response(follow_up, session)
 
     # If we get here, we need a NEW question.
     # We increment the sequence number.
@@ -433,6 +452,86 @@ Provide the structured assessment according to the schema.
         raise HTTPException(status_code=503, detail=f"Assessment generation failed: {error}")
 
 
+def _should_generate_follow_up(
+    question: InterviewQuestion,
+    answer: InterviewAnswer,
+) -> bool:
+    return (
+        not question.is_follow_up
+        and bool(answer.private_assessment.get("follow_up_needed"))
+    )
+
+
+def _run_next_question_decision(
+    session: InterviewSession,
+    question: InterviewQuestion,
+    answer: InterviewAnswer,
+) -> tuple[NextQuestionDecisionOutput, str, str]:
+    prompt = f"""
+Decide whether to ask one concise adaptive follow-up or continue to the next planned question.
+
+Rules:
+- Ask a follow-up only when it would clarify an incomplete, vague, contradictory, or unsupported answer.
+- Do not repeat the original question.
+- Do not introduce a topic unrelated to the original question.
+- At most one follow-up is allowed for this planned question.
+- If no follow-up is necessary, return decision "next_planned" and null follow-up fields.
+
+Question category: {question.category}
+Original question: {question.question_text}
+Candidate answer: {answer.answer_text}
+Private assessment:
+{json.dumps(answer.private_assessment, indent=2)}
+Rolling interview summary:
+{session.rolling_summary or "No prior summary."}
+""".strip()
+
+    try:
+        output = generate_structured_with_fallback(
+            routes=get_interview_routes(),
+            prompt=prompt,
+            json_schema=NextQuestionDecisionOutput.model_json_schema(),
+        )
+        return (
+            NextQuestionDecisionOutput.model_validate(output.data),
+            output.route.provider,
+            output.route.model,
+        )
+    except (AIOrchestratorError, ValidationError) as error:
+        raise HTTPException(
+            status_code=503,
+            detail=f"Next-question decision failed: {error}",
+        ) from error
+
+
+def _create_follow_up_question(
+    session: InterviewSession,
+    parent: InterviewQuestion,
+    decision: NextQuestionDecisionOutput,
+) -> InterviewQuestion:
+    if (
+        not decision.follow_up_question_text
+        or not decision.follow_up_category
+        or not decision.follow_up_reason
+    ):
+        raise HTTPException(
+            status_code=503,
+            detail="The interview model requested a follow-up without complete question data.",
+        )
+    return InterviewQuestion(
+        id=uuid.uuid4(),
+        session_id=session.id,
+        sequence_number=parent.sequence_number,
+        category=decision.follow_up_category,
+        question_text=decision.follow_up_question_text,
+        reason=decision.follow_up_reason,
+        source_requirement=parent.source_requirement,
+        source_section_keys=parent.source_section_keys,
+        is_follow_up=True,
+        parent_question_id=parent.id,
+    )
+
+
 def _run_rolling_summary(
     session: InterviewSession,
     question: InterviewQuestion,
@@ -466,4 +565,3 @@ Provide a new, condensed summary incorporating this turn. Keep it concise.
         )
     except (AIOrchestratorError, ValidationError) as error:
         raise HTTPException(status_code=503, detail=f"Summary generation failed: {error}")
-

@@ -49,13 +49,7 @@ def create_interview_preparation(
     force_refresh is False, the cached result is returned immediately
     without an AI call.
     """
-    # --- Step 1: Check cache first (saves AI cost on repeat visits) ---------
-    if not request.force_refresh:
-        cached = _get_cached_preparation(database, user, request)
-        if cached:
-            return _to_response(cached)
-
-    # --- Step 2: Build the compact context from existing saved data ---------
+    # --- Step 1: Build and validate the current compact context -------------
     compact_context = build_compact_context(
         database=database,
         user=user,
@@ -67,6 +61,17 @@ def create_interview_preparation(
         question_count=request.question_count,
         focus_areas=list(request.focus_areas),
     )
+
+    # --- Step 2: Reuse only a preparation built from this exact context -----
+    if not request.force_refresh:
+        cached = _get_cached_preparation(
+            database,
+            user,
+            request,
+            compact_context,
+        )
+        if cached:
+            return _to_response(cached)
 
     # --- Step 3: Call the AI orchestrator with the compact context ----------
     output, provider, model_name = _run_preparation_generator(compact_context, request)
@@ -177,6 +182,7 @@ def _get_cached_preparation(
     database: Session,
     user: User,
     request: InterviewPreparationCreate,
+    compact_context: dict,
 ) -> InterviewPreparation | None:
     """
     Returns the most recent non-stale preparation for this exact request payload,
@@ -196,7 +202,10 @@ def _get_cached_preparation(
         .limit(10)
     ).all()
     for candidate in candidates:
-        if candidate.request_payload == request_payload:
+        if (
+            candidate.request_payload == request_payload
+            and candidate.compact_context == compact_context
+        ):
             return candidate
     return None
 

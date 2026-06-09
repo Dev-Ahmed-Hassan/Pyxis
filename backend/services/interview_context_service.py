@@ -27,6 +27,8 @@ from schemas.matching import (
     MatchExplanationPayload,
     MatchPreviewResponse,
 )
+from schemas.profile import UserProfileFactsResponse
+from services.user_profile_facts_service import get_user_profile_facts
 
 # ---------------------------------------------------------------------------
 # Hard caps — keeps LLM prompt size bounded (Section 4: "set hard limits")
@@ -64,11 +66,17 @@ def build_compact_context(
     # --- Step 1: Load required match analysis (enforces ownership) ----------
     analysis = _get_owned_analysis(database, user, match_analysis_id)
     match = MatchPreviewResponse.model_validate(analysis.analysis_payload)
+    profile_facts = get_user_profile_facts(database, user)
 
     # --- Step 2: Load optional explanation (enforces ownership if provided) -
     explanation_payload: MatchExplanationPayload | None = None
     if match_explanation_id:
-        explanation = _get_owned_explanation(database, user, match_explanation_id)
+        explanation = _get_owned_explanation(
+            database,
+            user,
+            match_explanation_id,
+            analysis.id,
+        )
         explanation_payload = MatchExplanationPayload.model_validate(
             explanation.explanation_payload
         )
@@ -76,7 +84,12 @@ def build_compact_context(
     # --- Step 3: Load optional GitHub evidence (enforces ownership) ---------
     github_payload: GitHubMatchEvidencePayload | None = None
     if github_evidence_id:
-        evidence = _get_owned_github_evidence(database, user, github_evidence_id)
+        evidence = _get_owned_github_evidence(
+            database,
+            user,
+            github_evidence_id,
+            analysis.id,
+        )
         github_payload = GitHubMatchEvidencePayload.model_validate(
             evidence.evidence_payload
         )
@@ -85,6 +98,7 @@ def build_compact_context(
     return _assemble_compact_context(
         analysis=analysis,
         match=match,
+        profile_facts=profile_facts,
         explanation=explanation_payload,
         github=github_payload,
         mode=mode,
@@ -127,17 +141,23 @@ def _get_owned_explanation(
     database: Session,
     user: User,
     explanation_id: uuid.UUID,
+    match_analysis_id: uuid.UUID,
 ) -> MatchExplanation:
     explanation = database.scalar(
         select(MatchExplanation).where(
             MatchExplanation.id == explanation_id,
             MatchExplanation.user_id == user.id,
+            MatchExplanation.match_analysis_id == match_analysis_id,
+            MatchExplanation.stale_at.is_(None),
         )
     )
     if not explanation:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Match explanation not found or does not belong to this user.",
+            detail=(
+                "Match explanation not found, is stale, or does not belong "
+                "to the selected match analysis."
+            ),
         )
     return explanation
 
@@ -146,17 +166,23 @@ def _get_owned_github_evidence(
     database: Session,
     user: User,
     evidence_id: uuid.UUID,
+    match_analysis_id: uuid.UUID,
 ) -> GitHubMatchEvidence:
     evidence = database.scalar(
         select(GitHubMatchEvidence).where(
             GitHubMatchEvidence.id == evidence_id,
             GitHubMatchEvidence.user_id == user.id,
+            GitHubMatchEvidence.match_analysis_id == match_analysis_id,
+            GitHubMatchEvidence.stale_at.is_(None),
         )
     )
     if not evidence:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="GitHub match evidence not found or does not belong to this user.",
+            detail=(
+                "GitHub match evidence not found, is stale, or does not belong "
+                "to the selected match analysis."
+            ),
         )
     return evidence
 
@@ -169,6 +195,7 @@ def _get_owned_github_evidence(
 def _assemble_compact_context(
     analysis: MatchAnalysis,
     match: MatchPreviewResponse,
+    profile_facts: UserProfileFactsResponse,
     explanation: MatchExplanationPayload | None,
     github: GitHubMatchEvidencePayload | None,
     mode: str,
@@ -179,7 +206,7 @@ def _assemble_compact_context(
     return {
         "target": _build_target(analysis),
         "requirements": _build_requirements(match),
-        "candidate": _build_candidate(match),
+        "candidate": _build_candidate(match, profile_facts, analysis.resume_id),
         "evidence": _build_evidence(match, explanation, github),
         "interview_settings": {
             "mode": mode,
@@ -228,7 +255,11 @@ def _build_requirements(match: MatchPreviewResponse) -> dict:
     }
 
 
-def _build_candidate(match: MatchPreviewResponse) -> dict:
+def _build_candidate(
+    match: MatchPreviewResponse,
+    profile_facts: UserProfileFactsResponse,
+    resume_id: uuid.UUID,
+) -> dict:
     """
     Builds the candidate section from resume skills and evidence.
     Uses the semantic evidence section keys to identify which resume
@@ -236,20 +267,74 @@ def _build_candidate(match: MatchPreviewResponse) -> dict:
     """
     skills = match.resume_skills[:MAX_SKILLS]
 
-    # Extract unique section keys from semantic evidence (grounded resume references)
-    section_keys = list(
-        dict.fromkeys(
-            ev.resume_section_key
-            for ev in match.semantic_skill_score.evidence[:MAX_RESUME_SECTION_KEYS]
+    projects = [
+        {
+            "source_key": project.source_key,
+            "name": project.project_name,
+            "description": project.description,
+            "skills": project.skills[:MAX_SKILLS],
+            "evidence": project.evidence,
+        }
+        for project in profile_facts.project_sources
+        if project.resume_id == resume_id
+    ][:MAX_PROJECTS]
+
+    certifications = [
+        {
+            "source_key": certification.source_key,
+            "name": certification.certification_name,
+            "issuer": certification.issuer,
+            "date": certification.date,
+            "evidence": certification.evidence,
+        }
+        for certification in profile_facts.certification_sources
+        if certification.resume_id == resume_id
+    ][:MAX_CERTIFICATIONS]
+
+    experience = []
+    seen_experience = set()
+    for source in profile_facts.skill_sources:
+        if source.resume_id != resume_id or source.source_section != "experience":
+            continue
+        experience_key = source.context or source.source_key.split(":skill:", 1)[0]
+        if experience_key in seen_experience:
+            continue
+        seen_experience.add(experience_key)
+        related_sources = [
+            candidate
+            for candidate in profile_facts.skill_sources
+            if candidate.resume_id == resume_id
+            and candidate.source_section == "experience"
+            and (candidate.context or candidate.source_key.split(":skill:", 1)[0])
+            == experience_key
+        ]
+        experience.append(
+            {
+                "label": source.context or "Resume experience",
+                "source_keys": [candidate.source_key for candidate in related_sources],
+                "skills": list(
+                    dict.fromkeys(
+                        candidate.canonical_name for candidate in related_sources
+                    )
+                )[:MAX_SKILLS],
+                "evidence": list(
+                    dict.fromkeys(
+                        candidate.evidence
+                        for candidate in related_sources
+                        if candidate.evidence
+                    )
+                )[:3],
+            }
         )
-    )
+        if len(experience) >= MAX_EXPERIENCE:
+            break
 
     return {
         "summary": f"Candidate has {len(skills)} identified skills relevant to this role.",
         "skills": skills,
-        "projects": [],       # Populated by preparation/session service from profile facts
-        "experience": [],     # Populated by preparation/session service from profile facts
-        "certifications": [], # Populated by preparation/session service from profile facts
+        "projects": projects,
+        "experience": experience,
+        "certifications": certifications,
     }
 
 
